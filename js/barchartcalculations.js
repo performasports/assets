@@ -1,5 +1,4 @@
-
-		 		function teamPSR(){
+				function teamPSR(){
          let no1 = parseInt($("#home-psr-number").text(),10);
          let no2 = parseInt($("#away-psr-number").text(),10);
          let total = no1+no2; //10
@@ -755,6 +754,38 @@
 }
 
 function shotFromPlayCR(){
+let no1 = parseInt($("#home-shotFromPlay-cr-number").text(),10);
+let no2 = parseInt($("#away-shotFromPlay-cr-number").text(),10);
+let total = no1+no2; //10
+let homeNum = no1/total;
+let awayNum = no2/total;
+let homePercentage = homeNum*100;
+let awayPercentage = awayNum*100;
+//alert("The result is "+result +no1 +no2);
+//$("#home-ss-throw-bar").css({width: homePercentage + "%" });
+//$("#away-ss-throw-bar").css({width: awayPercentage + "%" });
+
+if (no1 >= no2) {
+$("#home-shotFromPlay-cr-bar").css({width: homePercentage + "%" });
+$("#away-shotFromPlay-cr-bar").css({width: 100 + "%" });
+}
+if (no1 == 0 && no2 == 0) {
+$("#home-shotFromPlay-cr-bar").css({width: 50 + "%" });
+$("#away-shotFromPlay-cr-bar").css({width: 100 + "%" });
+}
+if (no2 > no1) {
+$("#home-shotFromPlay-cr-bar").css({width: 100 + "%" });
+$("#away-shotFromPlay-cr-bar").css({width: awayPercentage + "%" }).css("z-index","2");
+}
+else {
+}
+}
+
+function barChartCalc(){
+
+	$('.homestatnumber').each(function() {
+  console.log($(this).text(),10);
+	});
 let no1 = parseInt($("#home-shotFromPlay-cr-number").text(),10);
 let no2 = parseInt($("#away-shotFromPlay-cr-number").text(),10);
 let total = no1+no2; //10
