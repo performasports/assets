@@ -530,6 +530,258 @@
          }
         }
 
+				function shotFromPlay(){
+				let no1 = parseInt($("#home-shotFromPlay-number").text(),10);
+				let no2 = parseInt($("#away-shotFromPlay-number").text(),10);
+				let total = no1+no2; //10
+				let homeNum = no1/total;
+				let awayNum = no2/total;
+				let homePercentage = homeNum*100;
+				let awayPercentage = awayNum*100;
+				//alert("The result is "+result +no1 +no2);
+				//$("#home-ss-throw-bar").css({width: homePercentage + "%" });
+				//$("#away-ss-throw-bar").css({width: awayPercentage + "%" });
+
+				if (no1 >= no2) {
+				$("#home-shotFromPlay-bar").css({width: homePercentage + "%" });
+				$("#away-shotFromPlay-bar").css({width: 100 + "%" });
+				}
+				if (no1 == 0 && no2 == 0) {
+				$("#home-shotFromPlay-bar").css({width: 50 + "%" });
+				$("#away-shotFromPlay-bar").css({width: 100 + "%" });
+				}
+				if (no2 > no1) {
+				$("#home-shotFromPlay-bar").css({width: 100 + "%" });
+				$("#away-shotFromPlay-bar").css({width: awayPercentage + "%" }).css("z-index","2");
+				}
+				else {
+				}
+			 }
+
+			 function shotFromPlayGoal(){
+			 let no1 = parseInt($("#home-shotFromPlay-goal-number").text(),10);
+			 let no2 = parseInt($("#away-shotFromPlay-goal-number").text(),10);
+			 let total = no1+no2; //10
+			 let homeNum = no1/total;
+			 let awayNum = no2/total;
+			 let homePercentage = homeNum*100;
+			 let awayPercentage = awayNum*100;
+			 //alert("The result is "+result +no1 +no2);
+			 //$("#home-ss-throw-bar").css({width: homePercentage + "%" });
+			 //$("#away-ss-throw-bar").css({width: awayPercentage + "%" });
+
+			 if (no1 >= no2) {
+			 $("#home-shotFromPlay-goal-bar").css({width: homePercentage + "%" });
+			 $("#away-shotFromPlay-goal-bar").css({width: 100 + "%" });
+			 }
+			 if (no1 == 0 && no2 == 0) {
+			 $("#home-shotFromPlay-goal-bar").css({width: 50 + "%" });
+			 $("#away-shotFromPlay-goal-bar").css({width: 100 + "%" });
+			 }
+			 if (no2 > no1) {
+			 $("#home-shotFromPlay-goal-bar").css({width: 100 + "%" });
+			 $("#away-shotFromPlay-goal-bar").css({width: awayPercentage + "%" }).css("z-index","2");
+			 }
+			 else {
+			 }
+			}
+
+			function shotFromPlayPoint(){
+			let no1 = parseInt($("#home-shotFromPlay-point-number").text(),10);
+			let no2 = parseInt($("#away-shotFromPlay-point-number").text(),10);
+			let total = no1+no2; //10
+			let homeNum = no1/total;
+			let awayNum = no2/total;
+			let homePercentage = homeNum*100;
+			let awayPercentage = awayNum*100;
+			//alert("The result is "+result +no1 +no2);
+			//$("#home-ss-throw-bar").css({width: homePercentage + "%" });
+			//$("#away-ss-throw-bar").css({width: awayPercentage + "%" });
+
+			if (no1 >= no2) {
+			$("#home-shotFromPlay-point-bar").css({width: homePercentage + "%" });
+			$("#away-shotFromPlay-point-bar").css({width: 100 + "%" });
+			}
+			if (no1 == 0 && no2 == 0) {
+			$("#home-shotFromPlay-point-bar").css({width: 50 + "%" });
+			$("#away-shotFromPlay-point-bar").css({width: 100 + "%" });
+			}
+			if (no2 > no1) {
+			$("#home-shotFromPlay-point-bar").css({width: 100 + "%" });
+			$("#away-shotFromPlay-point-bar").css({width: awayPercentage + "%" }).css("z-index","2");
+			}
+			else {
+			}
+		 }
+
+		 function shotFromPlayWide(){
+		 let no1 = parseInt($("#home-shotFromPlay-wide-number").text(),10);
+		 let no2 = parseInt($("#away-shotFromPlay-wide-number").text(),10);
+		 let total = no1+no2; //10
+		 let homeNum = no1/total;
+		 let awayNum = no2/total;
+		 let homePercentage = homeNum*100;
+		 let awayPercentage = awayNum*100;
+		 //alert("The result is "+result +no1 +no2);
+		 //$("#home-ss-throw-bar").css({width: homePercentage + "%" });
+		 //$("#away-ss-throw-bar").css({width: awayPercentage + "%" });
+
+		 if (no1 >= no2) {
+		 $("#home-shotFromPlay-wide-bar").css({width: homePercentage + "%" });
+		 $("#away-shotFromPlay-wide-bar").css({width: 100 + "%" });
+		 }
+		 if (no1 == 0 && no2 == 0) {
+		 $("#home-shotFromPlay-wide-bar").css({width: 50 + "%" });
+		 $("#away-shotFromPlay-wide-bar").css({width: 100 + "%" });
+		 }
+		 if (no2 > no1) {
+		 $("#home-shotFromPlay-wide-bar").css({width: 100 + "%" });
+		 $("#away-shotFromPlay-wide-bar").css({width: awayPercentage + "%" }).css("z-index","2");
+		 }
+		 else {
+		 }
+		}
+
+		function shotFromPlaySave(){
+		let no1 = parseInt($("#home-shotFromPlay-save-number").text(),10);
+		let no2 = parseInt($("#away-shotFromPlay-save-number").text(),10);
+		let total = no1+no2; //10
+		let homeNum = no1/total;
+		let awayNum = no2/total;
+		let homePercentage = homeNum*100;
+		let awayPercentage = awayNum*100;
+		//alert("The result is "+result +no1 +no2);
+		//$("#home-ss-throw-bar").css({width: homePercentage + "%" });
+		//$("#away-ss-throw-bar").css({width: awayPercentage + "%" });
+
+		if (no1 >= no2) {
+		$("#home-shotFromPlay-save-bar").css({width: homePercentage + "%" });
+		$("#away-shotFromPlay-save-bar").css({width: 100 + "%" });
+		}
+		if (no1 == 0 && no2 == 0) {
+		$("#home-shotFromPlay-save-bar").css({width: 50 + "%" });
+		$("#away-shotFromPlay-save-bar").css({width: 100 + "%" });
+		}
+		if (no2 > no1) {
+		$("#home-shotFromPlay-save-bar").css({width: 100 + "%" });
+		$("#away-shotFromPlay-save-bar").css({width: awayPercentage + "%" }).css("z-index","2");
+		}
+		else {
+		}
+	 }
+
+	 function shotFromPlayShort(){
+	 let no1 = parseInt($("#home-shotFromPlay-short-number").text(),10);
+	 let no2 = parseInt($("#away-shotFromPlay-short-number").text(),10);
+	 let total = no1+no2; //10
+	 let homeNum = no1/total;
+	 let awayNum = no2/total;
+	 let homePercentage = homeNum*100;
+	 let awayPercentage = awayNum*100;
+	 //alert("The result is "+result +no1 +no2);
+	 //$("#home-ss-throw-bar").css({width: homePercentage + "%" });
+	 //$("#away-ss-throw-bar").css({width: awayPercentage + "%" });
+
+	 if (no1 >= no2) {
+	 $("#home-shotFromPlay-short-bar").css({width: homePercentage + "%" });
+	 $("#away-shotFromPlay-short-bar").css({width: 100 + "%" });
+	 }
+	 if (no1 == 0 && no2 == 0) {
+	 $("#home-shotFromPlay-short-bar").css({width: 50 + "%" });
+	 $("#away-shotFromPlay-short-bar").css({width: 100 + "%" });
+	 }
+	 if (no2 > no1) {
+	 $("#home-shotFromPlay-short-bar").css({width: 100 + "%" });
+	 $("#away-shotFromPlay-short-bar").css({width: awayPercentage + "%" }).css("z-index","2");
+	 }
+	 else {
+	 }
+	}
+
+	function shotFromPlayWoodwork(){
+	let no1 = parseInt($("#home-shotFromPlay-woodwork-number").text(),10);
+	let no2 = parseInt($("#away-shotFromPlay-woodwork-number").text(),10);
+	let total = no1+no2; //10
+	let homeNum = no1/total;
+	let awayNum = no2/total;
+	let homePercentage = homeNum*100;
+	let awayPercentage = awayNum*100;
+	//alert("The result is "+result +no1 +no2);
+	//$("#home-ss-throw-bar").css({width: homePercentage + "%" });
+	//$("#away-ss-throw-bar").css({width: awayPercentage + "%" });
+
+	if (no1 >= no2) {
+	$("#home-shotFromPlay-woodwork-bar").css({width: homePercentage + "%" });
+	$("#away-shotFromPlay-woodwork-bar").css({width: 100 + "%" });
+	}
+	if (no1 == 0 && no2 == 0) {
+	$("#home-shotFromPlay-woodwork-bar").css({width: 50 + "%" });
+	$("#away-shotFromPlay-woodwork-bar").css({width: 100 + "%" });
+	}
+	if (no2 > no1) {
+	$("#home-shotFromPlay-woodwork-bar").css({width: 100 + "%" });
+	$("#away-shotFromPlay-woodwork-bar").css({width: awayPercentage + "%" }).css("z-index","2");
+	}
+	else {
+	}
+ }
+
+ function shotFromPlay45(){
+ let no1 = parseInt($("#home-shotFromPlay-45-number").text(),10);
+ let no2 = parseInt($("#away-shotFromPlay-45-number").text(),10);
+ let total = no1+no2; //10
+ let homeNum = no1/total;
+ let awayNum = no2/total;
+ let homePercentage = homeNum*100;
+ let awayPercentage = awayNum*100;
+ //alert("The result is "+result +no1 +no2);
+ //$("#home-ss-throw-bar").css({width: homePercentage + "%" });
+ //$("#away-ss-throw-bar").css({width: awayPercentage + "%" });
+
+ if (no1 >= no2) {
+ $("#home-shotFromPlay-45-bar").css({width: homePercentage + "%" });
+ $("#away-shotFromPlay-45-bar").css({width: 100 + "%" });
+ }
+ if (no1 == 0 && no2 == 0) {
+ $("#home-shotFromPlay-45-bar").css({width: 50 + "%" });
+ $("#away-shotFromPlay-45-bar").css({width: 100 + "%" });
+ }
+ if (no2 > no1) {
+ $("#home-shotFromPlay-45-bar").css({width: 100 + "%" });
+ $("#away-shotFromPlay-45-bar").css({width: awayPercentage + "%" }).css("z-index","2");
+ }
+ else {
+ }
+}
+
+function shotFromPlayCR(){
+let no1 = parseInt($("#home-shotFromPlay-cr-number").text(),10);
+let no2 = parseInt($("#away-shotFromPlay-cr-number").text(),10);
+let total = no1+no2; //10
+let homeNum = no1/total;
+let awayNum = no2/total;
+let homePercentage = homeNum*100;
+let awayPercentage = awayNum*100;
+//alert("The result is "+result +no1 +no2);
+//$("#home-ss-throw-bar").css({width: homePercentage + "%" });
+//$("#away-ss-throw-bar").css({width: awayPercentage + "%" });
+
+if (no1 >= no2) {
+$("#home-shotFromPlay-cr-bar").css({width: homePercentage + "%" });
+$("#away-shotFromPlay-cr-bar").css({width: 100 + "%" });
+}
+if (no1 == 0 && no2 == 0) {
+$("#home-shotFromPlay-cr-bar").css({width: 50 + "%" });
+$("#away-shotFromPlay-cr-bar").css({width: 100 + "%" });
+}
+if (no2 > no1) {
+$("#home-shotFromPlay-cr-bar").css({width: 100 + "%" });
+$("#away-shotFromPlay-cr-bar").css({width: awayPercentage + "%" }).css("z-index","2");
+}
+else {
+}
+}
+
 				//cdn//
         function initialise() {
     		teamPSR();
@@ -551,6 +803,15 @@
         attacksCarryLost();
         attacksMarkTaken();
         attacksDefMarkTaken();
+				shotFromPlay();
+				shotFromPlayGoal();
+				shotFromPlayPoint();
+				shotFromPlayWide();
+				shotFromPlaySave();
+				shotFromPlayShort();
+				shotFromPlayWoodwork();
+				shotFromPlay45();
+				shotFromPlayCR();
         }
 
 		$(document).ready(initialise);
