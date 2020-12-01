@@ -1,21 +1,4 @@
-				function Add(){
-         var no1=parseInt($("#txtNo1").val());
-         var no2=parseInt($("#txtNo2").val());
-         var result =no1+no2;
-          alert("The result is "+result);
-        }
-        function Substract(){
-         var no1=parseInt($("#txtNo1").val());
-         var no2=parseInt($("#txtNo2").val());
-         var result =no1-no2;
-          alert("The result is "+result);
-        }
-        function Multiply(){
-         var no1=parseInt($("#txtNo1").val());
-         var no2=parseInt($("#txtNo2").val());
-         var result =no1*no2;
-          alert("The result is "+result);
-        }
+
 		 		function teamPSR(){
          let no1 = parseInt($("#home-psr-number").text(),10);
          let no2 = parseInt($("#away-psr-number").text(),10);
@@ -44,6 +27,7 @@
          }
 
         }
+
         function teamPossessions(){
          let no1 = parseInt($("#home-team-possessions-number").text(),10);
          let no2 = parseInt($("#away-team-possessions-number").text(),10);
@@ -57,17 +41,17 @@
          //$("#away-team-possessions-bar").css({width: awayPercentage + "%" });
 
          if (no1 >= no2) {
-    	 $("#home-team-possessions-bar").css({width: homePercentage + "%" });
+    	   $("#home-team-possessions-bar").css({width: homePercentage + "%" });
          $("#away-team-possessions-bar").css({width: 100 + "%" });
-		 }
+		     }
          if (no1 == 0 && no2 == 0) {
          $("#home-team-possessions-bar").css({width: 50 + "%" });
          $("#away-team-possessions-bar").css({width: 100 + "%" });
          }
          if (no2 > no1) {
          $("#home-team-possessions-bar").css({width: 100 + "%" });
-    	 $("#away-team-possessions-bar").css({width: awayPercentage + "%" }).css("z-index","2");
-		 }
+    	   $("#away-team-possessions-bar").css({width: awayPercentage + "%" }).css("z-index","2");
+		     }
          else {
          }
 
@@ -75,11 +59,11 @@
         function timeInPossession(){
 
          let time = $("#home-time-in-possession-number").text();
-		 let no1 = new Date('1970-01-01T' + time + 'Z').getTime() / 1000;
+		     let no1 = new Date('1970-01-01T' + time + 'Z').getTime() / 1000;
          //console.log(seconds);
 
          let time2 = $("#away-time-in-possession-number").text();
-		 let no2 = new Date('1970-01-01T' + time2 + 'Z').getTime() / 1000;
+		     let no2 = new Date('1970-01-01T' + time2 + 'Z').getTime() / 1000;
          //console.log(seconds);
 
          let total = no1+no2; //10
@@ -349,6 +333,7 @@
 		 }
          else {
          }
+			 }
          function attacks(){
          let no1 = parseInt($("#home-attacks-number").text(),10);
          let no2 = parseInt($("#away-attacks-number").text(),10);
@@ -375,6 +360,7 @@
 		 }
          else {
          }
+			 }
 
          function attacksKickRetained(){
          let no1 = parseInt($("#home-attacks-kickretained-number").text(),10);
@@ -402,6 +388,7 @@
 		 }
          else {
          }
+			 }
 
          function attacksKickLost(){
          let no1 = parseInt($("#home-attacks-kicklost-number").text(),10);
@@ -429,6 +416,7 @@
 		 }
          else {
          }
+			 }
 
          function attacksCarryRetained(){
          let no1 = parseInt($("#home-attacks-carryretained-number").text(),10);
@@ -456,6 +444,7 @@
 		 }
          else {
          }
+			 }
 
          function attacksCarryLost(){
          let no1 = parseInt($("#home-attacks-carrylost-number").text(),10);
@@ -483,6 +472,7 @@
 		 }
          else {
          }
+			 }
 
          function attacksMarkTaken(){
          let no1 = parseInt($("#home-attacks-marktaken-number").text(),10);
@@ -510,6 +500,7 @@
 		 }
          else {
          }
+			 }
 
          function attacksDefMarkTaken(){
          let no1 = parseInt($("#home-attacks-defmarktaken-number").text(),10);
@@ -538,3 +529,28 @@
          else {
          }
         }
+
+				//cdn//
+        function initialise() {
+    		teamPSR();
+    		teamPossessions();
+        timeInPossession();
+        productivity();
+        scoreSource();
+        scoreSourceKickout();
+        scoreSourceOppKickout();
+        scoreSourcePosLost();
+        scoreSourceTurnover();
+        scoreSourceShotShort();
+        scoreSourceFreeFromPlay();
+        scoreSourceThrowUp();
+        attacks();
+        attacksKickRetained();
+        attacksKickLost();
+        attacksCarryRetained();
+        attacksCarryLost();
+        attacksMarkTaken();
+        attacksDefMarkTaken();
+        }
+
+		$(document).ready(initialise);
