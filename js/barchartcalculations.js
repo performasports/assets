@@ -1,5 +1,4 @@
-<script>
-		 function Add(){
+				function Add(){
          var no1=parseInt($("#txtNo1").val());
          var no2=parseInt($("#txtNo2").val());
          var result =no1+no2;
@@ -17,7 +16,7 @@
          var result =no1*no2;
           alert("The result is "+result);
         }
-		 function teamPSR(){
+		 		function teamPSR(){
          let no1 = parseInt($("#home-psr-number").text(),10);
          let no2 = parseInt($("#away-psr-number").text(),10);
          let total = no1+no2; //10
@@ -30,17 +29,17 @@
          //$("#home-psr-bar").css({width: homePercentage + "%" });
 
          if (no1 >= no2) {
-    	 $("#home-psr-bar").css({width: homePercentage + "%" });
+    	   $("#home-psr-bar").css({width: homePercentage + "%" });
          $("#away-psr-bar").css({width: 100 + "%" });
-		 }
+		 			}
          if (no1 == 0 && no2 == 0) {
          $("#home-psr-bar").css({width: 50 + "%" });
          $("#away-psr-bar").css({width: 100 + "%" });
          }
          if (no2 > no1) {
          $("#home-psr-bar").css({width: 100 + "%" });
-    	 $("#away-psr-bar").css({width: awayPercentage + "%" }).css("z-index","2");
-		 }
+    	 	 $("#away-psr-bar").css({width: awayPercentage + "%" }).css("z-index","2");
+		 		 }
          else {
          }
 
@@ -543,8 +542,8 @@
 
         //cdn//
         function initialise() {
-    	teamPSR();
-    	teamPossessions();
+    		teamPSR();
+    		teamPossessions();
         timeInPossession();
         productivity();
         scoreSource();
@@ -565,4 +564,3 @@
         }
 
 		$(document).ready(initialise);
-</script>
