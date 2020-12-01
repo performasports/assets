@@ -783,13 +783,13 @@ else {
 
 function barChartCalc(){
 
-	$('.bar-chart-team-stats-grid').each(function() {
+	$('.team-stats').each(function() {
 	let no1 = parseInt($(this).find(".homestatnumber").text(),10);
 	console.log(no1);
 
 	});
 
-let no1 = parseInt($("#home-shotFromPlay-cr-number").text(),10);
+//let no1 = parseInt($("#home-shotFromPlay-cr-number").text(),10);
 let no2 = parseInt($("#away-shotFromPlay-cr-number").text(),10);
 let total = no1+no2; //10
 let homeNum = no1/total;
