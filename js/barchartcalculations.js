@@ -784,7 +784,7 @@ else {
 function barChartCalc(){
 
 	$('.team-stats').each(function() {
-	let no1 = parseInt($(this).find(".homestatnumber .number").text(),10);
+	let no1 = parseInt($(this).find(".homestatnumber.number").text(),10);
 	console.log(no1);
 
 	});
