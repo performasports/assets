@@ -807,8 +807,6 @@ function barChartCalc(){
 	}
 	else {
 	}
-	}
-
 	});
 
 //let no1 = parseInt($("#home-shotFromPlay-cr-number").text(),10);
