@@ -792,7 +792,7 @@ function barChartCalc(){
 	let homePercentage = homeNum*100;
 	let awayPercentage = awayNum*100;
 
-	console.log(homePercentage,awayPercentage);
+	console.log(no1,no2);
 
 	if (no1 >= no2) {
 	$(this).find(".home-team-bar").css({width: homePercentage + "%" });
