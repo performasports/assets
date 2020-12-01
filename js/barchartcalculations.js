@@ -785,7 +785,29 @@ function barChartCalc(){
 
 	$('.team-stats').each(function() {
 	let no1 = parseInt($(this).find(".homestatnumber").filter(".number").text(),10);
-	console.log(no1);
+	//console.log(no1);
+	let no2 = parseInt($(this).find(".awaystatnumber").filter(".number").text(),10);
+	let total = no1+no2; //10
+	let homeNum = no1/total;
+	let awayNum = no2/total;
+	let homePercentage = homeNum*100;
+	let awayPercentage = awayNum*100;
+
+	if (no1 >= no2) {
+	$(this).find(".home-team-bar").css({width: homePercentage + "%" });
+	$(this).find(".away-team-bar").css({width: 100 + "%" });
+	}
+	if (no1 == 0 && no2 == 0) {
+	$(this).find(".home-team-bar").css({width: 50 + "%" });
+	$(this).find(".away-team-bar").css({width: 100 + "%" });
+	}
+	if (no2 > no1) {
+	$(this).find(".home-team-bar").css({width: 100 + "%" });
+	$(this).find(".away-team-bar").css({width: awayPercentage + "%" }).css("z-index","2");
+	}
+	else {
+	}
+	}
 
 	});
 
