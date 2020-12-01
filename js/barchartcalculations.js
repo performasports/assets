@@ -524,43 +524,17 @@
          //$("#away-ss-throw-bar").css({width: awayPercentage + "%" });
 
          if (no1 >= no2) {
-    	 $("#home-attacks-defmarktaken-bar").css({width: homePercentage + "%" });
+    	   $("#home-attacks-defmarktaken-bar").css({width: homePercentage + "%" });
          $("#away-attacks-defmarktaken-bar").css({width: 100 + "%" });
-		 }
+		     }
          if (no1 == 0 && no2 == 0) {
          $("#home-attacks-defmarktaken-bar").css({width: 50 + "%" });
          $("#away-attacks-defmarktaken-bar").css({width: 100 + "%" });
          }
          if (no2 > no1) {
          $("#home-attacks-defmarktaken-bar").css({width: 100 + "%" });
-    	 $("#away-attacks-defmarktaken-bar").css({width: awayPercentage + "%" }).css("z-index","2");
-		 }
+    	   $("#away-attacks-defmarktaken-bar").css({width: awayPercentage + "%" }).css("z-index","2");
+		 		 }
          else {
          }
         }
-
-
-        //cdn//
-        function initialise() {
-    		teamPSR();
-    		teamPossessions();
-        timeInPossession();
-        productivity();
-        scoreSource();
-        scoreSourceKickout();
-        scoreSourceOppKickout();
-        scoreSourcePosLost();
-        scoreSourceTurnover();
-        scoreSourceShotShort();
-        scoreSourceFreeFromPlay();
-        scoreSourceThrowUp();
-        attacks();
-        attacksKickRetained();
-        attacksKickLost();
-        attacksCarryRetained();
-        attacksCarryLost();
-        attacksMarkTaken();
-        attacksDefMarkTaken();
-        }
-
-		$(document).ready(initialise);
