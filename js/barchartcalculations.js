@@ -786,6 +786,7 @@ function barChartCalc(){
 	$('.homestatnumber').each(function() {
   console.log($(this).text(),10);
 	});
+
 let no1 = parseInt($("#home-shotFromPlay-cr-number").text(),10);
 let no2 = parseInt($("#away-shotFromPlay-cr-number").text(),10);
 let total = no1+no2; //10
@@ -843,6 +844,7 @@ else {
 				shotFromPlayWoodwork();
 				shotFromPlay45();
 				shotFromPlayCR();
+				barChartCalc();
         }
 
 		$(document).ready(initialise);
