@@ -838,8 +838,8 @@ else {
 
 				//cdn//
         function initialise() {
-    		teamPSR();
-    		teamPossessions();
+    		//teamPSR();
+    		//teamPossessions();
         timeInPossession();
         productivity();
         scoreSource();
