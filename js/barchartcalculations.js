@@ -1,4 +1,3 @@
-<script>
 		 function Add(){
          var no1=parseInt($("#txtNo1").val());
          var no2=parseInt($("#txtNo2").val());
@@ -565,4 +564,3 @@
         }
 
 		$(document).ready(initialise);
-</script>
