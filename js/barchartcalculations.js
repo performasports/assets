@@ -785,13 +785,14 @@ function barChartCalc(){
 
 	$('.team-stats').each(function() {
 	let no1 = parseInt($(this).find(".homestatnumber").filter(".number").text(),10);
-	//console.log(no1);
 	let no2 = parseInt($(this).find(".awaystatnumber").filter(".number").text(),10);
 	let total = no1+no2; //10
 	let homeNum = no1/total;
 	let awayNum = no2/total;
 	let homePercentage = homeNum*100;
 	let awayPercentage = awayNum*100;
+
+	alert("The result is "+total +no1 +no2);
 
 	if (no1 >= no2) {
 	$(this).find(".home-team-bar").css({width: homePercentage + "%" });
@@ -816,7 +817,7 @@ let homeNum = no1/total;
 let awayNum = no2/total;
 let homePercentage = homeNum*100;
 let awayPercentage = awayNum*100;
-//alert("The result is "+result +no1 +no2);
+//alert("The result is "+total +no1 +no2);
 //$("#home-ss-throw-bar").css({width: homePercentage + "%" });
 //$("#away-ss-throw-bar").css({width: awayPercentage + "%" });
 
