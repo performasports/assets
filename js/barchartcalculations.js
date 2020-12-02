@@ -4,9 +4,10 @@ $(document).ready(function() {
 
   if ($('.expandable-content-wrapper').hasClass('hide')) {
   $(this).parent().parent().next('.expandable-content-wrapper').toggleClass("hide").slideDown('fast');
+  alert("If else message");
   } else {
   $(this).parent().parent().next('.expandable-content-wrapper').toggleClass("hide").slideUp();
-  alert("If else message");
+
   }
 
   $(this).children(".stat-heading").toggleClass("AccordionShow");
