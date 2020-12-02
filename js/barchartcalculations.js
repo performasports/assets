@@ -3,12 +3,12 @@ $(document).ready(function() {
   $(".bar-chart-team-stats-grid.accordion .event-heading-wrapper").click(function(){
 
   if ($('.expandable-content-wrapper').hasClass('hide')) {
-  $(this).parent().parent().next('.expandable-content-wrapper').slideUp('slow',function() {
-  $(this).removeClass('hide').slideDown('fast');
+  $(this).parent().parent().next('.expandable-content-wrapper').slideDown('slow',function() {
+  $(this).removeClass('hide').slideDown(0);
   });
   } else {
   $(this).parent().parent().next('.expandable-content-wrapper').slideUp('slow',function() {
-  $(this).addClass('hide').slideDown(0);
+  $(this).addClass('hide').slideUp(0);
   });
   }
 
