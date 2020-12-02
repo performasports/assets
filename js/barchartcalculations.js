@@ -2,7 +2,7 @@ $(document).ready(function() {
 
   $(".bar-chart-team-stats-grid.accordion .event-heading-wrapper").click(function(){
 
-  $text = $(this).parent().parent().next('.expandable-content-wrapper'),
+  $text = 2,
   visible = false;
   console.log($text);
 
