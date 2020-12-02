@@ -4,6 +4,7 @@ $(document).ready(function() {
 
   $text = $(this).parent().parent().next('.expandable-content-wrapper'),
   visible = false;
+  console.log($text);
 
   if ( visible ) {
   $text.slideUp('fast',function(){
