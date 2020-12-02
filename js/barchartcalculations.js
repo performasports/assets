@@ -1,16 +1,15 @@
 $(document).ready(function() {
 
-  $(".bar-chart-team-stats-grid.accordion .event-heading-wrapper").click(function(){
+  $(".bar-chart-team-stats-grid.accordion .event-heading-wrapper").click(function(e){
 
-  if ($('.expandable-content-wrapper').hasClass('hide')) {
-  $(this).parent().parent().next('.expandable-content-wrapper').slideDown('slow',function() {
-  $(this).removeClass('hide').slideDown('slow');
-  });
-  } else {
-  $(this).parent().parent().next('.expandable-content-wrapper').slideUp('slow',function() {
-  $(this).addClass('hide').slideUp('slow');
-  });
+  $(".expandable-content-wrapper").toggle("slow", function(){
+  // check paragraph once toggle effect is completed
+  if($(".expandable-content-wrapper").hasClass("hide")){
+  alert("The paragraph  is visible.");
+  } else{
+  alert("The paragraph  is hidden.");
   }
+  });  
 
   $(this).children(".stat-heading").toggleClass("AccordionShow");
   $(this).children(".expandable-icon").toggleClass("AccordionShow");
