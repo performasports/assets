@@ -1,10 +1,7 @@
 $(document).ready(function() {
 
   $(".bar-chart-team-stats-grid.accordion .event-heading-wrapper").click(function(){
-
-  let accordion = $(this).parent().parent().next('.expandable-content-wrapper'),
-  visible = false;
-
+  
   if ( visible ) {
   $(this).parent().parent().next('.expandable-content-wrapper').slideUp('fast',function(){
   $(this).parent().parent().next('.expandable-content-wrapper').addClass('hide')
