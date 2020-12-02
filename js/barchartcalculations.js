@@ -4,11 +4,11 @@ $(document).ready(function() {
 
   if ($('.expandable-content-wrapper').hasClass('hide')) {
   $(this).parent().parent().next('.expandable-content-wrapper').slideDown('slow',function() {
-  $(this).removeClass('hide').slideDown(0);
+  $(this).removeClass('hide').slideDown('slow');
   });
   } else {
   $(this).parent().parent().next('.expandable-content-wrapper').slideUp('slow',function() {
-  $(this).addClass('hide').slideUp(0);
+  $(this).addClass('hide').slideUp('slow');
   });
   }
 
