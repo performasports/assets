@@ -3,9 +3,10 @@ $(document).ready(function() {
   $(".bar-chart-team-stats-grid.accordion .event-heading-wrapper").click(function(e){
 
   if ($(this).parent().parent().next('.expandable-content-wrapper').hasClass('hide')) {
-  $(this).parent().parent().next('.expandable-content-wrapper').slideDown('slow').delay(1000).toggleClass('hide');
-  } else {
-  $(this).parent().parent().next('.expandable-content-wrapper').slideUp('slow').delay(1000).toggleClass('hide');
+  $(this).parent().parent().next('.expandable-content-wrapper').slideDown('fast').delay(1000).toggleClass('hide');
+  }
+  else if (!$(this).parent().parent().next('.expandable-content-wrapper').hasClass('hide')) {
+  $(this).parent().parent().next('.expandable-content-wrapper').slideUp('fast').delay(1000).toggleClass('hide');
   }
 
   $(this).children(".stat-heading").toggleClass("AccordionShow");
