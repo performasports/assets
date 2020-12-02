@@ -1,3 +1,45 @@
+$(document).ready(function() {
+
+  var $button = $(".bar-chart-team-stats-grid.accordion .event-heading-wrapper"),
+  $text = $(this).parent().parent().next('.expandable-content-wrapper'),
+  visible = false;
+
+  $button.click(function(){
+  $(this).children(".stat-heading").toggleClass("AccordionShow");
+  $(this).children(".expandable-icon").toggleClass("AccordionShow");
+  if ( visible ) {
+  $text.slideUp('fast',function(){
+  $text.addClass('hide')
+  .slideDown(0);
+  });
+  } else {
+  $text.slideUp(0,function(){
+  $text.removeClass('hide')
+  .slideDown('fast');
+  });
+  }
+  visible = ! visible;
+  });
+
+	 //$(".bar-chart-team-stats-grid.accordion .event-heading-wrapper").click(function() {
+  		//$(".expandable-content-wrapper").toggleClass("AccordionShow");
+      //$(this).children(".stat-heading").toggleClass("AccordionShow");
+      //$(this).children(".expandable-icon").toggleClass("AccordionShow");
+		  //$(this).parent().parent().next('.expandable-content-wrapper').toggleClass("hide");
+    //});
+
+    $(".bar-chart-wrapper.accordion").click(function() {
+      //$(".expandable-content-wrapper").toggleClass("AccordionShow");
+  		$(this).parent().parent().find(".stat-heading").toggleClass("AccordionShow");
+      $(this).parent().parent().find(".expandable-icon").toggleClass("AccordionShow");
+      $(this).parent().parent().next('.expandable-content-wrapper').toggleClass("hide");
+	   });
+
+
+
+});
+
+
 
         function timeInPossession(){
 
@@ -68,7 +110,7 @@ function barChartCalc(){
 
 				//cdn//
         function initialise() {
-				timeInPossession();	
+				timeInPossession();
 				barChartCalc();
         }
 
