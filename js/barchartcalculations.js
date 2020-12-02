@@ -3,7 +3,7 @@ $(document).ready(function() {
   $(".bar-chart-team-stats-grid.accordion .event-heading-wrapper").click(function(){
 
   $text = $(this).parent().parent().next('.expandable-content-wrapper'),
-  visible = false;
+  visible = true;
   console.log($text);
 
   if ( visible ) {
