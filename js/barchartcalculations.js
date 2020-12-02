@@ -9,6 +9,7 @@ $(document).ready(function() {
   } else {
   $(this).parent().parent().next('.expandable-content-wrapper').slideUp('slow',function() {
   $(this).toggleClass('hide');
+  });
   }
 
   $(this).children(".stat-heading").toggleClass("AccordionShow");
