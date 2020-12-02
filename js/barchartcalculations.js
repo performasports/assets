@@ -3,8 +3,8 @@ $(document).ready(function() {
   $(".bar-chart-team-stats-grid.accordion .event-heading-wrapper").click(function(){
 
   if ($('.expandable-content-wrapper').hasClass('hide')) {
-  $(this).parent().parent().next('.expandable-content-wrapper').slideDown('slow',function() {
-  $(this).removeClass('hide').slideUp(0);
+  $(this).parent().parent().next('.expandable-content-wrapper').slideDown('fast',function() {
+  $(this).removeClass('hide');
   });
   } else {
   $(this).parent().parent().next('.expandable-content-wrapper').slideUp('slow').toggleClass("hide");
