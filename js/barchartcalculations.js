@@ -2,14 +2,13 @@ $(document).ready(function() {
 
   $(".bar-chart-team-stats-grid.accordion .event-heading-wrapper").click(function(e){
 
-  $(".expandable-content-wrapper").toggle("slow", function(){
-  // check paragraph once toggle effect is completed
-  if($(".expandable-content-wrapper").hasClass("hide")){
-  alert("The paragraph  is visible.");
-  } else{
-  alert("The paragraph  is hidden.");
+  if ($(this).parent().parent().next('.expandable-content-wrapper').hasClass('hide')) {
+  $(this).parent().parent().next('.expandable-content-wrapper').slideDown('slow').delay(1000).toggleClass('hide');
+  });
+  } else {
+  $(this).parent().parent().next('.expandable-content-wrapper').slideUp('slow').delay(1000).toggleClass('hide');
+  });
   }
-  });  
 
   $(this).children(".stat-heading").toggleClass("AccordionShow");
   $(this).children(".expandable-icon").toggleClass("AccordionShow");
