@@ -2,18 +2,17 @@ $(document).ready(function() {
 
   $(".bar-chart-team-stats-grid.accordion .event-heading-wrapper").click(function(){
 
-  $text = $(this).parent().parent().next('.expandable-content-wrapper'),
-  visible = true;
-  console.log($text);
+  let accordion = $(this).parent().parent().next('.expandable-content-wrapper'),
+  visible = false;
 
   if ( visible ) {
-  $text.slideUp('fast',function(){
-  $text.addClass('hide')
+  $(this).parent().parent().next('.expandable-content-wrapper').slideUp('fast',function(){
+  $(this).parent().parent().next('.expandable-content-wrapper').addClass('hide')
   .slideDown(0);
   });
   } else {
-  $text.slideUp(0,function(){
-  $text.removeClass('hide')
+  $(this).parent().parent().next('.expandable-content-wrapper').slideUp(0,function(){
+  $(this).parent().parent().next('.expandable-content-wrapper').removeClass('hide')
   .slideDown('fast');
   });
   }
