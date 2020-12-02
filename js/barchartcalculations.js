@@ -6,6 +6,7 @@ $(document).ready(function() {
   $(this).parent().parent().next('.expandable-content-wrapper').removeClass("hide").slideDown('fast');
   } else {
   $(this).parent().parent().next('.expandable-content-wrapper').addClass("hide").slideUp(0);
+  alert("If else message");
   }
 
   $(this).children(".stat-heading").toggleClass("AccordionShow");
