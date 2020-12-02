@@ -4,7 +4,7 @@ $(document).ready(function() {
 
   if ($('.expandable-content-wrapper').hasClass('hide')) {
   $(this).parent().parent().next('.expandable-content-wrapper').slideDown('slow',function() {
-  $(this).addClass('hide').slideDown(0);
+  $(this).removeClass('hide').slideUp(0);
   });
   } else {
   $(this).parent().parent().next('.expandable-content-wrapper').slideUp('slow').toggleClass("hide");
