@@ -4,10 +4,8 @@ $(document).ready(function() {
 
   if ($('.expandable-content-wrapper').hasClass('hide')) {
   $(this).parent().parent().next('.expandable-content-wrapper').toggleClass("hide").slideDown('fast');
-  alert("If else message");
   } else {
-  $(this).parent().parent().next('.expandable-content-wrapper').toggleClass("hide").slideUp();
-
+  $(this).parent().parent().next('.expandable-content-wrapper').toggleClass("hide").slideUp(0);
   }
 
   $(this).children(".stat-heading").toggleClass("AccordionShow");
