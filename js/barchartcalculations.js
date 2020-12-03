@@ -28,7 +28,7 @@ $(document).ready(function() {
 
   });
 
-  var gamePeriod = ["1st Half","2nd Half","Full Game"];
+  const gamePeriod = ["1st Half","2nd Half","Full Game"];
 
   //$(".team-stats-row-labels").after("<h6 class='data-row-sub-heading-label'> </h6>");
 
