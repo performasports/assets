@@ -2,16 +2,15 @@ $(document).ready(function() {
 
   $(".bar-chart-team-stats-grid.accordion .event-heading-wrapper").click(function(){
 
-  //if ($(this).parent().parent().next('.expandable-content-wrapper').hasClass('hide')) {
-  //$(this).parent().parent().next('.expandable-content-wrapper').slideDown('fast').removeClass('hide');
-  //}
-  //else if (!$(this).parent().parent().next('.expandable-content-wrapper').hasClass('hide')) {
-  //$(this).parent().parent().next('.expandable-content-wrapper').slideUp('fast').addClass('hide');
-  //}
+  if ($(this).parent().parent().next('.expandable-content-wrapper').hasClass('hide')) {
+  $(this).parent().parent().next('.expandable-content-wrapper').slideDown('fast').removeClass('hide');
+  }
+  else if (!$(this).parent().parent().next('.expandable-content-wrapper').hasClass('hide')) {
+  $(this).parent().parent().next('.expandable-content-wrapper').slideUp('fast').addClass('hide');
+  }
 
   $(this).children(".stat-heading").toggleClass("AccordionShow");
   $(this).children(".expandable-icon").toggleClass("AccordionShow");
-  $(this).parent().parent().next('.expandable-content-wrapper').toggleClass('hide');
 
   });
 
