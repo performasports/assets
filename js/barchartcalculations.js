@@ -2,11 +2,13 @@ $(document).ready(function() {
 
   $(".bar-chart-team-stats-grid.accordion .event-heading-wrapper").click(function(){
 
-  if ($(this).parent().parent().next('.expandable-content-wrapper').hasClass('hide')) {
   $(this).parent().parent().next('.expandable-content-wrapper').removeClass('hide').addClass('show');
+
+  if ($(this).parent().parent().next('.expandable-content-wrapper').hasClass('hide')) {
+  $(this).parent().parent().next('.expandable-content-wrapper').removeClass('hide').slideDown('fast');
   }
   else if (!$(this).parent().parent().next('.expandable-content-wrapper').hasClass('hide')) {
-  $(this).parent().parent().next('.expandable-content-wrapper').removeClass('show').addClass('hide');
+  $(this).parent().parent().next('.expandable-content-wrapper').slideUp('fast').addClass('hide');
   }
 
   $(this).children(".stat-heading").toggleClass("AccordionShow");
@@ -17,10 +19,10 @@ $(document).ready(function() {
   $(".bar-chart-wrapper.accordion").click(function(){
 
   if ($(this).parent().parent().next('.expandable-content-wrapper').hasClass('hide')) {
-  $(this).parent().parent().next('.expandable-content-wrapper').removeClass('hide').addClass('show');
+  $(this).parent().parent().next('.expandable-content-wrapper').slideDown('fast').removeClass('hide');
   }
   else if (!$(this).parent().parent().next('.expandable-content-wrapper').hasClass('hide')) {
-  $(this).parent().parent().next('.expandable-content-wrapper').removeClass('show').addClass('hide'); 
+  $(this).parent().parent().next('.expandable-content-wrapper').slideUp('fast').addClass('hide');
   }
 
   $(this).parent().parent().find(".stat-heading").toggleClass("AccordionShow");
