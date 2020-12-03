@@ -42,6 +42,10 @@ $(document).ready(function() {
       //$(this).parent().parent().next('.expandable-content-wrapper').toggleClass("hide");
 	   //});
 
+     var gamePeriod = "1st Half";
+
+     $('.team-stats-row-labels').append('<h6 class="data-row-sub-heading-label">' + gamePeriod + '</h6>');
+
 
 
 });
@@ -120,11 +124,3 @@ function barChartCalc(){
         }
 
 $(document).ready(initialise);
-
-$(document).ready(function() {
-
-var gamePeriod = "1st Half";
-
-$('.team-stats-row-labels').append('<h6 class="data-row-sub-heading-label">' + gamePeriod + '</h6>');
-
-});
