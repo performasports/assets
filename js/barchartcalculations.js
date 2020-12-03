@@ -11,6 +11,7 @@ $(document).ready(function() {
 
   $(this).children(".stat-heading").toggleClass("AccordionShow");
   $(this).children(".expandable-icon").toggleClass("AccordionShow");
+  $(this).parent().toggleClass("Selected");
 
   });
 
@@ -25,6 +26,7 @@ $(document).ready(function() {
 
   $(this).parent().parent().find(".stat-heading").toggleClass("AccordionShow");
   $(this).parent().parent().find(".expandable-icon").toggleClass("AccordionShow");
+  $(this).parent().parent().find(".bar-chart-team-stats-grid.accordion").toggleClass("Selected");
 
   });
 
