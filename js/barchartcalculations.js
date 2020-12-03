@@ -1,13 +1,3 @@
-<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.6/handlebars.min.js" integrity="sha512-zT3zHcFYbQwjHdKjCu6OMmETx8fJA9S7E6W7kBeFxultf75OPTYUJigEKX58qgyQMi1m1EgenfjMXlRZG8BXaw==" crossorigin="anonymous"></script>
-
-{
-  people: [
-    "Yehuda Katz",
-    "Alan Johnson",
-    "Charles Jolley",
-  ],
-}
-
 $(document).ready(function() {
 
   $(".bar-chart-team-stats-grid.accordion .event-heading-wrapper").click(function(){
@@ -37,6 +27,12 @@ $(document).ready(function() {
   $(this).parent().parent().find(".expandable-icon").toggleClass("AccordionShow");
 
   });
+
+  var gamePeriod = "1st Half";
+
+  //$(".team-stats-row-labels").after("<h6 class='data-row-sub-heading-label'> </h6>");
+
+  $(".GamePeriod").after("<h6 class='data-row-sub-heading-label'>"+gamePeriod"</h6>");
 
 	 //$(".bar-chart-team-stats-grid.accordion .event-heading-wrapper").click(function() {
   		//$(".expandable-content-wrapper").toggleClass("AccordionShow");
