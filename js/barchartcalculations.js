@@ -34,7 +34,7 @@ $(document).ready(function() {
 
   //$(".gameperiod").after("<h6 class='data-row-sub-heading-label'>"+gamePeriod+"</h6>");
 
-  $.each(gamePeriod, function(index,value){
+  $.each(gamePeriod, function(value){
   $(".gameperiod").after("<h6 class='data-row-sub-heading-label'>"+value+"</h6>");
   });
 
