@@ -2,7 +2,7 @@ var gamePeriod = "1st Half";
 
 $(document).ready(function(){
 
-  $('.team-stats-row-labels').append('<h6 class="data-row-sub-heading-label">'+gamePeriod+'</h6>');
+  $(".team-stats-row-labels").append("<h6 class='data-row-sub-heading-label'>"+gamePeriod+"</h6>");
 
 });
 
