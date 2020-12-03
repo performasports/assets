@@ -36,6 +36,7 @@ $(document).ready(function() {
 
   $(".gameperiod").after(function() {
   return "<h6 class='data-row-sub-heading-label'>"+gamePeriod+"</h6>";
+  console.log("Test");
   });
 
 	 //$(".bar-chart-team-stats-grid.accordion .event-heading-wrapper").click(function() {
