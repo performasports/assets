@@ -28,14 +28,14 @@ $(document).ready(function() {
 
   });
 
-  var gamePeriod = ["1st Half","2nd Half","full Game"];
+  var gamePeriod = ["1st Half","2nd Half","Full Game"];
 
   //$(".team-stats-row-labels").after("<h6 class='data-row-sub-heading-label'> </h6>");
 
   //$(".gameperiod").after("<h6 class='data-row-sub-heading-label'>"+gamePeriod+"</h6>");
 
   $.each(gamePeriod, function(index,value){
-  $(".gameperiod").append("<h6 class='data-row-sub-heading-label'>"+value+"</h6>");
+  $(".gameperiod").after("<h6 class='data-row-sub-heading-label'>"+value+"</h6>");
   });
 
 	 //$(".bar-chart-team-stats-grid.accordion .event-heading-wrapper").click(function() {
