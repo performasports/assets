@@ -2,7 +2,7 @@ $(document).ready(function() {
 
   $(".bar-chart-team-stats-grid.accordion .event-heading-wrapper").click(function(){
 
-  $(this).parent().parent().next('.expandable-content-wrapper').removeClass('.hide').addClass('.show');  
+  $(this).parent().parent().next('.expandable-content-wrapper').removeClass('hide').addClass('show');  
 
   //if ($(this).parent().parent().next('.expandable-content-wrapper').hasClass('hide')) {
   //$(this).parent().parent().next('.expandable-content-wrapper').slideDown('fast').removeClass('hide');
