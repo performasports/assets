@@ -125,6 +125,6 @@ $(document).ready(function() {
 
 var gamePeriod = "1st Half";
 
-$('.team-stats-row-labels').find('data-row-heading-label').append('<h6 class="data-row-sub-heading-label">' + gamePeriod + '</h6>');  
+$('.team-stats-row-labels').next('data-row-heading-label').append('<h6 class="data-row-sub-heading-label">' + gamePeriod + '</h6>');
 
 });
