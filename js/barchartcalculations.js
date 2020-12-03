@@ -1,3 +1,12 @@
+var gamePeriod = "1st Half";
+
+$(document).ready(function(){
+
+  $('.team-stats-row-labels').append('<h6 class="data-row-sub-heading-label">'+gamePeriod+'</h6>');
+
+});
+
+
 $(document).ready(function() {
 
   $(".bar-chart-team-stats-grid.accordion .event-heading-wrapper").click(function(){
@@ -41,12 +50,6 @@ $(document).ready(function() {
       //$(this).parent().parent().find(".expandable-icon").toggleClass("AccordionShow");
       //$(this).parent().parent().next('.expandable-content-wrapper').toggleClass("hide");
 	   //});
-
-     var gamePeriod = "1st Half";
-
-     $('.team-stats-row-labels').add('<h6 class="data-row-sub-heading-label">' + gamePeriod + '</h6>');
-
-
 
 });
 
