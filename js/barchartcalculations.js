@@ -28,15 +28,13 @@ $(document).ready(function() {
 
   });
 
-  const gamePeriod = ["1st Half","2nd Half","Full Game"];
-
-  const arr = ['one','two','three','four','five'];
+  const gamePeriod = ['1st Half','2nd Half','Full Game'];
 
   //$(".team-stats-row-labels").after("<h6 class='data-row-sub-heading-label'> </h6>");
 
   //$(".gameperiod").after("<h6 class='data-row-sub-heading-label'>"+gamePeriod+"</h6>");
 
-  $.each(arr, function(index,value){
+  $.each(gamePeriod, function(index,value){
   $(".gameperiod").append("<h6 class='data-row-sub-heading-label'>"+value+"</h6>");
   });
 
