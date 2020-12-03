@@ -6,7 +6,7 @@ $(document).ready(function() {
   $(this).parent().parent().next('.expandable-content-wrapper').slideDown('fast').removeClass('hide');
   }
   else if (!$(this).parent().parent().next('.expandable-content-wrapper').hasClass('hide')) {
-  $(this).parent().parent().next('.expandable-content-wrapper').slideUp('fast').delay(1000).addClass('hide');
+  $(this).parent().parent().next('.expandable-content-wrapper').slideUp('fast').addClass('hide');
   }
 
   $(this).children(".stat-heading").toggleClass("AccordionShow");
