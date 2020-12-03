@@ -5,7 +5,7 @@ $(document).ready(function() {
   $(this).parent().parent().next('.expandable-content-wrapper').removeClass('hide').addClass('show');
 
   if ($(this).parent().parent().next('.expandable-content-wrapper').hasClass('hide')) {
-  $(this).parent().parent().next('.expandable-content-wrapper').removeClass('hide').slideDown('fast');
+  $(this).parent().parent().next('.expandable-content-wrapper').slideDown('fast').removeClass('hide');
   }
   else if (!$(this).parent().parent().next('.expandable-content-wrapper').hasClass('hide')) {
   $(this).parent().parent().next('.expandable-content-wrapper').slideUp('fast').addClass('hide');
