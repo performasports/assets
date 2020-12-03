@@ -32,9 +32,9 @@ $(document).ready(function() {
 
   //$(".team-stats-row-labels").after("<h6 class='data-row-sub-heading-label'> </h6>");
 
-  $(".GamePeriod").after("<h6 class='data-row-sub-heading-label'>"+gamePeriod+"</h6>");
+  $(".gameperiod").after("<h6 class='data-row-sub-heading-label'>"+gamePeriod+"</h6>");
 
-  $(".GamePeriod").after(function() {
+  $(".gameperiod").after(function() {
   return "<h6 class='data-row-sub-heading-label'>"+gamePeriod+"</h6>";
   });
 
