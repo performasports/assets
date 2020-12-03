@@ -46,8 +46,6 @@ $(document).ready(function() {
 
 });
 
-
-
         function timeInPossession(){
 
          let time = $("#home-time-in-possession-number").text();
@@ -121,4 +119,4 @@ function barChartCalc(){
 				barChartCalc();
         }
 
-		$(document).ready(initialise);
+$(document).ready(initialise);
