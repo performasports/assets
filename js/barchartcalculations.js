@@ -37,7 +37,7 @@ $(document).ready(function() {
   //$(".gameperiod").after("<h6 class='data-row-sub-heading-label'>"+gamePeriod+"</h6>");
 
   $.each(arr, function(index,value){
-  $(".gameperiod").after().append("<h6 class='data-row-sub-heading-label'>"+value+"</h6>");
+  $(".gameperiod").append("<h6 class='data-row-sub-heading-label'>"+value+"</h6>");
   });
 
 	 //$(".bar-chart-team-stats-grid.accordion .event-heading-wrapper").click(function() {
