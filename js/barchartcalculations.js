@@ -34,8 +34,8 @@ $(document).ready(function() {
 
   //$(".gameperiod").after("<h6 class='data-row-sub-heading-label'>"+gamePeriod+"</h6>");
 
-  $.each(gamePeriod, function(value){
-  $(".gameperiod").append(value);
+  $.each(gamePeriod, function(index,value){
+  $(".gameperiod").after(value);
   });
 
 	 //$(".bar-chart-team-stats-grid.accordion .event-heading-wrapper").click(function() {
