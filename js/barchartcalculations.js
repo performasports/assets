@@ -30,21 +30,6 @@ $(document).ready(function() {
 
   });
 
-  const gamePeriod = ['1st Half','2nd Half','Full Game'];
-  const gameMinutes = ['0-12','13-25','26-42','35-47','48-60','70-82','80-94'];
-
-  //$(".team-stats-row-labels").after("<h6 class='data-row-sub-heading-label'> </h6>");
-
-  //$(".gameperiod").after("<h6 class='data-row-sub-heading-label'>"+gamePeriod+"</h6>");
-
-  $.each(gamePeriod, function(index,value){
-  $(".gameperiod").append("<h6 class='data-row-sub-heading-label'>"+value+"</h6>");
-  });
-
-  $.each(gameMinutes, function(index,value){
-  $(".gameminutes").append("<h6 class='data-row-sub-heading-label'>"+value+"</h6>");
-  });
-
 
 	 //$(".bar-chart-team-stats-grid.accordion .event-heading-wrapper").click(function() {
   		//$(".expandable-content-wrapper").toggleClass("AccordionShow");
