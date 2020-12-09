@@ -6,6 +6,7 @@ $(document).ready(function() {
   $(this).parent().parent().next('.expandable-content-wrapper').slideDown('fast').toggleClass('hide');
   }
   else if (!$(this).parent().parent().next('.expandable-content-wrapper').hasClass('hide')) {
+    alert("Slide Up should work");
   $(this).parent().parent().next('.expandable-content-wrapper').slideUp('fast').toggleClass('hide');
   }
 
