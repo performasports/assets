@@ -10,7 +10,7 @@ $(document).ready(function() {
   });
 
   $.each(gamePeriodClass, function(index,value){
-  $(".kpi-category.one").find(".team-stats-secondary-heading-row").after("<div class='team-stats-data-row "+value+"'>");
+  $(".kpi-category.one").find(".team-stats-secondary-heading-row").next().append("<div class='team-stats-data-row "+value+"'>");
   });
 
   //if (index = "1st Half") {
@@ -23,7 +23,7 @@ $(document).ready(function() {
 
   if (index > 0 && index < 9) {
   $(".kpi-category.one").find(".team-stats-secondary-heading-row").append("<h6 data-tippy-content='"+keyMetricsTooltips[index]+"' class='data-row-sub-heading-label category tippy'>"+value+"</h6>");
-  $(".kpi-category.one").find(".team-stats-data-row.1st-Half").append("<a href='#' class='table-data w-inline-block'><h5 class='datapoint'>"+homeTeam1stHalf[index]+"</h5></a>");
+  $(".kpi-category.one").find(".team-stats-data-row.1stHalf").append("<a href='#' class='table-data w-inline-block'><h5 class='datapoint'>"+homeTeam1stHalf[index]+"</h5></a>");
   } else {
   //  block of code to be executed if the condition is false
 	}
