@@ -2,13 +2,12 @@ $(document).ready(function() {
 
   $.each(gamePeriod, function(index,value){
   $(".gameperiod").append("<h6 class='data-row-sub-heading-label'>"+value+"</h6>");
+  $(".kpi-category.one").find(".team-stats-secondary-heading-row").after("<div class='team-stats-data-row"+index[0]+"'>");
   });
 
   $.each(gameMinutes, function(index,value){
   $(".gameminutes").append("<h6 class='data-row-sub-heading-label'>"+value+"</h6>");
   });
-
-  $(".kpi-category.one").find(".team-stats-secondary-heading-row").after("<div class='team-stats-data-row one'>");
 
   $.each(keyMetricsLabels, function(index,value){
 
