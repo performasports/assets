@@ -11,10 +11,12 @@ $(document).ready(function() {
   $.each(keyMetricsLabels, function(index,value){
 
   if (index > 0 && index < 9) {
-  $(".team-stats-secondary-heading-row").append("<h6 class='data-row-sub-heading-label category'>"+value+"</h6>");
-	} else {
+  $(".kpi-category.one").find(".team-stats-secondary-heading-row").append("<h6 data-tippy-content='"+keyMetricsTooltips[index]+"' class='data-row-sub-heading-label category tippy'>"+value+"</h6>");
+  $(".kpi-category.one").find(".team-stats-data-row.one").append("<a href='#' class='table-data w-inline-block'><h5 class='datapoint'>"+homeTeam1stHalf[index]+"</h5></a>");
+
+  } else {
   //  block of code to be executed if the condition is false
 	}
   });
-
+  
   });
