@@ -9,7 +9,10 @@ $(document).ready(function() {
   $(".gameminutes").append("<h6 class='data-row-sub-heading-label'>"+value+"</h6>");
   });
 
+  if (gamePeriod[index] == "1st Half") {
   $(".kpi-category.one").find(".team-stats-secondary-heading-row").after("<div class='team-stats-data-row 1st-Half'>");
+  }
+
   $(".kpi-category.one").find(".team-stats-secondary-heading-row").next().after("<div class='team-stats-data-row 2nd-Half'>");
 
   $.each(keyMetricsLabels, function(index,value){
