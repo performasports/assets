@@ -2,7 +2,7 @@ $(document).ready(function() {
 
   $.each(gamePeriod, function(index,value){
   $(".gameperiod").append("<h6 class='data-row-sub-heading-label'>"+value+"</h6>");
-  $(".kpi-category.one").find(".team-stats-secondary-heading-row").after("<div class='team-stats-data-row"+index[0]+"'>");
+  $(".kpi-category.one").find(".team-stats-secondary-heading-row").after("<div class='team-stats-data-row" +gamePeriod[index]+"'>");
   });
 
   $.each(gameMinutes, function(index,value){
