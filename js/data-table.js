@@ -10,7 +10,7 @@ $(document).ready(function() {
   });
 
   $.each(gamePeriodClass, function(index,value){
-  $(".kpi-category.one").find(".team-stats-secondary-heading-row").next().append("<div class='team-stats-data-row "+value+"'>");
+  $(".kpi-category.one").find(".team-stats-secondary-heading-row").append("<div class='team-stats-data-row "+value+"'>");
   });
 
   //if (index = "1st Half") {
