@@ -9,7 +9,8 @@ $(document).ready(function() {
   $(".gameminutes").append("<h6 class='data-row-sub-heading-label'>"+value+"</h6>");
   });
 
-  $.each(gamePeriodClass, function(index,value){
+  const gamePeriodClassName = gamePeriodClass.reverse();
+  $.each(gamePeriodClassName, function(index,value){
   $(".kpi-category.one").find(".team-stats-secondary-heading-row").after("<div class='team-stats-data-row "+value+"'>");
   });
 
