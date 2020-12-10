@@ -16,6 +16,15 @@ $(document).ready(function() {
   $(".kpi-category.three").find(".team-stats-secondary-heading-row.by-period").after("<div class='team-stats-data-row "+value+"'>");
   $(".kpi-category.four").find(".team-stats-secondary-heading-row.by-period").after("<div class='team-stats-data-row "+value+"'>");
   $(".kpi-category.five").find(".team-stats-secondary-heading-row.by-period").after("<div class='team-stats-data-row "+value+"'>");
+  $(".kpi-category.six").find(".team-stats-secondary-heading-row.by-period").after("<div class='team-stats-data-row "+value+"'>");
+  $(".kpi-category.seven").find(".team-stats-secondary-heading-row.by-period").after("<div class='team-stats-data-row "+value+"'>");
+  $(".kpi-category.eight").find(".team-stats-secondary-heading-row.by-period").after("<div class='team-stats-data-row "+value+"'>");
+  $(".kpi-category.nine").find(".team-stats-secondary-heading-row.by-period").after("<div class='team-stats-data-row "+value+"'>");
+  $(".kpi-category.ten").find(".team-stats-secondary-heading-row.by-period").after("<div class='team-stats-data-row "+value+"'>");
+  $(".kpi-category.eleven").find(".team-stats-secondary-heading-row.by-period").after("<div class='team-stats-data-row "+value+"'>");
+  $(".kpi-category.twelve").find(".team-stats-secondary-heading-row.by-period").after("<div class='team-stats-data-row "+value+"'>");
+  $(".kpi-category.thirteen").find(".team-stats-secondary-heading-row.by-period").after("<div class='team-stats-data-row "+value+"'>");
+  $(".kpi-category.fourteen").find(".team-stats-secondary-heading-row.by-period").after("<div class='team-stats-data-row "+value+"'>");
   });
 
   $(".kpi-category.one").find(".team-stats-data-row.FullGame").after("<div class='team-stats-secondary-heading-row by-minutes'></div>");
@@ -23,6 +32,15 @@ $(document).ready(function() {
   $(".kpi-category.three").find(".team-stats-data-row.FullGame").after("<div class='team-stats-secondary-heading-row by-minutes'></div>");
   $(".kpi-category.four").find(".team-stats-data-row.FullGame").after("<div class='team-stats-secondary-heading-row by-minutes'></div>");
   $(".kpi-category.five").find(".team-stats-data-row.FullGame").after("<div class='team-stats-secondary-heading-row by-minutes'></div>");
+  $(".kpi-category.six").find(".team-stats-data-row.FullGame").after("<div class='team-stats-secondary-heading-row by-minutes'></div>");
+  $(".kpi-category.seven").find(".team-stats-data-row.FullGame").after("<div class='team-stats-secondary-heading-row by-minutes'></div>");
+  $(".kpi-category.eight").find(".team-stats-data-row.FullGame").after("<div class='team-stats-secondary-heading-row by-minutes'></div>");
+  $(".kpi-category.nine").find(".team-stats-data-row.FullGame").after("<div class='team-stats-secondary-heading-row by-minutes'></div>");
+  $(".kpi-category.ten").find(".team-stats-data-row.FullGame").after("<div class='team-stats-secondary-heading-row by-minutes'></div>");
+  $(".kpi-category.eleven").find(".team-stats-data-row.FullGame").after("<div class='team-stats-secondary-heading-row by-minutes'></div>");
+  $(".kpi-category.twelve").find(".team-stats-data-row.FullGame").after("<div class='team-stats-secondary-heading-row by-minutes'></div>");
+  $(".kpi-category.thirteen").find(".team-stats-data-row.FullGame").after("<div class='team-stats-secondary-heading-row by-minutes'></div>");
+  $(".kpi-category.fourteen").find(".team-stats-data-row.FullGame").after("<div class='team-stats-secondary-heading-row by-minutes'></div>");
 
   var minsArray = ["0-12","13-25","26-half","35-47","48-60","61-full","70-1st","80-2nd"]
   const gameMinutesClassName = minsArray.reverse();
@@ -32,6 +50,15 @@ $(document).ready(function() {
   $(".kpi-category.three").find(".team-stats-secondary-heading-row.by-minutes").after("<div class='team-stats-data-row "+value+"'>");
   $(".kpi-category.four").find(".team-stats-secondary-heading-row.by-minutes").after("<div class='team-stats-data-row "+value+"'>");
   $(".kpi-category.five").find(".team-stats-secondary-heading-row.by-minutes").after("<div class='team-stats-data-row "+value+"'>");
+  $(".kpi-category.six").find(".team-stats-secondary-heading-row.by-minutes").after("<div class='team-stats-data-row "+value+"'>");
+  $(".kpi-category.seven").find(".team-stats-secondary-heading-row.by-minutes").after("<div class='team-stats-data-row "+value+"'>");
+  $(".kpi-category.eight").find(".team-stats-secondary-heading-row.by-minutes").after("<div class='team-stats-data-row "+value+"'>");
+  $(".kpi-category.nine").find(".team-stats-secondary-heading-row.by-minutes").after("<div class='team-stats-data-row "+value+"'>");
+  $(".kpi-category.ten").find(".team-stats-secondary-heading-row.by-minutes").after("<div class='team-stats-data-row "+value+"'>");
+  $(".kpi-category.eleven").find(".team-stats-secondary-heading-row.by-minutes").after("<div class='team-stats-data-row "+value+"'>");
+  $(".kpi-category.twelve").find(".team-stats-secondary-heading-row.by-minutes").after("<div class='team-stats-data-row "+value+"'>");
+  $(".kpi-category.thirteen").find(".team-stats-secondary-heading-row.by-minutes").after("<div class='team-stats-data-row "+value+"'>");
+  $(".kpi-category.fourteen").find(".team-stats-secondary-heading-row.by-minutes").after("<div class='team-stats-data-row "+value+"'>");
   });
 
   //if (index = "1st Half") {
@@ -46,17 +73,44 @@ $(document).ready(function() {
   if (index >= 0 && index < 10) {
   $(".kpi-category.one").find(".team-stats-secondary-heading-row.by-period").append("<h6 data-tippy-content='"+keyMetricsTooltips[index]+"' class='data-row-sub-heading-label category tippy "+keyMetricsLabelsID[index]+"'>"+value+"</h6>");
   }
-  if (index >= 10 && index < 43) {
+  if (index >= 10 && index < 17) {
   $(".kpi-category.two").find(".team-stats-secondary-heading-row.by-period").append("<h6 data-tippy-content='"+keyMetricsTooltips[index]+"' class='data-row-sub-heading-label category tippy "+keyMetricsLabelsID[index]+"'>"+value+"</h6>");
   }
-  if (index >= 43 && index < 51) {
+  if (index >= 17 && index < 27) {
   $(".kpi-category.three").find(".team-stats-secondary-heading-row.by-period").append("<h6 data-tippy-content='"+keyMetricsTooltips[index]+"' class='data-row-sub-heading-label category tippy "+keyMetricsLabelsID[index]+"'>"+value+"</h6>");
   }
-  if (index >= 51 && index < 79) {
+  if (index >= 27 && index < 37) {
   $(".kpi-category.four").find(".team-stats-secondary-heading-row.by-period").append("<h6 data-tippy-content='"+keyMetricsTooltips[index]+"' class='data-row-sub-heading-label category tippy "+keyMetricsLabelsID[index]+"'>"+value+"</h6>");
   }
-  if (index >= 79 && index < 93) {
+  if (index >= 37 && index < 43) {
   $(".kpi-category.five").find(".team-stats-secondary-heading-row.by-period").append("<h6 data-tippy-content='"+keyMetricsTooltips[index]+"' class='data-row-sub-heading-label category tippy "+keyMetricsLabelsID[index]+"'>"+value+"</h6>");
+  }
+  if (index >= 43 && index < 51) {
+  $(".kpi-category.six").find(".team-stats-secondary-heading-row.by-period").append("<h6 data-tippy-content='"+keyMetricsTooltips[index]+"' class='data-row-sub-heading-label category tippy "+keyMetricsLabelsID[index]+"'>"+value+"</h6>");
+  }
+  if (index >= 51 && index < 60) {
+  $(".kpi-category.seven").find(".team-stats-secondary-heading-row.by-period").append("<h6 data-tippy-content='"+keyMetricsTooltips[index]+"' class='data-row-sub-heading-label category tippy "+keyMetricsLabelsID[index]+"'>"+value+"</h6>");
+  }
+  if (index >= 60 && index < 61) {
+  $(".kpi-category.eight").find(".team-stats-secondary-heading-row.by-period").append("<h6 data-tippy-content='"+keyMetricsTooltips[index]+"' class='data-row-sub-heading-label category tippy "+keyMetricsLabelsID[index]+"'>"+value+"</h6>");
+  }
+  if (index >= 61 && index < 70) {
+  $(".kpi-category.nine").find(".team-stats-secondary-heading-row.by-period").append("<h6 data-tippy-content='"+keyMetricsTooltips[index]+"' class='data-row-sub-heading-label category tippy "+keyMetricsLabelsID[index]+"'>"+value+"</h6>");
+  }
+  if (index >= 70 && index < 79) {
+  $(".kpi-category.ten").find(".team-stats-secondary-heading-row.by-period").append("<h6 data-tippy-content='"+keyMetricsTooltips[index]+"' class='data-row-sub-heading-label category tippy "+keyMetricsLabelsID[index]+"'>"+value+"</h6>");
+  }
+  if (index >= 79 && index < 82) {
+  $(".kpi-category.eleven").find(".team-stats-secondary-heading-row.by-period").append("<h6 data-tippy-content='"+keyMetricsTooltips[index]+"' class='data-row-sub-heading-label category tippy "+keyMetricsLabelsID[index]+"'>"+value+"</h6>");
+  }
+  if (index >= 82 && index < 85) {
+  $(".kpi-category.twelve").find(".team-stats-secondary-heading-row.by-period").append("<h6 data-tippy-content='"+keyMetricsTooltips[index]+"' class='data-row-sub-heading-label category tippy "+keyMetricsLabelsID[index]+"'>"+value+"</h6>");
+  }
+  if (index >= 85 && index < 90) {
+  $(".kpi-category.thirteen").find(".team-stats-secondary-heading-row.by-period").append("<h6 data-tippy-content='"+keyMetricsTooltips[index]+"' class='data-row-sub-heading-label category tippy "+keyMetricsLabelsID[index]+"'>"+value+"</h6>");
+  }
+  if (index >= 90 && index < 93) {
+  $(".kpi-category.fourteen").find(".team-stats-secondary-heading-row.by-period").append("<h6 data-tippy-content='"+keyMetricsTooltips[index]+"' class='data-row-sub-heading-label category tippy "+keyMetricsLabelsID[index]+"'>"+value+"</h6>");
   } else {
   //  block of code to be executed if the condition is false
 	}
