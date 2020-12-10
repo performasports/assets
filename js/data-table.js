@@ -11,18 +11,18 @@ $(document).ready(function() {
 
   const gamePeriodClassName = gamePeriodClass.reverse();
   $.each(gamePeriodClassName, function(index,value){
-  $(".kpi-category.one").find(".team-stats-secondary-heading-row.by-period").after("<div class='team-stats-data-row "+value+"'>");
-  $(".kpi-category.two").find(".team-stats-secondary-heading-row.by-period").after("<div class='team-stats-data-row "+value+"'>");
+  $(".kpi-category.one").children(".team-stats-secondary-heading-row.by-period").after("<div class='team-stats-data-row "+value+"'>");
+  $(".kpi-category.two").children(".team-stats-secondary-heading-row.by-period").after("<div class='team-stats-data-row "+value+"'>");
   });
 
-  $(".kpi-category.one").find(".team-stats-data-row.FullGame").after("<div class='team-stats-secondary-heading-row by-minutes'></div>");
-  $(".kpi-category.two").find(".team-stats-data-row.FullGame").after("<div class='team-stats-secondary-heading-row by-minutes'></div>");
+  $(".kpi-category.one").children(".team-stats-data-row.FullGame").after("<div class='team-stats-secondary-heading-row by-minutes'></div>");
+  $(".kpi-category.two").children(".team-stats-data-row.FullGame").after("<div class='team-stats-secondary-heading-row by-minutes'></div>");
 
   var minsArray = ["0-12","13-25","26-half","35-47","48-60","61-full","70-1st","80-2nd"]
   const gameMinutesClassName = minsArray.reverse();
   $.each(gameMinutesClassName, function(index,value){
-  $(".kpi-category.one").find(".team-stats-secondary-heading-row.by-minutes").after("<div class='team-stats-data-row "+value+"'>");
-  $(".kpi-category.two").find(".team-stats-secondary-heading-row.by-minutes").after("<div class='team-stats-data-row "+value+"'>");
+  $(".kpi-category.one").children(".team-stats-secondary-heading-row.by-minutes").after("<div class='team-stats-data-row "+value+"'>");
+  $(".kpi-category.two").children(".team-stats-secondary-heading-row.by-minutes").after("<div class='team-stats-data-row "+value+"'>");
   });
 
   //if (index = "1st Half") {
@@ -35,10 +35,10 @@ $(document).ready(function() {
   $.each(keyMetricsLabels, function(index,value){
 
   if (index >= 0 && index < 9) {
-  $(".kpi-category.one").find(".team-stats-secondary-heading-row.by-period").append("<h6 data-tippy-content='"+keyMetricsTooltips[index]+"' class='data-row-sub-heading-label category tippy "+keyMetricsLabelsID[index]+"'>"+value+"</h6>");
+  $(".kpi-category.one").children(".team-stats-secondary-heading-row.by-period").append("<h6 data-tippy-content='"+keyMetricsTooltips[index]+"' class='data-row-sub-heading-label category tippy "+keyMetricsLabelsID[index]+"'>"+value+"</h6>");
   }
   if (index >= 9 && index < 42) {
-  $(".kpi-category.two").find(".team-stats-secondary-heading-row.by-period").append("<h6 data-tippy-content='"+keyMetricsTooltips[index]+"' class='data-row-sub-heading-label category tippy "+keyMetricsLabelsID[index]+"'>"+value+"</h6>");
+  $(".kpi-category.two").children(".team-stats-secondary-heading-row.by-period").append("<h6 data-tippy-content='"+keyMetricsTooltips[index]+"' class='data-row-sub-heading-label category tippy "+keyMetricsLabelsID[index]+"'>"+value+"</h6>");
   } else {
   //  block of code to be executed if the condition is false
 	}
@@ -46,10 +46,10 @@ $(document).ready(function() {
 
   $.each(homeTeam1stHalf, function(index,value){
   if (index >= 0 && index < 9) {
-  $(".kpi-category.one").find(".team-stats-data-row.1stHalf").append("<a href='#' class='table-data w-inline-block "+keyMetricsLabelsID[index]+"'><h5 class='datapoint'>"+homeTeam1stHalf[index]+"</h5></a>");
+  $(".kpi-category.one").children(".team-stats-data-row.1stHalf").append("<a href='#' class='table-data w-inline-block "+keyMetricsLabelsID[index]+"'><h5 class='datapoint'>"+homeTeam1stHalf[index]+"</h5></a>");
   }
   if (index >= 9 && index < 42) {
-  $(".kpi-category.two").find(".team-stats-data-row.1stHalf").append("<a href='#' class='table-data w-inline-block "+keyMetricsLabelsID[index]+"'><h5 class='datapoint'>"+homeTeam1stHalf[index]+"</h5></a>");
+  $(".kpi-category.two").children(".team-stats-data-row.1stHalf").append("<a href='#' class='table-data w-inline-block "+keyMetricsLabelsID[index]+"'><h5 class='datapoint'>"+homeTeam1stHalf[index]+"</h5></a>");
   } else {
   //  block of code to be executed if the condition is false
   }
