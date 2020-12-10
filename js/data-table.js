@@ -33,7 +33,7 @@ $(document).ready(function() {
   $.each(keyMetricsLabels, function(index,value){
 
   if (index >= 0 && index < 9) {
-  $(".kpi-category.one").find(".team-stats-secondary-heading-row").append("<h6 id='"+keyMetricsLabels[value]+"' data-tippy-content='"+keyMetricsTooltips[index]+"' class='data-row-sub-heading-label category tippy'>"+value+"</h6>");
+  $(".kpi-category.one").find(".team-stats-secondary-heading-row").append("<h6 id='"+keyMetricsLabels[index]+"' data-tippy-content='"+keyMetricsTooltips[index]+"' class='data-row-sub-heading-label category tippy'>"+value+"</h6>");
   } else {
   //  block of code to be executed if the condition is false
 	}
