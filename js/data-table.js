@@ -29,7 +29,7 @@ $(document).ready(function() {
   var colLarge = keyMetricsLabels.indexOf("Score");
   console.log(colLarge);
 
-  if (index == colLarge) {
+  if (index = colLarge) {
   $(".kpi-category.one").find(".data-row-sub-heading-label.category.tippy").addClass("col-lg");
   } else {
   //  block of code to be executed if the condition is false
