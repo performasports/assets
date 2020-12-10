@@ -29,10 +29,12 @@ $(document).ready(function() {
   if (index >= 0 && index < 9) {
   $(".kpi-category.one").find(".team-stats-secondary-heading-row").append("<h6 data-tippy-content='"+keyMetricsTooltips[index]+"' class='data-row-sub-heading-label category tippy'>"+value+"</h6>");
 
-  var colLarge = keyMetricsLabels.indexOf("Score");
+  var score = keyMetricsLabels.indexOf("Score");
+  var posTime = keyMetricsLabels.indexOf("Pos. Time");
+  var shotTime = keyMetricsLabels.indexOf("Shot Time");
   //console.log(colLarge);
 
-  if (index == colLarge) {
+  if (index == score || index == posTime || index == shotTime) {
   $(".kpi-category.one").find(".data-row-sub-heading-label.category").addClass("col-lg");
   } else {
   //  block of code to be executed if the condition is false
