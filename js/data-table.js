@@ -41,13 +41,13 @@ $(document).ready(function() {
   //  block of code to be executed if the condition is false
 	}
 
-  if (index == score) {
+  if (index = 0) {
   $(".kpi-category.one").find(".data-row-sub-heading-label.category").addClass("col-lg");
   }
-  if (index == posTime) {
+  if (index = 5) {
   $(".kpi-category.one").find(".data-row-sub-heading-label.category").addClass("col-lg");
   }
-  if (index == shotTime) {
+  if (index = 7) {
   $(".kpi-category.one").find(".data-row-sub-heading-label.category").addClass("col-lg");
   }
 
