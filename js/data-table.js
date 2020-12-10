@@ -27,6 +27,7 @@ $(document).ready(function() {
   $.each(keyMetricsLabels, function(index,value){
 
   var colLarge = keyMetricsLabels.indexOf("Score");
+  console.log(colLarge);
 
   if (index == colLarge) {
   $(".data-row-sub-heading-label.category").addClass("col-lg");
