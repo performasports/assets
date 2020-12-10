@@ -14,8 +14,9 @@ $(document).ready(function() {
   $(".kpi-category.one").find(".team-stats-secondary-heading-row").after("<div class='team-stats-data-row "+value+"'>");
   });
 
-  const gameMinsClassName = gamePeriodClass.reverse();
-  $.each(gameMinsClassName, function(index,value){
+  const gameMinutesClassName = gameMinutesClass.reverse();
+  $.each(gameMinutesClassName, function(index,value){
+  $(".kpi-category.one").find(".team-stats-secondary-heading-row.by-minutes").after("<div class='team-stats-data-row "+value+"'>");
   });
 
   //if (index = "1st Half") {
@@ -144,6 +145,6 @@ $(document).ready(function() {
   $(".kpi-category.one").find(".Prod--").addClass("col-md");
   $(".kpi-category.one").find(".Pos---").addClass("col-md");
 
-  $(".kpi-category.one").find(".team-stats-data-row.FullGame").after("<div class='team-stats-secondary-heading-row'></div>");
+  $(".kpi-category.one").find(".team-stats-data-row.FullGame").after("<div class='team-stats-secondary-heading-row by-minutes'></div>");
 
   });
