@@ -37,10 +37,10 @@ $(document).ready(function() {
   if (index == score) {
   $(".kpi-category.one").find(".data-row-sub-heading-label.category").addClass("col-lg");
   }
-  else if (index == posTime) {
+  if (index == posTime) {
   $(".kpi-category.one").find(".data-row-sub-heading-label.category").addClass("col-lg");
   }
-  else if (index == shotTime) {
+  if (index == shotTime) {
   $(".kpi-category.one").find(".data-row-sub-heading-label.category").addClass("col-lg");
   }
   else {
