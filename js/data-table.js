@@ -14,6 +14,8 @@ $(document).ready(function() {
   $(".kpi-category.one").find(".team-stats-secondary-heading-row").after("<div class='team-stats-data-row "+value+"'>");
   });
 
+  $(".kpi-category.one").find(".team-stats-data-row.FullGame").after("<div class='team-stats-secondary-heading-row by-minutes'></div>");
+
   const gameMinutesClassName = gameMinutesClass.reverse();
   $.each(gameMinutesClassName, function(index,value){
   $(".kpi-category.one").find(".team-stats-secondary-heading-row.by-minutes").after("<div class='team-stats-data-row "+value+"'>");
@@ -144,7 +146,4 @@ $(document).ready(function() {
   $(".kpi-category.one").find(".Shot-Time").addClass("col-lg");
   $(".kpi-category.one").find(".Prod--").addClass("col-md");
   $(".kpi-category.one").find(".Pos---").addClass("col-md");
-
-  $(".kpi-category.one").find(".team-stats-data-row.FullGame").after("<div class='team-stats-secondary-heading-row by-minutes'></div>");
-
   });
