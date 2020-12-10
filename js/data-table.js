@@ -24,7 +24,7 @@ $(document).ready(function() {
 
   //$(".kpi-category.one").find(".team-stats-secondary-heading-row").next().after("<div class='team-stats-data-row 2nd-Half'>");
 
-  
+
 
   var score = keyMetricsLabels.indexOf("Score");
   var posTime = keyMetricsLabels.indexOf("Pos. Time");
@@ -33,10 +33,6 @@ $(document).ready(function() {
   console.log(posTime);
   console.log(shotTime);
 
-  if (index == score) {
-  $(".kpi-category.one").find(".data-row-sub-heading-label.category").addClass("col-lg");
-  }
-
   $.each(keyMetricsLabels, function(index,value){
 
   if (index >= 0 && index < 9) {
@@ -44,6 +40,11 @@ $(document).ready(function() {
   } else {
   //  block of code to be executed if the condition is false
 	}
+
+  if (index == score) {
+  $(".kpi-category.one").find(".data-row-sub-heading-label.category").addClass("col-lg");
+  }
+
   });
 
   $.each(homeTeam1stHalf, function(index,value){
