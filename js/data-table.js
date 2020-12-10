@@ -44,6 +44,12 @@ $(document).ready(function() {
   if (index == score) {
   $(".kpi-category.one").find(".data-row-sub-heading-label.category").addClass("col-lg");
   }
+  if (index == posTime) {
+  $(".kpi-category.one").find(".data-row-sub-heading-label.category").addClass("col-lg");
+  }
+  if (index == shotTime) {
+  $(".kpi-category.one").find(".data-row-sub-heading-label.category").addClass("col-lg");
+  }
 
   });
 
