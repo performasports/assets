@@ -28,15 +28,15 @@ $(document).ready(function() {
   $.each(keyMetricsLabels, function(index,value){
 
   if (index >= 0 && index < 9) {
-  $(".kpi-category.one").find(".team-stats-secondary-heading-row").append("<h6 id='"+keyMetricsLabelsID[index]+"' data-tippy-content='"+keyMetricsTooltips[index]+"' class='data-row-sub-heading-label category tippy'>"+value+"</h6>");
+  $(".kpi-category.one").find(".team-stats-secondary-heading-row").append("<h6 data-tippy-content='"+keyMetricsTooltips[index]+"' class='data-row-sub-heading-label category tippy'"+keyMetricsLabelsID[index]+">"+value+"</h6>");
   } else {
   //  block of code to be executed if the condition is false
 	}
   });
 
-  $(".kpi-category.one").find("#Score").addClass("col-lg");
-  $(".kpi-category.one").find("#PosTime").addClass("col-lg");
-  $(".kpi-category.one").find("#ShotTime").addClass("col-lg");
+  $(".kpi-category.one").find(".Score").addClass("col-lg");
+  $(".kpi-category.one").find(".PosTime").addClass("col-lg");
+  $(".kpi-category.one").find(".ShotTime").addClass("col-lg");
 
   $.each(homeTeam1stHalf, function(index,value){
   if (index >= 0 && index < 9) {
