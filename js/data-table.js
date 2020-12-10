@@ -306,7 +306,7 @@ $(document).ready(function() {
   if (index >= 0 && index < 10) {
   $(".kpi-category.one").find(".team-stats-data-row.80-2nd").append("<a href='#' class='table-data w-inline-block "+keyMetricsLabelsID[index]+"'><h5 class='datapoint'>"+homeTeamByMins802ndEx[index]+"</h5></a>");
   }
-  if (index >= 9 && index < 43) {
+  if (index >= 10 && index < 43) {
   $(".kpi-category.two").find(".team-stats-data-row.80-2nd").append("<a href='#' class='table-data w-inline-block "+keyMetricsLabelsID[index]+"'><h5 class='datapoint'>"+homeTeamByMins802ndEx[index]+"</h5></a>");
   }
   if (index >= 43 && index < 51) {
