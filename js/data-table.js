@@ -41,7 +41,7 @@ $(document).ready(function() {
   //  block of code to be executed if the condition is false
 	}
 
-  if (index == posTime) {
+  if (index = posTime) {
   $(".kpi-category.one").find(".data-row-sub-heading-label.category").addClass("col-lg");
   }
 
