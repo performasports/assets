@@ -34,9 +34,16 @@ $(document).ready(function() {
   var shotTime = keyMetricsLabels.indexOf("Shot Time");
   //console.log(colLarge);
 
-  if (index == score || index == posTime || index == shotTime) {
+  if (index == score) {
   $(".kpi-category.one").find(".data-row-sub-heading-label.category").addClass("col-lg");
-  } else {
+  }
+  else if (index == posTime) {
+  $(".kpi-category.one").find(".data-row-sub-heading-label.category").addClass("col-lg");
+  }
+  else if (index == shotTime) {
+  $(".kpi-category.one").find(".data-row-sub-heading-label.category").addClass("col-lg");
+  }
+  else {
   //  block of code to be executed if the condition is false
   }
 
