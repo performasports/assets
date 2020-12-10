@@ -32,6 +32,7 @@ $(document).ready(function() {
   $.each(homeTeam1stHalf, function(index,value){
   if (index > 0 && index < 9) {
   $(".kpi-category.one").find(".team-stats-data-row.1stHalf").append("<a href='#' class='table-data w-inline-block'><h5 class='datapoint'>"+homeTeam1stHalf[index]+"</h5></a>");
+  console.log(gamePeriodClass[0]);
   } else {
   //  block of code to be executed if the condition is false
   }
