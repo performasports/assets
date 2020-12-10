@@ -35,7 +35,7 @@ $(document).ready(function() {
   });
 
   $(".kpi-category.one").find("#Score").addClass("col-lg");
-  $(".kpi-category.one").find("#Pos.Time").addClass("col-lg");
+  $(".kpi-category.one").find("#PosTime").addClass("col-lg");
   $(".kpi-category.one").find("#ShotTime").addClass("col-lg");
 
   $.each(homeTeam1stHalf, function(index,value){
