@@ -41,7 +41,7 @@ $(document).ready(function() {
   //  block of code to be executed if the condition is false
 	}
 
-  if (keyMetricsLabels.indexOf("Pos. Time") == 5) {
+  if (index = 0 && index = 5) {
   $(".kpi-category.one").find(".data-row-sub-heading-label.category").addClass("col-lg");
   }
 
