@@ -16,7 +16,7 @@ $(document).ready(function() {
 
   $(".kpi-category.one").find(".team-stats-data-row.FullGame").after("<div class='team-stats-secondary-heading-row by-minutes'></div>");
 
-  var minsArray = ["0-12","13-25","25-half","35-47","48-60","61-full","70-1st","80-2nd"]
+  var minsArray = ["0-12","13-25","26-half","35-47","48-60","61-full","70-1st","80-2nd"]
   const gameMinutesClassName = minsArray.reverse();
   $.each(gameMinutesClassName, function(index,value){
   $(".kpi-category.one").find(".team-stats-secondary-heading-row.by-minutes").after("<div class='team-stats-data-row "+value+"'>");
