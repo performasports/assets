@@ -144,4 +144,6 @@ $(document).ready(function() {
   $(".kpi-category.one").find(".Prod--").addClass("col-md");
   $(".kpi-category.one").find(".Pos---").addClass("col-md");
 
+  $(".kpi-category.one").find(".team-stats-data-row.FullGame").after("<div class='team-stats-secondary-heading-row'></div>");
+
   });
