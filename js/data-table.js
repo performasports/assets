@@ -41,13 +41,7 @@ $(document).ready(function() {
   //  block of code to be executed if the condition is false
 	}
 
-  if (index = 0) {
-  $(".kpi-category.one").find(".data-row-sub-heading-label.category").addClass("col-lg");
-  }
-  if (index = 5) {
-  $(".kpi-category.one").find(".data-row-sub-heading-label.category").addClass("col-lg");
-  }
-  if (index = 7) {
+  if (index == posTime) {
   $(".kpi-category.one").find(".data-row-sub-heading-label.category").addClass("col-lg");
   }
 
