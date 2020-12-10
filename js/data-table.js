@@ -33,17 +33,14 @@ $(document).ready(function() {
   $.each(keyMetricsLabels, function(index,value){
 
   if (index >= 0 && index < 9) {
-  $(".kpi-category.one").find(".team-stats-secondary-heading-row").append("<h6 data-tippy-content='"+keyMetricsTooltips[index]+"' class='data-row-sub-heading-label category tippy'>"+value+"</h6>");
+  $(".kpi-category.one").find(".team-stats-secondary-heading-row").append("<h6 id='"+keyMetricsLabels[value]+"' data-tippy-content='"+keyMetricsTooltips[index]+"' class='data-row-sub-heading-label category tippy'>"+value+"</h6>");
   } else {
   //  block of code to be executed if the condition is false
 	}
-
-  if (index >= 5 && index <= 5) {
-  $(".kpi-category.one").find(".data-row-sub-heading-label.category").addClass("col-lg");
-  console.log("Add col-lg");
-  }
-
   });
+
+  $(".kpi-category.one").find("#Score").addClass("col-lg");
+
 
   $.each(homeTeam1stHalf, function(index,value){
   if (index >= 0 && index < 9) {
