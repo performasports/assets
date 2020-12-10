@@ -33,6 +33,9 @@ $(document).ready(function() {
 
   if (index >= 0 && index < 9) {
   $(".kpi-category.one").find(".team-stats-secondary-heading-row.by-period").append("<h6 data-tippy-content='"+keyMetricsTooltips[index]+"' class='data-row-sub-heading-label category tippy "+keyMetricsLabelsID[index]+"'>"+value+"</h6>");
+  }
+  if (index >= 9 && index < 43) {
+  $(".kpi-category.two").find(".team-stats-secondary-heading-row.by-period").append("<h6 data-tippy-content='"+keyMetricsTooltips[index]+"' class='data-row-sub-heading-label category tippy "+keyMetricsLabelsID[index]+"'>"+value+"</h6>");
   } else {
   //  block of code to be executed if the condition is false
 	}
