@@ -29,9 +29,6 @@ $(document).ready(function() {
   var score = keyMetricsLabels.indexOf("Score");
   var posTime = keyMetricsLabels.indexOf("Pos. Time");
   var shotTime = keyMetricsLabels.indexOf("Shot Time");
-  console.log(score);
-  console.log(posTime);
-  console.log(shotTime);
 
   $.each(keyMetricsLabels, function(index,value){
 
