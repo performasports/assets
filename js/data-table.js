@@ -40,7 +40,7 @@ $(document).ready(function() {
 
   if (index == 0 && index == 5) {
   $(".kpi-category.one").find(".data-row-sub-heading-label.category").addClass("col-lg");
-  console.log("Add col-lg");
+  alert("Add col-lg");
   }
 
   });
