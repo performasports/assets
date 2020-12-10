@@ -68,6 +68,15 @@ $(document).ready(function() {
   }
   if (index >= 10 && index < 43) {
   $(".kpi-category.two").find(".team-stats-data-row.1stHalf").append("<a href='#' class='table-data w-inline-block "+keyMetricsLabelsID[index]+"'><h5 class='datapoint'>"+homeTeam1stHalf[index]+"</h5></a>");
+  }
+  if (index >= 43 && index < 51) {
+  $(".kpi-category.three").find(".team-stats-data-row.1stHalf").append("<a href='#' class='table-data w-inline-block "+keyMetricsLabelsID[index]+"'><h5 class='datapoint'>"+homeTeam1stHalf[index]+"</h5></a>");
+  }
+  if (index >= 51 && index < 79) {
+  $(".kpi-category.four").find(".team-stats-data-row.1stHalf").append("<a href='#' class='table-data w-inline-block "+keyMetricsLabelsID[index]+"'><h5 class='datapoint'>"+homeTeam1stHalf[index]+"</h5></a>");
+  }
+  if (index >= 79 && index < 93) {
+  $(".kpi-category.five").find(".team-stats-data-row.1stHalf").append("<a href='#' class='table-data w-inline-block "+keyMetricsLabelsID[index]+"'><h5 class='datapoint'>"+homeTeam1stHalf[index]+"</h5></a>");
   } else {
   //  block of code to be executed if the condition is false
   }
