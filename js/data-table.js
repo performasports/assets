@@ -30,7 +30,7 @@ $(document).ready(function() {
   console.log(colLarge);
 
   if (index == colLarge) {
-  $(".kpi-category.one").find(".data-row-sub-heading-label.category").addClass("col-lg");
+  $(".kpi-category.one").find(".data-row-sub-heading-label.category.tippy").addClass("col-lg");
   } else {
   //  block of code to be executed if the condition is false
   }
