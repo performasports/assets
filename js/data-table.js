@@ -25,7 +25,8 @@ $(document).ready(function() {
   //$(".kpi-category.one").find(".team-stats-secondary-heading-row").next().after("<div class='team-stats-data-row 2nd-Half'>");
 
   $.each(keyMetricsLabels, function(index,value){
-  if (index = 0 || index = 5 || index = 7) {
+
+  if (index == 0 || index == 5 || index == 7) {
   $(".data-row-sub-heading-label.category").addClass("col-lg");
   } else {
   //  block of code to be executed if the condition is false
