@@ -24,18 +24,20 @@ $(document).ready(function() {
 
   //$(".kpi-category.one").find(".team-stats-secondary-heading-row").next().after("<div class='team-stats-data-row 2nd-Half'>");
 
+  
+
+  var score = keyMetricsLabels.indexOf("Score");
+  var posTime = keyMetricsLabels.indexOf("Pos. Time");
+  var shotTime = keyMetricsLabels.indexOf("Shot Time");
+  console.log(score);
+  console.log(posTime);
+  console.log(shotTime);
+
+  if (index == score) {
+  $(".kpi-category.one").find(".data-row-sub-heading-label.category").addClass("col-lg");
+  }
+
   $.each(keyMetricsLabels, function(index,value){
-
-    var score = keyMetricsLabels.indexOf("Score");
-    var posTime = keyMetricsLabels.indexOf("Pos. Time");
-    var shotTime = keyMetricsLabels.indexOf("Shot Time");
-    console.log(score);
-    console.log(posTime);
-    console.log(shotTime);
-
-    if (index == score) {
-    $(".kpi-category.one").find(".data-row-sub-heading-label.category").addClass("col-lg");
-    }
 
   if (index >= 0 && index < 9) {
   $(".kpi-category.one").find(".team-stats-secondary-heading-row").append("<h6 data-tippy-content='"+keyMetricsTooltips[index]+"' class='data-row-sub-heading-label category tippy'>"+value+"</h6>");
