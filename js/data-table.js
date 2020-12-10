@@ -45,4 +45,28 @@ $(document).ready(function() {
   }
   });
 
+  $.each(homeTeam1stExtra, function(index,value){
+  if (index > 0 && index < 9) {
+  $(".kpi-category.one").find(".team-stats-data-row.1stExtra").append("<a href='#' class='table-data w-inline-block'><h5 class='datapoint'>"+homeTeam1stExtra[index]+"</h5></a>");
+  } else {
+  //  block of code to be executed if the condition is false
+  }
+  });
+
+  $.each(homeTeam2ndExtra, function(index,value){
+  if (index > 0 && index < 9) {
+  $(".kpi-category.one").find(".team-stats-data-row.1stExtra").append("<a href='#' class='table-data w-inline-block'><h5 class='datapoint'>"+homeTeam2ndExtra[index]+"</h5></a>");
+  } else {
+  //  block of code to be executed if the condition is false
+  }
+  });
+
+  $.each(homeTeamFullGame, function(index,value){
+  if (index > 0 && index < 9) {
+  $(".kpi-category.one").find(".team-stats-data-row.1stExtra").append("<a href='#' class='table-data w-inline-block'><h5 class='datapoint'>"+homeTeamFullGame[index]+"</h5></a>");
+  } else {
+  //  block of code to be executed if the condition is false
+  }
+  });
+
   });
