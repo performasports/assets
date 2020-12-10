@@ -25,6 +25,11 @@ $(document).ready(function() {
   //$(".kpi-category.one").find(".team-stats-secondary-heading-row").next().after("<div class='team-stats-data-row 2nd-Half'>");
 
   $.each(keyMetricsLabels, function(index,value){
+  if (index = 0 || index = 5 || index = 7) {
+  $(".data-row-sub-heading-label.category").addClass("col-lg");
+  } else {
+  //  block of code to be executed if the condition is false
+  }
 
   if (index >= 0 && index < 9) {
   $(".kpi-category.one").find(".team-stats-secondary-heading-row").append("<h6 data-tippy-content='"+keyMetricsTooltips[index]+"' class='data-row-sub-heading-label category tippy'>"+value+"</h6>");
