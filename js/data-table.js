@@ -14,6 +14,10 @@ $(document).ready(function() {
   $(".kpi-category.one").find(".team-stats-secondary-heading-row").after("<div class='team-stats-data-row "+value+"'>");
   });
 
+  const gameMinsClassName = gamePeriodClass.reverse();
+  $.each(gameMinsClassName, function(index,value){
+  });
+
   //if (index = "1st Half") {
   //$(".kpi-category.one").find(".team-stats-secondary-heading-row").after("<div class='team-stats-data-row 1st-Half'>");
   //}
@@ -55,7 +59,7 @@ $(document).ready(function() {
 
   $.each(homeTeam2ndExtra, function(index,value){
   if (index > 0 && index < 9) {
-  $(".kpi-category.one").find(".team-stats-data-row.1stExtra").append("<a href='#' class='table-data w-inline-block'><h5 class='datapoint'>"+homeTeam2ndExtra[index]+"</h5></a>");
+  $(".kpi-category.one").find(".team-stats-data-row.2ndExtra").append("<a href='#' class='table-data w-inline-block'><h5 class='datapoint'>"+homeTeam2ndExtra[index]+"</h5></a>");
   } else {
   //  block of code to be executed if the condition is false
   }
@@ -63,7 +67,71 @@ $(document).ready(function() {
 
   $.each(homeTeamFullGame, function(index,value){
   if (index > 0 && index < 9) {
-  $(".kpi-category.one").find(".team-stats-data-row.1stExtra").append("<a href='#' class='table-data w-inline-block'><h5 class='datapoint'>"+homeTeamFullGame[index]+"</h5></a>");
+  $(".kpi-category.one").find(".team-stats-data-row.FullGame").append("<a href='#' class='table-data w-inline-block'><h5 class='datapoint'>"+homeTeamFullGame[index]+"</h5></a>");
+  } else {
+  //  block of code to be executed if the condition is false
+  }
+  });
+
+  $.each(homeTeamByMins012, function(index,value){
+  if (index > 0 && index < 9) {
+  $(".kpi-category.one").find(".team-stats-data-row.mins-0-12").append("<a href='#' class='table-data w-inline-block'><h5 class='datapoint'>"+homeTeamByMins012[index]+"</h5></a>");
+  } else {
+  //  block of code to be executed if the condition is false
+  }
+  });
+
+  $.each(homeTeamByMins1325, function(index,value){
+  if (index > 0 && index < 9) {
+  $(".kpi-category.one").find(".team-stats-data-row.mins-13-25").append("<a href='#' class='table-data w-inline-block'><h5 class='datapoint'>"+homeTeamByMins1325[index]+"</h5></a>");
+  } else {
+  //  block of code to be executed if the condition is false
+  }
+  });
+
+  $.each(homeTeamByMins26half, function(index,value){
+  if (index > 0 && index < 9) {
+  $(".kpi-category.one").find(".team-stats-data-row.mins-26-half").append("<a href='#' class='table-data w-inline-block'><h5 class='datapoint'>"+homeTeamByMins26half[index]+"</h5></a>");
+  } else {
+  //  block of code to be executed if the condition is false
+  }
+  });
+
+  $.each(homeTeamByMins3547, function(index,value){
+  if (index > 0 && index < 9) {
+  $(".kpi-category.one").find(".team-stats-data-row.mins-35-47").append("<a href='#' class='table-data w-inline-block'><h5 class='datapoint'>"+homeTeamByMins3547[index]+"</h5></a>");
+  } else {
+  //  block of code to be executed if the condition is false
+  }
+  });
+
+  $.each(homeTeamByMins4860, function(index,value){
+  if (index > 0 && index < 9) {
+  $(".kpi-category.one").find(".team-stats-data-row.mins-48-60").append("<a href='#' class='table-data w-inline-block'><h5 class='datapoint'>"+homeTeamByMins4860[index]+"</h5></a>");
+  } else {
+  //  block of code to be executed if the condition is false
+  }
+  });
+
+  $.each(homeTeamByMins61full, function(index,value){
+  if (index > 0 && index < 9) {
+  $(".kpi-category.one").find(".team-stats-data-row.mins-61-full").append("<a href='#' class='table-data w-inline-block'><h5 class='datapoint'>"+homeTeamByMins61full[index]+"</h5></a>");
+  } else {
+  //  block of code to be executed if the condition is false
+  }
+  });
+
+  $.each(homeTeamByMins1stExtra, function(index,value){
+  if (index > 0 && index < 9) {
+  $(".kpi-category.one").find(".team-stats-data-row.mins-1stExtra").append("<a href='#' class='table-data w-inline-block'><h5 class='datapoint'>"+homeTeamByMins1stExtra[index]+"</h5></a>");
+  } else {
+  //  block of code to be executed if the condition is false
+  }
+  });
+
+  $.each(homeTeamByMins2ndExtra, function(index,value){
+  if (index > 0 && index < 9) {
+  $(".kpi-category.one").find(".team-stats-data-row.mins-2ndExtra").append("<a href='#' class='table-data w-inline-block'><h5 class='datapoint'>"+homeTeamByMins2ndExtra[index]+"</h5></a>");
   } else {
   //  block of code to be executed if the condition is false
   }
