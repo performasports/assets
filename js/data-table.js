@@ -11,7 +11,7 @@ $(document).ready(function() {
 
   const gamePeriodClassName = gamePeriodClass.reverse();
   $.each(gamePeriodClassName, function(index,value){
-  $(".kpi-category.one").find(".team-stats-secondary-heading-row").after("<div class='team-stats-data-row "+value+"'>");
+  $(".kpi-category.one").find(".team-stats-secondary-heading-row.by-period").after("<div class='team-stats-data-row "+value+"'>");
   });
 
   $(".kpi-category.one").find(".team-stats-data-row.FullGame").after("<div class='team-stats-secondary-heading-row by-minutes'></div>");
