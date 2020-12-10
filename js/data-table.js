@@ -128,7 +128,7 @@ $(document).ready(function() {
 
   $.each(homeTeamByMins701stEx, function(index,value){
   if (index >= 0 && index < 9) {
-  $(".kpi-category.one").find(".team-stats-data-row.mins-1stExtra").append("<a href='#' class='table-data w-inline-block "+keyMetricsLabelsID[index]+"'><h5 class='datapoint'>"+homeTeamByMins1stExtra[index]+"</h5></a>");
+  $(".kpi-category.one").find(".team-stats-data-row.mins-1stExtra").append("<a href='#' class='table-data w-inline-block "+keyMetricsLabelsID[index]+"'><h5 class='datapoint'>"+homeTeamByMins701stEx[index]+"</h5></a>");
   } else {
   //  block of code to be executed if the condition is false
   }
@@ -136,7 +136,7 @@ $(document).ready(function() {
 
   $.each(homeTeamByMins802ndEx, function(index,value){
   if (index >= 0 && index < 9) {
-  $(".kpi-category.one").find(".team-stats-data-row.mins-2ndExtra").append("<a href='#' class='table-data w-inline-block "+keyMetricsLabelsID[index]+"'><h5 class='datapoint'>"+homeTeamByMins2ndExtra[index]+"</h5></a>");
+  $(".kpi-category.one").find(".team-stats-data-row.mins-2ndExtra").append("<a href='#' class='table-data w-inline-block "+keyMetricsLabelsID[index]+"'><h5 class='datapoint'>"+homeTeamByMins802ndEx[index]+"</h5></a>");
   } else {
   //  block of code to be executed if the condition is false
   }
