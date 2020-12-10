@@ -26,7 +26,7 @@ $(document).ready(function() {
 
   $.each(keyMetricsLabels, function(index,value){
 
-  if (index == "Score") {
+  if (value == "Score") {
   $(".data-row-sub-heading-label.category").addClass("col-lg");
   } else {
   //  block of code to be executed if the condition is false
