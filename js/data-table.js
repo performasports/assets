@@ -289,175 +289,144 @@ $(document).ready(function() {
   });
 
   $.each(homeTeam1stExtra, function(index,value){
-    if (index >= 0 && index < 10) {
-    $(".kpi-category.one").find(".team-stats-data-row.1stExtra").append("<div class='table-data no-link w-inline-block "+keyMetricsLabelsID[index]+"'><h5 class='datapoint'>"+homeTeam1stExtra[index]+"</h5></div>");
-    }
-    if (index >= 10 && index < 17 && value == "") {
-    $(".kpi-category.two").find(".team-stats-data-row.1stExtra").append("<div class='table-data no-link w-inline-block "+keyMetricsLabelsID[index]+"'><h5 class='datapoint'>"+homeTeam1stExtra[index]+"</h5></div>");
-    }
-    if (index >= 10 && index < 17 && value !== "") {
-    $(".kpi-category.two").find(".team-stats-data-row.1stExtra").append("<a href='#' class='table-data w-inline-block "+keyMetricsLabelsID[index]+"'><h5 class='datapoint'>"+homeTeam1stExtra[index]+"</h5></a>");
-    }
-    if (index >= 17 && index < 27 && (value == "" || value.includes('%'))) {
-    $(".kpi-category.three").find(".team-stats-data-row.1stExtra").append("<div class='table-data no-link w-inline-block "+keyMetricsLabelsID[index]+"'><h5 class='datapoint'>"+homeTeam1stExtra[index]+"</h5></div>");
-    }
-    if (index >= 17 && index < 26 && value !== "") {
-    $(".kpi-category.three").find(".team-stats-data-row.1stExtra").append("<a href='#' class='table-data w-inline-block "+keyMetricsLabelsID[index]+"'><h5 class='datapoint'>"+homeTeam1stExtra[index]+"</h5></a>");
-    }
-    if (index >= 27 && index < 37 && (value == "" || value.includes('%'))) {
-    $(".kpi-category.four").find(".team-stats-data-row.1stExtra").append("<div class='table-data no-link w-inline-block "+keyMetricsLabelsID[index]+"'><h5 class='datapoint'>"+homeTeam1stExtra[index]+"</h5></div>");
-    }
-    if (index >= 27 && index < 36 && value !== "") {
-    $(".kpi-category.four").find(".team-stats-data-row.1stExtra").append("<a href='#' class='table-data w-inline-block "+keyMetricsLabelsID[index]+"'><h5 class='datapoint'>"+homeTeam1stExtra[index]+"</h5></a>");
-    }
-    if (index >= 39 && index < 43) {
-    $(".kpi-category.five").find(".team-stats-data-row.1stExtra").append("<div class='table-data no-link w-inline-block "+keyMetricsLabelsID[index]+"'><h5 class='datapoint'>"+homeTeam1stExtra[index]+"</h5></div>");
-    }
-    if (index >= 37 && index < 39) {
-    $(".kpi-category.five").find(".team-stats-data-row.1stExtra").append("<a href='#' class='table-data w-inline-block "+keyMetricsLabelsID[index]+"'><h5 class='datapoint'>"+homeTeam1stExtra[index]+"</h5></a>");
-    }
-    if (index >= 43 && index < 51 && value == "") {
-    $(".kpi-category.six").find(".team-stats-data-row.1stExtra").append("<div class='table-data no-link w-inline-block "+keyMetricsLabelsID[index]+"'><h5 class='datapoint'>"+homeTeam1stExtra[index]+"</h5></div>");
-    }
-    if (index >= 43 && index < 51 && value !== "") {
-    $(".kpi-category.six").find(".team-stats-data-row.1stExtra").append("<a href='#' class='table-data w-inline-block "+keyMetricsLabelsID[index]+"'><h5 class='datapoint'>"+homeTeam1stExtra[index]+"</h5></a>");
-    }
-    if (index >= 51 && index < 60 && value == "") {
-    $(".kpi-category.seven").find(".team-stats-data-row.1stExtra").append("<div class='table-data no-link w-inline-block "+keyMetricsLabelsID[index]+"'><h5 class='datapoint'>"+homeTeam1stExtra[index]+"</h5></div>");
-    }
-    if (index >= 51 && index < 60 && value !== "") {
-    $(".kpi-category.seven").find(".team-stats-data-row.1stExtra").append("<a href='#' class='table-data w-inline-block "+keyMetricsLabelsID[index]+"'><h5 class='datapoint'>"+homeTeam1stExtra[index]+"</h5></a>");
-    }
-    if (index >= 60 && index < 61 && value == "") {
-    $(".kpi-category.eight").find(".team-stats-data-row.1stExtra").append("<div class='table-data no-link w-inline-block "+keyMetricsLabelsID[index]+"'><h5 class='datapoint'>"+homeTeam1stExtra[index]+"</h5></div>");
-    }
-    if (index >= 60 && index < 61 && value !== "") {
-    $(".kpi-category.eight").find(".team-stats-data-row.1stExtra").append("<a href='#' class='table-data w-inline-block "+keyMetricsLabelsID[index]+"'><h5 class='datapoint'>"+homeTeam1stExtra[index]+"</h5></a>");
-    }
-    if (index >= 61 && index < 70 && value == "") {
-    $(".kpi-category.nine").find(".team-stats-data-row.1stExtra").append("<div class='table-data no-link w-inline-block "+keyMetricsLabelsID[index]+"'><h5 class='datapoint'>"+homeTeam1stExtra[index]+"</h5></div>");
-    }
-    if (index >= 61 && index < 70 && value !== "") {
-    $(".kpi-category.nine").find(".team-stats-data-row.1stExtra").append("<a href='#' class='table-data w-inline-block "+keyMetricsLabelsID[index]+"'><h5 class='datapoint'>"+homeTeam1stExtra[index]+"</h5></a>");
-    }
-    if (index >= 70 && index < 79 && value == "") {
-    $(".kpi-category.ten").find(".team-stats-data-row.1stExtra").append("<div class='table-data no-link w-inline-block "+keyMetricsLabelsID[index]+"'><h5 class='datapoint'>"+homeTeam1stExtra[index]+"</h5></div>");
-    }
-    if (index >= 70 && index < 79 && value !== "") {
-    $(".kpi-category.ten").find(".team-stats-data-row.1stExtra").append("<a href='#' class='table-data w-inline-block "+keyMetricsLabelsID[index]+"'><h5 class='datapoint'>"+homeTeam1stExtra[index]+"</h5></a>");
-    }
-    if (index >= 79 && index < 82 && value == "") {
-    $(".kpi-category.eleven").find(".team-stats-data-row.1stExtra").append("<div class='table-data no-link w-inline-block "+keyMetricsLabelsID[index]+"'><h5 class='datapoint'>"+homeTeam1stExtra[index]+"</h5></div>");
-    }
-    if (index >= 79 && index < 82 && value !== "") {
-    $(".kpi-category.eleven").find(".team-stats-data-row.1stExtra").append("<a href='#' class='table-data w-inline-block "+keyMetricsLabelsID[index]+"'><h5 class='datapoint'>"+homeTeam1stExtra[index]+"</h5></a>");
-    }
-    if (index >= 82 && index < 85 && value == "") {
-    $(".kpi-category.twelve").find(".team-stats-data-row.1stExtra").append("<div class='table-data no-link w-inline-block "+keyMetricsLabelsID[index]+"'><h5 class='datapoint'>"+homeTeam1stExtra[index]+"</h5></div>");
-    }
-    if (index >= 82 && index < 85 && value !== "") {
-    $(".kpi-category.twelve").find(".team-stats-data-row.1stExtra").append("<a href='#' class='table-data w-inline-block "+keyMetricsLabelsID[index]+"'><h5 class='datapoint'>"+homeTeam1stExtra[index]+"</h5></a>");
-    }
-    if (index >= 85 && index < 90 && value == "") {
-    $(".kpi-category.thirteen").find(".team-stats-data-row.1stExtra").append("<div class='table-data no-link w-inline-block "+keyMetricsLabelsID[index]+"'><h5 class='datapoint'>"+homeTeam1stExtra[index]+"</h5></div>");
-    }
-    if (index >= 85 && index < 90 && value !== "") {
-    $(".kpi-category.thirteen").find(".team-stats-data-row.1stExtra").append("<a href='#' class='table-data w-inline-block "+keyMetricsLabelsID[index]+"'><h5 class='datapoint'>"+homeTeam1stExtra[index]+"</h5></a>");
-    }
-    if (index >= 90 && index < 93 && value == "") {
-    $(".kpi-category.fourteen").find(".team-stats-data-row.1stExtra").append("<div class='table-data no-link w-inline-block "+keyMetricsLabelsID[index]+"'><h5 class='datapoint'>"+homeTeam1stExtra[index]+"</h5></div>");
-    }
-    if (index >= 90 && index < 93 && value !== "") {
-    $(".kpi-category.fourteen").find(".team-stats-data-row.1stExtra").append("<a href='#' class='table-data w-inline-block "+keyMetricsLabelsID[index]+"'><h5 class='datapoint'>"+homeTeam1stExtra[index]+"</h5></a>");
-    } else {
-    //  block of code to be executed if the condition is false
-    }
+  if (index >= 0 && index < 10) {
+  $(".kpi-category.one").find(".team-stats-data-row.1stExtra").append("<a href='#' class='table-data w-inline-block "+keyMetricsLabelsID[index]+"'><h5 class='datapoint'>"+homeTeam1stExtra[index]+"</h5></a>");
+  }
+  if (index >= 10 && index < 17) {
+  $(".kpi-category.two").find(".team-stats-data-row.1stExtra").append("<a href='#' class='table-data w-inline-block "+keyMetricsLabelsID[index]+"'><h5 class='datapoint'>"+homeTeam1stExtra[index]+"</h5></a>");
+  }
+  if (index >= 17 && index < 27) {
+  $(".kpi-category.three").find(".team-stats-data-row.1stExtra").append("<a href='#' class='table-data w-inline-block "+keyMetricsLabelsID[index]+"'><h5 class='datapoint'>"+homeTeam1stExtra[index]+"</h5></a>");
+  }
+  if (index >= 27 && index < 37) {
+  $(".kpi-category.four").find(".team-stats-data-row.1stExtra").append("<a href='#' class='table-data w-inline-block "+keyMetricsLabelsID[index]+"'><h5 class='datapoint'>"+homeTeam1stExtra[index]+"</h5></a>");
+  }
+  if (index >= 37 && index < 43) {
+  $(".kpi-category.five").find(".team-stats-data-row.1stExtra").append("<a href='#' class='table-data w-inline-block "+keyMetricsLabelsID[index]+"'><h5 class='datapoint'>"+homeTeam1stExtra[index]+"</h5></a>");
+  }
+  if (index >= 43 && index < 51) {
+  $(".kpi-category.six").find(".team-stats-data-row.1stExtra").append("<a href='#' class='table-data w-inline-block "+keyMetricsLabelsID[index]+"'><h5 class='datapoint'>"+homeTeam1stExtra[index]+"</h5></a>");
+  }
+  if (index >= 51 && index < 60) {
+  $(".kpi-category.seven").find(".team-stats-data-row.1stExtra").append("<a href='#' class='table-data w-inline-block "+keyMetricsLabelsID[index]+"'><h5 class='datapoint'>"+homeTeam1stExtra[index]+"</h5></a>");
+  }
+  if (index >= 60 && index < 61) {
+  $(".kpi-category.eight").find(".team-stats-data-row.1stExtra").append("<a href='#' class='table-data w-inline-block "+keyMetricsLabelsID[index]+"'><h5 class='datapoint'>"+homeTeam1stExtra[index]+"</h5></a>");
+  }
+  if (index >= 61 && index < 70) {
+  $(".kpi-category.nine").find(".team-stats-data-row.1stExtra").append("<a href='#' class='table-data w-inline-block "+keyMetricsLabelsID[index]+"'><h5 class='datapoint'>"+homeTeam1stExtra[index]+"</h5></a>");
+  }
+  if (index >= 70 && index < 79) {
+  $(".kpi-category.ten").find(".team-stats-data-row.1stExtra").append("<a href='#' class='table-data w-inline-block "+keyMetricsLabelsID[index]+"'><h5 class='datapoint'>"+homeTeam1stExtra[index]+"</h5></a>");
+  }
+  if (index >= 79 && index < 82) {
+  $(".kpi-category.eleven").find(".team-stats-data-row.1stExtra").append("<a href='#' class='table-data w-inline-block "+keyMetricsLabelsID[index]+"'><h5 class='datapoint'>"+homeTeam1stExtra[index]+"</h5></a>");
+  }
+  if (index >= 82 && index < 85) {
+  $(".kpi-category.twelve").find(".team-stats-data-row.1stExtra").append("<a href='#' class='table-data w-inline-block "+keyMetricsLabelsID[index]+"'><h5 class='datapoint'>"+homeTeam1stExtra[index]+"</h5></a>");
+  }
+  if (index >= 85 && index < 90) {
+  $(".kpi-category.thirteen").find(".team-stats-data-row.1stExtra").append("<a href='#' class='table-data w-inline-block "+keyMetricsLabelsID[index]+"'><h5 class='datapoint'>"+homeTeam1stExtra[index]+"</h5></a>");
+  }
+  if (index >= 90 && index < 93) {
+  $(".kpi-category.fourteen").find(".team-stats-data-row.1stExtra").append("<a href='#' class='table-data w-inline-block "+keyMetricsLabelsID[index]+"'><h5 class='datapoint'>"+homeTeam1stExtra[index]+"</h5></a>");
+  } else {
+  //  block of code to be executed if the condition is false
+  }
   });
 
   $.each(homeTeam2ndExtra, function(index,value){
-    if (index >= 0 && index < 10) {
-    $(".kpi-category.one").find(".team-stats-data-row.2ndExtra").append("<div class='table-data no-link w-inline-block "+keyMetricsLabelsID[index]+"'><h5 class='datapoint'>"+homeTeam2ndExtra[index]+"</h5></div>");
-    }
-    if (index >= 10 && index < 17 && value == "") {
-    $(".kpi-category.two").find(".team-stats-data-row.2ndExtra").append("<div class='table-data no-link w-inline-block "+keyMetricsLabelsID[index]+"'><h5 class='datapoint'>"+homeTeam2ndExtra[index]+"</h5></div>");
-    }
-    if (index >= 10 && index < 17 && value !== "") {
-    $(".kpi-category.two").find(".team-stats-data-row.2ndExtra").append("<a href='#' class='table-data w-inline-block "+keyMetricsLabelsID[index]+"'><h5 class='datapoint'>"+homeTeam2ndExtra[index]+"</h5></a>");
-    }
-    if (index >= 17 && index < 27 && (value == "" || value.includes('%'))) {
-    $(".kpi-category.three").find(".team-stats-data-row.2ndExtra").append("<div class='table-data no-link w-inline-block "+keyMetricsLabelsID[index]+"'><h5 class='datapoint'>"+homeTeam2ndExtra[index]+"</h5></div>");
-    }
-    if (index >= 17 && index < 26 && value !== "") {
-    $(".kpi-category.three").find(".team-stats-data-row.2ndExtra").append("<a href='#' class='table-data w-inline-block "+keyMetricsLabelsID[index]+"'><h5 class='datapoint'>"+homeTeam2ndExtra[index]+"</h5></a>");
-    }
-    if (index >= 27 && index < 37 && (value == "" || value.includes('%'))) {
-    $(".kpi-category.four").find(".team-stats-data-row.2ndExtra").append("<div class='table-data no-link w-inline-block "+keyMetricsLabelsID[index]+"'><h5 class='datapoint'>"+homeTeam2ndExtra[index]+"</h5></div>");
-    }
-    if (index >= 27 && index < 36 && value !== "") {
-    $(".kpi-category.four").find(".team-stats-data-row.2ndExtra").append("<a href='#' class='table-data w-inline-block "+keyMetricsLabelsID[index]+"'><h5 class='datapoint'>"+homeTeam2ndExtra[index]+"</h5></a>");
-    }
-    if (index >= 39 && index < 43) {
-    $(".kpi-category.five").find(".team-stats-data-row.2ndExtra").append("<div class='table-data no-link w-inline-block "+keyMetricsLabelsID[index]+"'><h5 class='datapoint'>"+homeTeam2ndExtra[index]+"</h5></div>");
-    }
-    if (index >= 37 && index < 39) {
-    $(".kpi-category.five").find(".team-stats-data-row.2ndExtra").append("<a href='#' class='table-data w-inline-block "+keyMetricsLabelsID[index]+"'><h5 class='datapoint'>"+homeTeam2ndExtra[index]+"</h5></a>");
-    }
-    if (index >= 43 && index < 51 && value == "") {
-    $(".kpi-category.six").find(".team-stats-data-row.2ndExtra").append("<div class='table-data no-link w-inline-block "+keyMetricsLabelsID[index]+"'><h5 class='datapoint'>"+homeTeam2ndExtra[index]+"</h5></div>");
-    }
-    if (index >= 43 && index < 51 && value !== "") {
-    $(".kpi-category.six").find(".team-stats-data-row.2ndExtra").append("<a href='#' class='table-data w-inline-block "+keyMetricsLabelsID[index]+"'><h5 class='datapoint'>"+homeTeam2ndExtra[index]+"</h5></a>");
-    }
-    if (index >= 51 && index < 60 && value == "") {
-    $(".kpi-category.seven").find(".team-stats-data-row.2ndExtra").append("<div class='table-data no-link w-inline-block "+keyMetricsLabelsID[index]+"'><h5 class='datapoint'>"+homeTeam2ndExtra[index]+"</h5></div>");
-    }
-    if (index >= 51 && index < 60 && value !== "") {
-    $(".kpi-category.seven").find(".team-stats-data-row.2ndExtra").append("<a href='#' class='table-data w-inline-block "+keyMetricsLabelsID[index]+"'><h5 class='datapoint'>"+homeTeam2ndExtra[index]+"</h5></a>");
-    }
-    if (index >= 60 && index < 61 && value == "") {
-    $(".kpi-category.eight").find(".team-stats-data-row.2ndExtra").append("<div class='table-data no-link w-inline-block "+keyMetricsLabelsID[index]+"'><h5 class='datapoint'>"+homeTeam2ndExtra[index]+"</h5></div>");
-    }
-    if (index >= 60 && index < 61 && value !== "") {
-    $(".kpi-category.eight").find(".team-stats-data-row.2ndExtra").append("<a href='#' class='table-data w-inline-block "+keyMetricsLabelsID[index]+"'><h5 class='datapoint'>"+homeTeam2ndExtra[index]+"</h5></a>");
-    }
-    if (index >= 61 && index < 70 && value == "") {
-    $(".kpi-category.nine").find(".team-stats-data-row.2ndExtra").append("<div class='table-data no-link w-inline-block "+keyMetricsLabelsID[index]+"'><h5 class='datapoint'>"+homeTeam2ndExtra[index]+"</h5></div>");
-    }
-    if (index >= 61 && index < 70 && value !== "") {
-    $(".kpi-category.nine").find(".team-stats-data-row.2ndExtra").append("<a href='#' class='table-data w-inline-block "+keyMetricsLabelsID[index]+"'><h5 class='datapoint'>"+homeTeam2ndExtra[index]+"</h5></a>");
-    }
-    if (index >= 70 && index < 79 && value == "") {
-    $(".kpi-category.ten").find(".team-stats-data-row.2ndExtra").append("<div class='table-data no-link w-inline-block "+keyMetricsLabelsID[index]+"'><h5 class='datapoint'>"+homeTeam2ndExtra[index]+"</h5></div>");
-    }
-    if (index >= 70 && index < 79 && value !== "") {
-    $(".kpi-category.ten").find(".team-stats-data-row.2ndExtra").append("<a href='#' class='table-data w-inline-block "+keyMetricsLabelsID[index]+"'><h5 class='datapoint'>"+homeTeam2ndExtra[index]+"</h5></a>");
-    }
-    if (index >= 79 && index < 82 && value == "") {
-    $(".kpi-category.eleven").find(".team-stats-data-row.2ndExtra").append("<div class='table-data no-link w-inline-block "+keyMetricsLabelsID[index]+"'><h5 class='datapoint'>"+homeTeam2ndExtra[index]+"</h5></div>");
-    }
-    if (index >= 79 && index < 82 && value !== "") {
-    $(".kpi-category.eleven").find(".team-stats-data-row.2ndExtra").append("<a href='#' class='table-data w-inline-block "+keyMetricsLabelsID[index]+"'><h5 class='datapoint'>"+homeTeam2ndExtra[index]+"</h5></a>");
-    }
-    if (index >= 82 && index < 85 && value == "") {
-    $(".kpi-category.twelve").find(".team-stats-data-row.2ndExtra").append("<div class='table-data no-link w-inline-block "+keyMetricsLabelsID[index]+"'><h5 class='datapoint'>"+homeTeam2ndExtra[index]+"</h5></div>");
-    }
-    if (index >= 82 && index < 85 && value !== "") {
-    $(".kpi-category.twelve").find(".team-stats-data-row.2ndExtra").append("<a href='#' class='table-data w-inline-block "+keyMetricsLabelsID[index]+"'><h5 class='datapoint'>"+homeTeam2ndExtra[index]+"</h5></a>");
-    }
-    if (index >= 85 && index < 90 && value == "") {
-    $(".kpi-category.thirteen").find(".team-stats-data-row.2ndExtra").append("<div class='table-data no-link w-inline-block "+keyMetricsLabelsID[index]+"'><h5 class='datapoint'>"+homeTeam2ndExtra[index]+"</h5></div>");
-    }
-    if (index >= 85 && index < 90 && value !== "") {
-    $(".kpi-category.thirteen").find(".team-stats-data-row.2ndExtra").append("<a href='#' class='table-data w-inline-block "+keyMetricsLabelsID[index]+"'><h5 class='datapoint'>"+homeTeam2ndExtra[index]+"</h5></a>");
-    }
-    if (index >= 90 && index < 93 && value == "") {
-    $(".kpi-category.fourteen").find(".team-stats-data-row.2ndExtra").append("<div class='table-data no-link w-inline-block "+keyMetricsLabelsID[index]+"'><h5 class='datapoint'>"+homeTeam2ndExtra[index]+"</h5></div>");
-    }
-    if (index >= 90 && index < 93 && value !== "") {
-    $(".kpi-category.fourteen").find(".team-stats-data-row.2ndExtra").append("<a href='#' class='table-data w-inline-block "+keyMetricsLabelsID[index]+"'><h5 class='datapoint'>"+homeTeam2ndExtra[index]+"</h5></a>");
-    } else {
-    //  block of code to be executed if the condition is false
-    }
+  if (index >= 0 && index < 10) {
+  $(".kpi-category.one").find(".team-stats-data-row.2ndExtra").append("<a href='#' class='table-data w-inline-block "+keyMetricsLabelsID[index]+"'><h5 class='datapoint'>"+homeTeam2ndExtra[index]+"</h5></a>");
+  }
+  if (index >= 10 && index < 17) {
+  $(".kpi-category.two").find(".team-stats-data-row.2ndExtra").append("<a href='#' class='table-data w-inline-block "+keyMetricsLabelsID[index]+"'><h5 class='datapoint'>"+homeTeam2ndExtra[index]+"</h5></a>");
+  }
+  if (index >= 17 && index < 27) {
+  $(".kpi-category.three").find(".team-stats-data-row.2ndExtra").append("<a href='#' class='table-data w-inline-block "+keyMetricsLabelsID[index]+"'><h5 class='datapoint'>"+homeTeam2ndExtra[index]+"</h5></a>");
+  }
+  if (index >= 27 && index < 37) {
+  $(".kpi-category.four").find(".team-stats-data-row.2ndExtra").append("<a href='#' class='table-data w-inline-block "+keyMetricsLabelsID[index]+"'><h5 class='datapoint'>"+homeTeam2ndExtra[index]+"</h5></a>");
+  }
+  if (index >= 37 && index < 43) {
+  $(".kpi-category.five").find(".team-stats-data-row.2ndExtra").append("<a href='#' class='table-data w-inline-block "+keyMetricsLabelsID[index]+"'><h5 class='datapoint'>"+homeTeam2ndExtra[index]+"</h5></a>");
+  }
+  if (index >= 43 && index < 51) {
+  $(".kpi-category.six").find(".team-stats-data-row.2ndExtra").append("<a href='#' class='table-data w-inline-block "+keyMetricsLabelsID[index]+"'><h5 class='datapoint'>"+homeTeam2ndExtra[index]+"</h5></a>");
+  }
+  if (index >= 51 && index < 60) {
+  $(".kpi-category.seven").find(".team-stats-data-row.2ndExtra").append("<a href='#' class='table-data w-inline-block "+keyMetricsLabelsID[index]+"'><h5 class='datapoint'>"+homeTeam2ndExtra[index]+"</h5></a>");
+  }
+  if (index >= 60 && index < 61) {
+  $(".kpi-category.eight").find(".team-stats-data-row.2ndExtra").append("<a href='#' class='table-data w-inline-block "+keyMetricsLabelsID[index]+"'><h5 class='datapoint'>"+homeTeam2ndExtra[index]+"</h5></a>");
+  }
+  if (index >= 61 && index < 70) {
+  $(".kpi-category.nine").find(".team-stats-data-row.2ndExtra").append("<a href='#' class='table-data w-inline-block "+keyMetricsLabelsID[index]+"'><h5 class='datapoint'>"+homeTeam2ndExtra[index]+"</h5></a>");
+  }
+  if (index >= 70 && index < 79) {
+  $(".kpi-category.ten").find(".team-stats-data-row.2ndExtra").append("<a href='#' class='table-data w-inline-block "+keyMetricsLabelsID[index]+"'><h5 class='datapoint'>"+homeTeam2ndExtra[index]+"</h5></a>");
+  }
+  if (index >= 79 && index < 82) {
+  $(".kpi-category.eleven").find(".team-stats-data-row.2ndExtra").append("<a href='#' class='table-data w-inline-block "+keyMetricsLabelsID[index]+"'><h5 class='datapoint'>"+homeTeam2ndExtra[index]+"</h5></a>");
+  }
+  if (index >= 82 && index < 85) {
+  $(".kpi-category.twelve").find(".team-stats-data-row.2ndExtra").append("<a href='#' class='table-data w-inline-block "+keyMetricsLabelsID[index]+"'><h5 class='datapoint'>"+homeTeam2ndExtra[index]+"</h5></a>");
+  }
+  if (index >= 85 && index < 90) {
+  $(".kpi-category.thirteen").find(".team-stats-data-row.2ndExtra").append("<a href='#' class='table-data w-inline-block "+keyMetricsLabelsID[index]+"'><h5 class='datapoint'>"+homeTeam2ndExtra[index]+"</h5></a>");
+  }
+  if (index >= 90 && index < 93) {
+  $(".kpi-category.fourteen").find(".team-stats-data-row.2ndExtra").append("<a href='#' class='table-data w-inline-block "+keyMetricsLabelsID[index]+"'><h5 class='datapoint'>"+homeTeam2ndExtra[index]+"</h5></a>");
+  } else {
+  //  block of code to be executed if the condition is false
+  }
+  });
+
+  $.each(homeTeamFullGame, function(index,value){
+  if (index >= 0 && index < 10) {
+  $(".kpi-category.one").find(".team-stats-data-row.FullGame").append("<a href='#' class='table-data w-inline-block "+keyMetricsLabelsID[index]+"'><h5 class='datapoint'>"+homeTeamFullGame[index]+"</h5></a>");
+  }
+  if (index >= 10 && index < 17) {
+  $(".kpi-category.two").find(".team-stats-data-row.FullGame").append("<a href='#' class='table-data w-inline-block "+keyMetricsLabelsID[index]+"'><h5 class='datapoint'>"+homeTeamFullGame[index]+"</h5></a>");
+  }
+  if (index >= 17 && index < 27) {
+  $(".kpi-category.three").find(".team-stats-data-row.FullGame").append("<a href='#' class='table-data w-inline-block "+keyMetricsLabelsID[index]+"'><h5 class='datapoint'>"+homeTeamFullGame[index]+"</h5></a>");
+  }
+  if (index >= 27 && index < 37) {
+  $(".kpi-category.four").find(".team-stats-data-row.FullGame").append("<a href='#' class='table-data w-inline-block "+keyMetricsLabelsID[index]+"'><h5 class='datapoint'>"+homeTeamFullGame[index]+"</h5></a>");
+  }
+  if (index >= 37 && index < 43) {
+  $(".kpi-category.five").find(".team-stats-data-row.FullGame").append("<a href='#' class='table-data w-inline-block "+keyMetricsLabelsID[index]+"'><h5 class='datapoint'>"+homeTeamFullGame[index]+"</h5></a>");
+  }
+  if (index >= 43 && index < 51) {
+  $(".kpi-category.six").find(".team-stats-data-row.FullGame").append("<a href='#' class='table-data w-inline-block "+keyMetricsLabelsID[index]+"'><h5 class='datapoint'>"+homeTeamFullGame[index]+"</h5></a>");
+  }
+  if (index >= 51 && index < 60) {
+  $(".kpi-category.seven").find(".team-stats-data-row.FullGame").append("<a href='#' class='table-data w-inline-block "+keyMetricsLabelsID[index]+"'><h5 class='datapoint'>"+homeTeamFullGame[index]+"</h5></a>");
+  }
+  if (index >= 60 && index < 61) {
+  $(".kpi-category.eight").find(".team-stats-data-row.FullGame").append("<a href='#' class='table-data w-inline-block "+keyMetricsLabelsID[index]+"'><h5 class='datapoint'>"+homeTeamFullGame[index]+"</h5></a>");
+  }
+  if (index >= 61 && index < 70) {
+  $(".kpi-category.nine").find(".team-stats-data-row.FullGame").append("<a href='#' class='table-data w-inline-block "+keyMetricsLabelsID[index]+"'><h5 class='datapoint'>"+homeTeamFullGame[index]+"</h5></a>");
+  }
+  if (index >= 70 && index < 79) {
+  $(".kpi-category.ten").find(".team-stats-data-row.FullGame").append("<a href='#' class='table-data w-inline-block "+keyMetricsLabelsID[index]+"'><h5 class='datapoint'>"+homeTeamFullGame[index]+"</h5></a>");
+  }
+  if (index >= 79 && index < 82) {
+  $(".kpi-category.eleven").find(".team-stats-data-row.FullGame").append("<a href='#' class='table-data w-inline-block "+keyMetricsLabelsID[index]+"'><h5 class='datapoint'>"+homeTeamFullGame[index]+"</h5></a>");
+  }
+  if (index >= 82 && index < 85) {
+  $(".kpi-category.twelve").find(".team-stats-data-row.FullGame").append("<a href='#' class='table-data w-inline-block "+keyMetricsLabelsID[index]+"'><h5 class='datapoint'>"+homeTeamFullGame[index]+"</h5></a>");
+  }
+  if (index >= 85 && index < 90) {
+  $(".kpi-category.thirteen").find(".team-stats-data-row.FullGame").append("<a href='#' class='table-data w-inline-block "+keyMetricsLabelsID[index]+"'><h5 class='datapoint'>"+homeTeamFullGame[index]+"</h5></a>");
+  }
+  if (index >= 90 && index < 93) {
+  $(".kpi-category.fourteen").find(".team-stats-data-row.FullGame").append("<a href='#' class='table-data w-inline-block "+keyMetricsLabelsID[index]+"'><h5 class='datapoint'>"+homeTeamFullGame[index]+"</h5></a>");
+  } else {
+  //  block of code to be executed if the condition is false
+  }
   });
 
   $.each(homeTeamByMins012, function(index,value){
