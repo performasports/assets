@@ -134,16 +134,16 @@ $(document).ready(function() {
   $(".kpi-category.three").find(".team-stats-data-row.1stHalf").append("<a href='#' class='table-data w-inline-block "+keyMetricsLabelsID[index]+"'><h5 class='datapoint'>"+homeTeam1stHalf[index]+"</h5></a>");
   console.log(index,value);
   }
-  if (index >= 27 && index < 37 && value == "") {
+  if (index >= 27 && index < 37 && (value == "" || value.includes('%'))) {
   $(".kpi-category.four").find(".team-stats-data-row.1stHalf").append("<div class='table-data no-link w-inline-block "+keyMetricsLabelsID[index]+"'><h5 class='datapoint'>"+homeTeam1stHalf[index]+"</h5></div>");
   }
-  if (index >= 27 && index < 37 && value !== "") {
+  if (index >= 27 && index < 36 && value !== "") {
   $(".kpi-category.four").find(".team-stats-data-row.1stHalf").append("<a href='#' class='table-data w-inline-block "+keyMetricsLabelsID[index]+"'><h5 class='datapoint'>"+homeTeam1stHalf[index]+"</h5></a>");
   }
-  if (index >= 37 && index < 43 && value == "") {
+  if (index >= 39 && index < 43) {
   $(".kpi-category.five").find(".team-stats-data-row.1stHalf").append("<div class='table-data no-link w-inline-block "+keyMetricsLabelsID[index]+"'><h5 class='datapoint'>"+homeTeam1stHalf[index]+"</h5></div>");
   }
-  if (index >= 37 && index < 43 && value !== "") {
+  if (index >= 37 && index < 39) {
   $(".kpi-category.five").find(".team-stats-data-row.1stHalf").append("<a href='#' class='table-data w-inline-block "+keyMetricsLabelsID[index]+"'><h5 class='datapoint'>"+homeTeam1stHalf[index]+"</h5></a>");
   }
   if (index >= 43 && index < 51 && value == "") {
