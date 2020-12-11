@@ -733,4 +733,7 @@ $(document).ready(function() {
   $(".kpi-category.one").find(".Prod--").addClass("col-md");
   $(".kpi-category.one").find(".Pos---").addClass("col-md");
   $(".kpi-category").find(".-").addClass("col-md");
+  $(".kpi-category.five").find(".Exp-Pts").addClass("col-md");
+  $(".kpi-category.five").find(".--/-+").addClass("col-md");
+  $(".kpi-category.eight").find(".Won").addClass("col-full");
   });
