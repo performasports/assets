@@ -732,4 +732,5 @@ $(document).ready(function() {
   $(".kpi-category.one").find(".Shot-Time").addClass("col-lg");
   $(".kpi-category.one").find(".Prod--").addClass("col-md");
   $(".kpi-category.one").find(".Pos---").addClass("col-md");
+  $(".kpi-category").find(".-").addClass("col-md");
   });
