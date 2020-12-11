@@ -128,9 +128,13 @@ $(document).ready(function() {
   }
   if (index >= 17 && index < 27 && (value == "" || keyMetricsLabelsID[index] == "-")) {
   $(".kpi-category.three").find(".team-stats-data-row.1stHalf").append("<div class='table-data no-link w-inline-block "+keyMetricsLabelsID[index]+"'><h5 class='datapoint'>"+homeTeam1stHalf[index]+"</h5></div>");
+  console.log(index);
+  console.log(value);
   }
   if (index >= 17 && index < 27 && (value == !"") {
   $(".kpi-category.three").find(".team-stats-data-row.1stHalf").append("<a href='#' class='table-data w-inline-block "+keyMetricsLabelsID[index]+"'><h5 class='datapoint'>"+homeTeam1stHalf[index]+"</h5></a>");
+  console.log(index);
+  console.log(value);
   }
   if (index >= 27 && index < 37 && value == "") {
   $(".kpi-category.four").find(".team-stats-data-row.1stHalf").append("<div class='table-data no-link w-inline-block "+keyMetricsLabelsID[index]+"'><h5 class='datapoint'>"+homeTeam1stHalf[index]+"</h5></div>");
