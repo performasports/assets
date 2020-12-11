@@ -1,4 +1,4 @@
-0-12$(document).ready(function() {
+$(document).ready(function() {
 
   $.each(gamePeriod, function(index,value){
   $(".gameperiod").append("<h6 class='data-row-sub-heading-label'>"+value+"</h6>");
