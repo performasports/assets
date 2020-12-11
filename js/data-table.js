@@ -117,8 +117,10 @@ $(document).ready(function() {
   });
 
   $.each(homeTeam1stHalf, function(index,value){
-  if (index >= 0 && index < 10) {
+  if (index >= 0 && index < 10 &&) {
   $(".kpi-category.one").find(".team-stats-data-row.1stHalf").append("<a href='#' class='table-data w-inline-block "+keyMetricsLabelsID[index]+"'><h5 class='datapoint'>"+homeTeam1stHalf[index]+"</h5></a>");
+  console.log(index);
+  console.log(value);
   }
   if (index >= 10 && index < 17) {
   $(".kpi-category.two").find(".team-stats-data-row.1stHalf").append("<a href='#' class='table-data w-inline-block "+keyMetricsLabelsID[index]+"'><h5 class='datapoint'>"+homeTeam1stHalf[index]+"</h5></a>");
@@ -735,5 +737,5 @@ $(document).ready(function() {
   $(".kpi-category").find(".-").addClass("col-md");
   $(".kpi-category.five").find(".Exp-Pts").addClass("col-md");
   $(".kpi-category.eight").find(".Won").addClass("col-full");
-  
+
   });
