@@ -131,7 +131,7 @@ $(document).ready(function() {
   console.log(index);
   console.log(value);
   }
-  if (index >= 17 && index < 27 && (value == !"") {
+  if (index >= 17 && index < 27 && value == !"") {
   $(".kpi-category.three").find(".team-stats-data-row.1stHalf").append("<a href='#' class='table-data w-inline-block "+keyMetricsLabelsID[index]+"'><h5 class='datapoint'>"+homeTeam1stHalf[index]+"</h5></a>");
   console.log(index);
   console.log(value);
