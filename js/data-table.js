@@ -123,7 +123,10 @@ $(document).ready(function() {
   if (index >= 0 && index < 10 && value !== "") {
   $(".kpi-category.one").find(".team-stats-data-row.1stHalf").append("<a href='#' class='table-data w-inline-block "+keyMetricsLabelsID[index]+"'><h5 class='datapoint'>"+homeTeam1stHalf[index]+"</h5></a>");
   }
-  if (index >= 10 && index < 17) {
+  if (index >= 10 && index < 17 && value == "") {
+  $(".kpi-category.two").find(".team-stats-data-row.1stHalf").append("<div class='table-data w-inline-block "+keyMetricsLabelsID[index]+"'><h5 class='datapoint'>"+homeTeam1stHalf[index]+"</h5></div>");
+  }
+  if (index >= 10 && index < 17 && value !== "") {
   $(".kpi-category.two").find(".team-stats-data-row.1stHalf").append("<a href='#' class='table-data w-inline-block "+keyMetricsLabelsID[index]+"'><h5 class='datapoint'>"+homeTeam1stHalf[index]+"</h5></a>");
   }
   if (index >= 17 && index < 27) {
