@@ -2365,7 +2365,7 @@ $(document).ready(function() {
   $(".data-filters-links.key-metrics").click(function() {
 
     $(".data-filters-links.key-metrics").toggleClass("selected");
-    $('.show-all').removeClass('selected');
+    $('.show-all').toggleClass('selected');
     $('.kpi-category.two').toggleClass('hide');
     $('.kpi-category.three').toggleClass('hide');
     $('.kpi-category.four').toggleClass('hide');
