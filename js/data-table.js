@@ -2367,6 +2367,26 @@ $(document).ready(function() {
     $('.data-filters-links.show-all').removeClass('selected');
   });
 
+  $(".data-filters-links.attacking-play").click(function() {
+    $(".data-filters-links.attacking-play").toggleClass("selected");
+    $('.data-filters-links.show-all').removeClass('selected');
+  });
+
+  $(".data-filters-links.kickouts").click(function() {
+    $(".data-filters-links.kickouts").toggleClass("selected");
+    $('.data-filters-links.show-all').removeClass('selected');
+  });
+
+  $(".data-filters-links.possession-play").click(function() {
+    $(".data-filters-links.possession-play").toggleClass("selected");
+    $('.data-filters-links.show-all').removeClass('selected');
+  });
+
+  $(".data-filters-links.defensive-play").click(function() {
+    $(".data-filters-links.defensive-play").toggleClass("selected");
+    $('.data-filters-links.show-all').removeClass('selected');
+  });
+
 
 
 
