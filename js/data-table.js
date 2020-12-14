@@ -2390,10 +2390,8 @@ $(document).ready(function() {
   $(".data-filters-links.show-all").click(function() {
     if ($("data-filters-links.show-all").hasClass('selected')) {
       $(".data-filters-links").removeClass("selected");
-      alert("Is selected");
     }
     else if (!$(".data-filters-links.show-all").hasClass('selected')) {
-      alert("Is not selected");
       $(".data-filters-links.show-all").addClass("selected");
       $(".data-filters-links.key-metrics").removeClass("selected");
       $(".data-filters-links.attacking-play").removeClass("selected");
