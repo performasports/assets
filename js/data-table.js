@@ -231,7 +231,8 @@ $(document).ready(function() {
 
   $.each(homeTeam2ndHalf, function(index,value){
     if (index >= 0 && index < 10) {
-    $(".kpi-category.one").find(".team-stats-data-row.2ndHalf").append("<div class='table-data no-link w-inline-block "+keyMetricsLabelsID[index]+"'><h5 class='datapoint'>"+homeTeam2ndHalf[index]+"</h5></div>");
+    $(".home-team").find(".kpi-category.one").find(".team-stats-data-row.2ndHalf").append("<div class='table-data no-link w-inline-block "+keyMetricsLabelsID[index]+"'><h5 class='datapoint'>"+homeTeam2ndHalf[index]+"</h5></div>");
+    $(".away-team").find(".kpi-category.one").find(".team-stats-data-row.2ndHalf").append("<div class='table-data no-link w-inline-block "+keyMetricsLabelsID[index]+"'><h5 class='datapoint'>"+awayTeam2ndHalf[index]+"</h5></div>");
     }
     if (index >= 10 && index < 17 && value == "") {
     $(".kpi-category.two").find(".team-stats-data-row.2ndHalf").append("<div class='table-data no-link w-inline-block "+keyMetricsLabelsID[index]+"'><h5 class='datapoint'>"+homeTeam2ndHalf[index]+"</h5></div>");
