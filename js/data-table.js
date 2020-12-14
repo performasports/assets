@@ -2391,7 +2391,7 @@ $(document).ready(function() {
     if ($("data-filters-links.show-all").hasClass('selected')) {
       $(".data-filters-links").removeClass("selected");
     }
-    else if !$(".data-filters-links.show-all").hasClass('selected')) {
+    else if (!$(".data-filters-links.show-all").hasClass('selected')) {
       $(".data-filters-links.show-all").addClass("selected");
       $(".data-filters-links").addClass("selected");
     }
