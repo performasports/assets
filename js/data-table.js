@@ -2377,6 +2377,7 @@ $(document).ready(function() {
     $(".data-filters-links.key-metrics").addClass("selected");
     $('.show-all').removeClass('selected');
 
+    $('.kpi-category.one').removeClass('hide');
     $('.kpi-category.two').addClass('hide');
     $('.kpi-category.three').addClass('hide');
     $('.kpi-category.four').addClass('hide');
@@ -2395,6 +2396,24 @@ $(document).ready(function() {
 
   $(".data-filters-links.attacking-play").click(function() {
 
+    $(".data-filters-links").removeClass("selected");
+    $(".data-filters-links.attacking-play").addClass("selected");
+    $('.show-all').removeClass('selected');
+
+    $('.kpi-category.one').addClass('hide');
+    $('.kpi-category.two').removeClass('hide');
+    $('.kpi-category.three').removeClass('hide');
+    $('.kpi-category.four').removeClass('hide');
+    $('.kpi-category.five').removeClass('hide');
+    $('.kpi-category.six').addClass('hide');
+    $('.kpi-category.seven').addClass('hide');
+    $('.kpi-category.eight').addClass('hide');
+    $('.kpi-category.nine').addClass('hide');
+    $('.kpi-category.ten').addClass('hide');
+    $('.kpi-category.eleven').addClass('hide');
+    $('.kpi-category.twelve').addClass('hide');
+    $('.kpi-category.thirteen').addClass('hide');
+    $('.kpi-category.fourteen').addClass('hide');
 
   });
 
