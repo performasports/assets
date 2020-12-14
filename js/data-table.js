@@ -2388,7 +2388,7 @@ $(document).ready(function() {
   });
 
   $(".data-filters-links.show-all").click(function() {
-    if ($(this).hasClass('selected')) {
+    if ($("data-filters-links.show-all").hasClass('selected')) {
     }
     else if (!$(this).hasClass('selected')) {
       $(".data-filters-links.show-all").addClass("selected");
