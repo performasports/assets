@@ -2364,7 +2364,16 @@ $(document).ready(function() {
 
   $(".data-filters-links.key-metrics").click(function() {
     $(".data-filters-links.key-metrics").toggleClass("selected");
-    $('.data-filters-links.show-all').toggleClass('selected');
+
+    if ($(".data-filters-links.show-all").hasClass('selected')) {
+      $(".data-filters-links.show-all").removeClass("selected");
+    }
+    else if (!$(".data-filters-links.key-metrics").hasClass('selected')) {
+      $(".data-filters-links.show-all").addClass("selected");
+    }
+
+    $(".data-filters-links.key-metrics").toggleClass("selected");
+    $('.data-filters-links.show-all').removeClass('selected');
     $('.kpi-category.two').toggleClass('hide');
     $('.kpi-category.three').toggleClass('hide');
     $('.kpi-category.four').toggleClass('hide');
