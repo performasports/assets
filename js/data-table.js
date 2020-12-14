@@ -2368,6 +2368,9 @@ $(document).ready(function() {
     if ($(".data-filters-links.show-all").hasClass('selected')) {
       $(".data-filters-links.show-all").removeClass("selected");
     }
+    if ($(".data-filters-links").hasClass('selected')) {
+      $(".show-all").removeClass("selected");
+    }
     else if (!$(".data-filters-links.key-metrics").hasClass('selected')) {
       $(".data-filters-links.show-all").addClass("selected");
     }
@@ -2396,25 +2399,25 @@ $(document).ready(function() {
 
   $(".data-filters-links.kickouts").click(function() {
     $(".data-filters-links.kickouts").toggleClass("selected");
-    $('.data-filters-links.show-all').removeClass('selected');
+    $('.show-all').removeClass('selected');
   });
 
   $(".data-filters-links.possession-play").click(function() {
     $(".data-filters-links.possession-play").toggleClass("selected");
-    $('.data-filters-links.show-all').removeClass('selected');
+    $('.show-all').removeClass('selected');
   });
 
   $(".data-filters-links.defensive-play").click(function() {
     $(".data-filters-links.defensive-play").toggleClass("selected");
-    $('.data-filters-links.show-all').removeClass('selected');
+    $('.show-all').removeClass('selected');
   });
 
-  $(".data-filters-links.show-all").click(function() {
-    if ($("data-filters-links.show-all").hasClass('selected')) {
+  $(".show-all").click(function() {
+    if ($(".show-all").hasClass('selected')) {
       $(".data-filters-links").removeClass("selected");
     }
     else if (!$(".data-filters-links.show-all").hasClass('selected')) {
-      $(".data-filters-links.show-all").addClass("selected");
+      $(".show-all").addClass("selected");
       $(".data-filters-links.key-metrics").removeClass("selected");
       $(".data-filters-links.attacking-play").removeClass("selected");
       $(".data-filters-links.kickouts").removeClass("selected");
