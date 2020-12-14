@@ -2392,6 +2392,7 @@ $(document).ready(function() {
     }
     else if (!$(this).hasClass('selected')) {
       $(".data-filters-links.show-all").addClass("selected");
+      $(".data-filters-links").addClass("selected");
     }
   });
 
