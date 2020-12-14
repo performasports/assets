@@ -2373,51 +2373,28 @@ $(document).ready(function() {
 
   $(".data-filters-links.key-metrics").click(function() {
 
-    $(".data-filters-links.key-metrics").toggleClass("selected");
+    $(".data-filters-links").removeClass("selected");
+    $(".data-filters-links.key-metrics").addClass("selected");
     $('.show-all').removeClass('selected');
-    $('.kpi-category.two').toggleClass('hide');
-    $('.kpi-category.three').toggleClass('hide');
-    $('.kpi-category.four').toggleClass('hide');
-    $('.kpi-category.five').toggleClass('hide');
-    $('.kpi-category.six').toggleClass('hide');
-    $('.kpi-category.seven').toggleClass('hide');
-    $('.kpi-category.eight').toggleClass('hide');
-    $('.kpi-category.nine').toggleClass('hide');
-    $('.kpi-category.ten').toggleClass('hide');
-    $('.kpi-category.eleven').toggleClass('hide');
-    $('.kpi-category.twelve').toggleClass('hide');
-    $('.kpi-category.thirteen').toggleClass('hide');
-    $('.kpi-category.fourteen').toggleClass('hide');
+
+    $('.kpi-category.two').addClass('hide');
+    $('.kpi-category.three').addClass('hide');
+    $('.kpi-category.four').addClass('hide');
+    $('.kpi-category.five').addClass('hide');
+    $('.kpi-category.six').addClass('hide');
+    $('.kpi-category.seven').addClass('hide');
+    $('.kpi-category.eight').addClass('hide');
+    $('.kpi-category.nine').addClass('hide');
+    $('.kpi-category.ten').addClass('hide');
+    $('.kpi-category.eleven').addClass('hide');
+    $('.kpi-category.twelve').addClass('hide');
+    $('.kpi-category.thirteen').addClass('hide');
+    $('.kpi-category.fourteen').addClass('hide');
 
   });
 
   $(".data-filters-links.attacking-play").click(function() {
 
-    $(".data-filters-links.attacking-play").toggleClass("selected");
-    $('.show-all').removeClass('selected');
-
-    if ($('.data-filters-links.key-metrics').hasClass('selected')) {
-      $('.kpi-category.six').toggleClass('hide');
-      $('.kpi-category.seven').toggleClass('hide');
-      $('.kpi-category.eight').toggleClass('hide');
-      $('.kpi-category.nine').toggleClass('hide');
-      $('.kpi-category.ten').toggleClass('hide');
-      $('.kpi-category.eleven').toggleClass('hide');
-      $('.kpi-category.twelve').toggleClass('hide');
-      $('.kpi-category.thirteen').toggleClass('hide');
-      $('.kpi-category.fourteen').toggleClass('hide');
-    } else {
-      $('.kpi-category.one').toggleClass('hide');
-      $('.kpi-category.six').toggleClass('hide');
-      $('.kpi-category.seven').toggleClass('hide');
-      $('.kpi-category.eight').toggleClass('hide');
-      $('.kpi-category.nine').toggleClass('hide');
-      $('.kpi-category.ten').toggleClass('hide');
-      $('.kpi-category.eleven').toggleClass('hide');
-      $('.kpi-category.twelve').toggleClass('hide');
-      $('.kpi-category.thirteen').toggleClass('hide');
-      $('.kpi-category.fourteen').toggleClass('hide');
-    }
 
   });
 
