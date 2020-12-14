@@ -2364,6 +2364,7 @@ $(document).ready(function() {
 
   $(".data-filters-links").click(function() {
     $(this).toggleClass("selected");
+    $(".show-all").toggleClass("selected");
   });
 
   });
