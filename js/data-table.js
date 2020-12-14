@@ -116,7 +116,7 @@ $(document).ready(function() {
 	}
   });
 
-  $.each(homeTeam1stHalf, awayTeam1stHalf) function(index,value)){
+  $.each(homeTeam1stHalf, function(index,value){
   if (index >= 0 && index < 10) {
   $(".home-team").find(".kpi-category.one").find(".team-stats-data-row.1stHalf").append("<div class='table-data no-link w-inline-block "+keyMetricsLabelsID[index]+"'><h5 class='datapoint'>"+homeTeam1stHalf[index]+"</h5></div>");
   $(".away-team").find(".kpi-category.one").find(".team-stats-data-row.1stHalf").append("<div class='table-data no-link w-inline-block "+keyMetricsLabelsID[index]+"'><h5 class='datapoint'>"+awayTeam1stHalf[index]+"</h5></div>");
@@ -1233,6 +1233,92 @@ $(document).ready(function() {
     } else {
     //  block of code to be executed if the condition is false
     }
+  });
+
+  $.each(awayTeam1stHalf, function(index,value){
+  if (index >= 0 && index < 10) {
+  $(".away-team").find(".kpi-category.one").find(".team-stats-data-row.1stHalf").append("<div class='table-data no-link w-inline-block "+keyMetricsLabelsID[index]+"'><h5 class='datapoint'>"+awayTeam1stHalf[index]+"</h5></div>");
+  }
+  if (index >= 10 && index < 17 && value == "") {
+  $(".away-team").find(".kpi-category.two").find(".team-stats-data-row.1stHalf").append("<div class='table-data no-link w-inline-block "+keyMetricsLabelsID[index]+"'><h5 class='datapoint'>"+awayTeam1stHalf[index]+"</h5></div>");
+  }
+  if (index >= 10 && index < 17 && value !== "") {
+  $(".away-team").find(".kpi-category.two").find(".team-stats-data-row.1stHalf").append("<a href='#' class='table-data w-inline-block "+keyMetricsLabelsID[index]+"'><h5 class='datapoint'>"+awayTeam1stHalf[index]+"</h5></a>");
+  }
+  if (index >= 17 && index < 27 && (value == "" || value.includes('%'))) {
+  $(".away-team").find(".kpi-category.three").find(".team-stats-data-row.1stHalf").append("<div class='table-data no-link w-inline-block "+keyMetricsLabelsID[index]+"'><h5 class='datapoint'>"+awayTeam1stHalf[index]+"</h5></div>");
+  }
+  if (index >= 17 && index < 26 && value !== "") {
+  $(".away-team").find(".kpi-category.three").find(".team-stats-data-row.1stHalf").append("<a href='#' class='table-data w-inline-block "+keyMetricsLabelsID[index]+"'><h5 class='datapoint'>"+awayTeam1stHalf[index]+"</h5></a>");
+  }
+  if (index >= 27 && index < 37 && (value == "" || value.includes('%'))) {
+  $(".away-team").find(".kpi-category.four").find(".team-stats-data-row.1stHalf").append("<div class='table-data no-link w-inline-block "+keyMetricsLabelsID[index]+"'><h5 class='datapoint'>"+awayTeam1stHalf[index]+"</h5></div>");
+  }
+  if (index >= 27 && index < 36 && value !== "") {
+  $(".away-team").find(".kpi-category.four").find(".team-stats-data-row.1stHalf").append("<a href='#' class='table-data w-inline-block "+keyMetricsLabelsID[index]+"'><h5 class='datapoint'>"+awayTeam1stHalf[index]+"</h5></a>");
+  }
+  if (index >= 39 && index < 43) {
+  $(".away-team").find(".kpi-category.five").find(".team-stats-data-row.1stHalf").append("<div class='table-data no-link w-inline-block "+keyMetricsLabelsID[index]+"'><h5 class='datapoint'>"+awayTeam1stHalf[index]+"</h5></div>");
+  }
+  if (index >= 37 && index < 39) {
+  $(".away-team").find(".kpi-category.five").find(".team-stats-data-row.1stHalf").append("<a href='#' class='table-data w-inline-block "+keyMetricsLabelsID[index]+"'><h5 class='datapoint'>"+awayTeam1stHalf[index]+"</h5></a>");
+  }
+  if (index >= 43 && index < 51 && value == "") {
+  $(".away-team").find(".kpi-category.six").find(".team-stats-data-row.1stHalf").append("<div class='table-data no-link w-inline-block "+keyMetricsLabelsID[index]+"'><h5 class='datapoint'>"+awayTeam1stHalf[index]+"</h5></div>");
+  }
+  if (index >= 43 && index < 51 && value !== "") {
+  $(".away-team").find(".kpi-category.six").find(".team-stats-data-row.1stHalf").append("<a href='#' class='table-data w-inline-block "+keyMetricsLabelsID[index]+"'><h5 class='datapoint'>"+awayTeam1stHalf[index]+"</h5></a>");
+  }
+  if (index >= 51 && index < 60 && value == "") {
+  $(".away-team").find(".kpi-category.seven").find(".team-stats-data-row.1stHalf").append("<div class='table-data no-link w-inline-block "+keyMetricsLabelsID[index]+"'><h5 class='datapoint'>"+awayTeam1stHalf[index]+"</h5></div>");
+  }
+  if (index >= 51 && index < 60 && value !== "") {
+  $(".away-team").find(".kpi-category.seven").find(".team-stats-data-row.1stHalf").append("<a href='#' class='table-data w-inline-block "+keyMetricsLabelsID[index]+"'><h5 class='datapoint'>"+awayTeam1stHalf[index]+"</h5></a>");
+  }
+  if (index >= 60 && index < 61 && value == "") {
+  $(".away-team").find(".kpi-category.eight").find(".team-stats-data-row.1stHalf").append("<div class='table-data no-link w-inline-block "+keyMetricsLabelsID[index]+"'><h5 class='datapoint'>"+awayTeam1stHalf[index]+"</h5></div>");
+  }
+  if (index >= 60 && index < 61 && value !== "") {
+  $(".away-team").find(".kpi-category.eight").find(".team-stats-data-row.1stHalf").append("<a href='#' class='table-data w-inline-block "+keyMetricsLabelsID[index]+"'><h5 class='datapoint'>"+awayTeam1stHalf[index]+"</h5></a>");
+  }
+  if (index >= 61 && index < 70 && value == "") {
+  $(".away-team").find(".kpi-category.nine").find(".team-stats-data-row.1stHalf").append("<div class='table-data no-link w-inline-block "+keyMetricsLabelsID[index]+"'><h5 class='datapoint'>"+awayTeam1stHalf[index]+"</h5></div>");
+  }
+  if (index >= 61 && index < 70 && value !== "") {
+  $(".away-team").find(".kpi-category.nine").find(".team-stats-data-row.1stHalf").append("<a href='#' class='table-data w-inline-block "+keyMetricsLabelsID[index]+"'><h5 class='datapoint'>"+awayTeam1stHalf[index]+"</h5></a>");
+  }
+  if (index >= 70 && index < 79 && value == "") {
+  $(".away-team").find(".kpi-category.ten").find(".team-stats-data-row.1stHalf").append("<div class='table-data no-link w-inline-block "+keyMetricsLabelsID[index]+"'><h5 class='datapoint'>"+awayTeam1stHalf[index]+"</h5></div>");
+  }
+  if (index >= 70 && index < 79 && value !== "") {
+  $(".away-team").find(".kpi-category.ten").find(".team-stats-data-row.1stHalf").append("<a href='#' class='table-data w-inline-block "+keyMetricsLabelsID[index]+"'><h5 class='datapoint'>"+awayTeam1stHalf[index]+"</h5></a>");
+  }
+  if (index >= 79 && index < 82 && value == "") {
+  $(".away-team").find(".kpi-category.eleven").find(".team-stats-data-row.1stHalf").append("<div class='table-data no-link w-inline-block "+keyMetricsLabelsID[index]+"'><h5 class='datapoint'>"+awayTeam1stHalf[index]+"</h5></div>");
+  }
+  if (index >= 79 && index < 82 && value !== "") {
+  $(".away-team").find(".kpi-category.eleven").find(".team-stats-data-row.1stHalf").append("<a href='#' class='table-data w-inline-block "+keyMetricsLabelsID[index]+"'><h5 class='datapoint'>"+awayTeam1stHalf[index]+"</h5></a>");
+  }
+  if (index >= 82 && index < 85 && value == "") {
+  $(".away-team").find(".kpi-category.twelve").find(".team-stats-data-row.1stHalf").append("<div class='table-data no-link w-inline-block "+keyMetricsLabelsID[index]+"'><h5 class='datapoint'>"+awayTeam1stHalf[index]+"</h5></div>");
+  }
+  if (index >= 82 && index < 85 && value !== "") {
+  $(".away-team").find(".kpi-category.twelve").find(".team-stats-data-row.1stHalf").append("<a href='#' class='table-data w-inline-block "+keyMetricsLabelsID[index]+"'><h5 class='datapoint'>"+awayTeam1stHalf[index]+"</h5></a>");
+  }
+  if (index >= 85 && index < 90 && value == "") {
+  $(".away-team").find(".kpi-category.thirteen").find(".team-stats-data-row.1stHalf").append("<div class='table-data no-link w-inline-block "+keyMetricsLabelsID[index]+"'><h5 class='datapoint'>"+awayTeam1stHalf[index]+"</h5></div>");
+  }
+  if (index >= 85 && index < 90 && value !== "") {
+  $(".away-team").find(".kpi-category.thirteen").find(".team-stats-data-row.1stHalf").append("<a href='#' class='table-data w-inline-block "+keyMetricsLabelsID[index]+"'><h5 class='datapoint'>"+awayTeam1stHalf[index]+"</h5></a>");
+  }
+  if (index >= 90 && index < 93 && value == "") {
+  $(".away-team").find(".kpi-category.fourteen").find(".team-stats-data-row.1stHalf").append("<div class='table-data no-link w-inline-block "+keyMetricsLabelsID[index]+"'><h5 class='datapoint'>"+awayTeam1stHalf[index]+"</h5></div>");
+  }
+  if (index >= 90 && index < 93 && value !== "") {
+  $(".away-team").find(".kpi-category.fourteen").find(".team-stats-data-row.1stHalf").append("<a href='#' class='table-data w-inline-block "+keyMetricsLabelsID[index]+"'><h5 class='datapoint'>"+awayTeam1stHalf[index]+"</h5></a>");
+  } else {
+  //  block of code to be executed if the condition is false
+  }
   });
 
   $(".kpi-category.one").find(".Score").addClass("col-lg");
