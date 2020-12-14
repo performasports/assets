@@ -2363,13 +2363,12 @@ $(document).ready(function() {
 
 
   $(".data-filters-links.key-metrics").click(function() {
-    $(".data-filters-links.key-metrics").toggleClass("selected");
-
     if ($(".show-all").hasClass('selected')) {
       $(".show-all").removeClass("selected");
     }
     if ($(".data-filters-links").hasClass('selected')) {
       $(".show-all").removeClass("selected");
+      $(".data-filters-links.key-metrics").toggleClass("selected");
     }
     else if (!$(".data-filters-links.key-metrics").hasClass('selected')) {
       $(".show-all").addClass("selected");
