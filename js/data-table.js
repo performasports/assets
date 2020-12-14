@@ -2362,9 +2362,12 @@ $(document).ready(function() {
   $(".kpi-category.eight").find(".Won").addClass("col-full");
 
 
-  $(".data-filters-links").click(function() {
-    $(this).toggleClass("selected");
-    $(".data-filters-links.show-all").toggleClass("selected");
+  $(".data-filters-links.key-metrics").click(function() {
+    $(".data-filters-links.key-metrics").toggleClass("selected");
+    $('.data-filters-links.show-all').removeClass('selected');
   });
+
+
+
 
   });
