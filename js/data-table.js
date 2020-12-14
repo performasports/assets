@@ -2393,7 +2393,11 @@ $(document).ready(function() {
     }
     else if (!$(".data-filters-links.show-all").hasClass('selected')) {
       $(".data-filters-links.show-all").addClass("selected");
-      $(".data-filters-links").addClass("selected");
+      $(".data-filters-links.key-metrics").removeClass("selected");
+      $(".data-filters-links.attacking-play").removeClass("selected");
+      $(".data-filters-links.kickouts").removeClass("selected");
+      $(".data-filters-links.possession-play").removeClass("selected");
+      $(".data-filters-links.defensive-play").removeClass("selected");
     }
   });
 
