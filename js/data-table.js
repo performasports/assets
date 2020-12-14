@@ -2361,6 +2361,14 @@ $(document).ready(function() {
   $(".kpi-category.five").find(".Exp-Pts").addClass("col-md");
   $(".kpi-category.eight").find(".Won").addClass("col-full");
 
+  $(".show-all").click(function() {
+    if (!$('.show-all').hasClass('selected') {
+      $('.show-all').addClass('selected');
+      $(".data-filters-links").removeClass("selected");
+    } else if ($('.show-all').hasClass('selected') {
+      $('.show-all').removeClass('selected');
+    }
+  });
 
   $(".data-filters-links.key-metrics").click(function() {
 
@@ -2401,19 +2409,7 @@ $(document).ready(function() {
     $('.show-all').removeClass('selected');
   });
 
-  $(".show-all").click(function() {
-    if ($(".show-all").hasClass('selected')) {
-      $(".data-filters-links").removeClass("selected");
-    }
-    else if (!$(".show-all").hasClass('selected')) {
-      $(".show-all").addClass("selected");
-      $(".data-filters-links.key-metrics").removeClass("selected");
-      $(".data-filters-links.attacking-play").removeClass("selected");
-      $(".data-filters-links.kickouts").removeClass("selected");
-      $(".data-filters-links.possession-play").removeClass("selected");
-      $(".data-filters-links.defensive-play").removeClass("selected");
-    }
-  });
+
 
 
 
