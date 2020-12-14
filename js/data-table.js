@@ -2365,18 +2365,18 @@ $(document).ready(function() {
   $(".data-filters-links.key-metrics").click(function() {
     $(".data-filters-links.key-metrics").toggleClass("selected");
 
-    if ($(".data-filters-links.show-all").hasClass('selected')) {
-      $(".data-filters-links.show-all").removeClass("selected");
+    if ($(".show-all").hasClass('selected')) {
+      $(".show-all").removeClass("selected");
     }
     if ($(".data-filters-links").hasClass('selected')) {
       $(".show-all").removeClass("selected");
     }
     else if (!$(".data-filters-links.key-metrics").hasClass('selected')) {
-      $(".data-filters-links.show-all").addClass("selected");
+      $(".show-all").addClass("selected");
     }
 
     $(".data-filters-links.key-metrics").toggleClass("selected");
-    $('.data-filters-links.show-all').removeClass('selected');
+    $('.show-all').removeClass('selected');
     $('.kpi-category.two').toggleClass('hide');
     $('.kpi-category.three').toggleClass('hide');
     $('.kpi-category.four').toggleClass('hide');
@@ -2394,7 +2394,7 @@ $(document).ready(function() {
 
   $(".data-filters-links.attacking-play").click(function() {
     $(".data-filters-links.attacking-play").toggleClass("selected");
-    $('.data-filters-links.show-all').removeClass('selected');
+    $('.show-all').removeClass('selected');
   });
 
   $(".data-filters-links.kickouts").click(function() {
@@ -2416,7 +2416,7 @@ $(document).ready(function() {
     if ($(".show-all").hasClass('selected')) {
       $(".data-filters-links").removeClass("selected");
     }
-    else if (!$(".data-filters-links.show-all").hasClass('selected')) {
+    else if (!$(".show-all").hasClass('selected')) {
       $(".show-all").addClass("selected");
       $(".data-filters-links.key-metrics").removeClass("selected");
       $(".data-filters-links.attacking-play").removeClass("selected");
