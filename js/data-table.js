@@ -2362,11 +2362,11 @@ $(document).ready(function() {
   $(".kpi-category.eight").find(".Won").addClass("col-full");
 
   $(".show-all").click(function() {
-    if (!$('.show-all').hasClass('selected') {
+    if (!$('.show-all').hasClass('selected')) {
       $('.show-all').addClass('selected');
       $(".data-filters-links").removeClass("selected");
       $('.kpi-category').removeClass('hide');
-    } else if ($('.show-all').hasClass('selected') {
+    } else if ($('.show-all').hasClass('selected')) {
       $('.show-all').removeClass('selected');
     }
   });
