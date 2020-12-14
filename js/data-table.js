@@ -288,7 +288,7 @@ $(document).ready(function() {
     }
   });
 
-  $(".home-team").find.each(homeTeam1stExtra, function(index,value){
+  $.each(homeTeam1stExtra, function(index,value){
     if (index >= 0 && index < 10) {
     $(".home-team").find(".kpi-category.one").find(".team-stats-data-row.1stExtra").append("<div class='table-data no-link w-inline-block "+keyMetricsLabelsID[index]+"'><h5 class='datapoint'>"+homeTeam1stExtra[index]+"</h5></div>");
     }
@@ -374,7 +374,7 @@ $(document).ready(function() {
     }
   });
 
-  $(".home-team").find.each(homeTeam2ndExtra, function(index,value){
+  $.each(homeTeam2ndExtra, function(index,value){
     if (index >= 0 && index < 10) {
     $(".home-team").find(".kpi-category.one").find(".team-stats-data-row.2ndExtra").append("<div class='table-data no-link w-inline-block "+keyMetricsLabelsID[index]+"'><h5 class='datapoint'>"+homeTeam2ndExtra[index]+"</h5></div>");
     }
@@ -460,7 +460,7 @@ $(document).ready(function() {
     }
   });
 
-  $(".home-team").find.each(homeTeamFullGame, function(index,value){
+  $.each(homeTeamFullGame, function(index,value){
     if (index >= 0 && index < 10) {
     $(".home-team").find(".kpi-category.one").find(".team-stats-data-row.FullGame").append("<div class='table-data no-link w-inline-block "+keyMetricsLabelsID[index]+"'><h5 class='datapoint'>"+homeTeamFullGame[index]+"</h5></div>");
     }
@@ -546,7 +546,7 @@ $(document).ready(function() {
     }
   });
 
-  $(".home-team").find.each(homeTeamByMins012, function(index,value){
+  $.each(homeTeamByMins012, function(index,value){
     if (index >= 0 && index < 10) {
     $(".home-team").find(".kpi-category.one").find(".team-stats-data-row.0-12").append("<div class='table-data no-link w-inline-block "+keyMetricsLabelsID[index]+"'><h5 class='datapoint'>"+homeTeamByMins012[index]+"</h5></div>");
     }
@@ -632,7 +632,7 @@ $(document).ready(function() {
     }
   });
 
-  $(".home-team").find.each(homeTeamByMins1325, function(index,value){
+  $.each(homeTeamByMins1325, function(index,value){
     if (index >= 0 && index < 10) {
     $(".home-team").find(".kpi-category.one").find(".team-stats-data-row.13-25").append("<div class='table-data no-link w-inline-block "+keyMetricsLabelsID[index]+"'><h5 class='datapoint'>"+homeTeamByMins1325[index]+"</h5></div>");
     }
@@ -718,7 +718,7 @@ $(document).ready(function() {
     }
   });
 
-  $(".home-team").find.each(homeTeamByMins26half, function(index,value){
+  $.each(homeTeamByMins26half, function(index,value){
     if (index >= 0 && index < 10) {
     $(".home-team").find(".kpi-category.one").find(".team-stats-data-row.26-half").append("<div class='table-data no-link w-inline-block "+keyMetricsLabelsID[index]+"'><h5 class='datapoint'>"+homeTeamByMins26half[index]+"</h5></div>");
     }
@@ -804,7 +804,7 @@ $(document).ready(function() {
     }
   });
 
-  $(".home-team").find.each(homeTeamByMins3547, function(index,value){
+  $each(homeTeamByMins3547, function(index,value){
     if (index >= 0 && index < 10) {
     $(".home-team").find(".kpi-category.one").find(".team-stats-data-row.35-47").append("<div class='table-data no-link w-inline-block "+keyMetricsLabelsID[index]+"'><h5 class='datapoint'>"+homeTeamByMins3547[index]+"</h5></div>");
     }
@@ -890,7 +890,7 @@ $(document).ready(function() {
     }
   });
 
-  $(".home-team").find.each(homeTeamByMins4860, function(index,value){
+  $.each(homeTeamByMins4860, function(index,value){
     if (index >= 0 && index < 10) {
     $(".home-team").find(".kpi-category.one").find(".team-stats-data-row.48-60").append("<div class='table-data no-link w-inline-block "+keyMetricsLabelsID[index]+"'><h5 class='datapoint'>"+homeTeamByMins4860[index]+"</h5></div>");
     }
@@ -976,7 +976,7 @@ $(document).ready(function() {
     }
   });
 
-  $(".home-team").find.each(homeTeamByMins61full, function(index,value){
+  $.each(homeTeamByMins61full, function(index,value){
     if (index >= 0 && index < 10) {
     $(".home-team").find(".kpi-category.one").find(".team-stats-data-row.61-full").append("<div class='table-data no-link w-inline-block "+keyMetricsLabelsID[index]+"'><h5 class='datapoint'>"+homeTeamByMins61full[index]+"</h5></div>");
     }
@@ -1062,7 +1062,7 @@ $(document).ready(function() {
     }
   });
 
-  $(".home-team").find.each(homeTeamByMins701stEx, function(index,value){
+  $.each(homeTeamByMins701stEx, function(index,value){
     if (index >= 0 && index < 10) {
     $(".home-team").find(".kpi-category.one").find(".team-stats-data-row.70-1st").append("<div class='table-data no-link w-inline-block "+keyMetricsLabelsID[index]+"'><h5 class='datapoint'>"+homeTeamByMins701stEx[index]+"</h5></div>");
     }
@@ -1148,7 +1148,7 @@ $(document).ready(function() {
     }
   });
 
-  $(".home-team").find.each(homeTeamByMins802ndEx, function(index,value){
+  $.each(homeTeamByMins802ndEx, function(index,value){
     if (index >= 0 && index < 10) {
     $(".home-team").find(".kpi-category.one").find(".team-stats-data-row.80-2nd").append("<div class='table-data no-link w-inline-block "+keyMetricsLabelsID[index]+"'><h5 class='datapoint'>"+homeTeamByMins802ndEx[index]+"</h5></div>");
     }
