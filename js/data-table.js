@@ -2365,6 +2365,7 @@ $(document).ready(function() {
     if (!$('.show-all').hasClass('selected') {
       $('.show-all').addClass('selected');
       $(".data-filters-links").removeClass("selected");
+      $('.kpi-category').removeClass('hide');
     } else if ($('.show-all').hasClass('selected') {
       $('.show-all').removeClass('selected');
     }
