@@ -2361,4 +2361,9 @@ $(document).ready(function() {
   $(".kpi-category.five").find(".Exp-Pts").addClass("col-md");
   $(".kpi-category.eight").find(".Won").addClass("col-full");
 
+
+  $(".data-filters-links").click(function() {
+    $(this).toggleClass("selected");
+  });
+
   });
