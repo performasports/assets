@@ -2366,7 +2366,7 @@ $(document).ready(function() {
       $('.show-all').addClass('selected');
       $(".data-filters-links").removeClass("selected");
       $('.kpi-category').removeClass('hide');
-    } else if ($('.show-all').hasClass('selected')) {
+    } else if ($('.show-all').hasClass('selected'))  {
       $('.show-all').removeClass('selected');
     }
   });
@@ -2374,7 +2374,7 @@ $(document).ready(function() {
   $(".data-filters-links.key-metrics").click(function() {
 
     $(".data-filters-links.key-metrics").toggleClass("selected");
-    $('.show-all').toggleClass('selected');
+    //$('.show-all').toggleClass('selected');
     $('.kpi-category.two').toggleClass('hide');
     $('.kpi-category.three').toggleClass('hide');
     $('.kpi-category.four').toggleClass('hide');
@@ -2388,26 +2388,23 @@ $(document).ready(function() {
     $('.kpi-category.twelve').toggleClass('hide');
     $('.kpi-category.thirteen').toggleClass('hide');
     $('.kpi-category.fourteen').toggleClass('hide');
+
   });
 
   $(".data-filters-links.attacking-play").click(function() {
-    $(".data-filters-links.attacking-play").toggleClass("selected");
-    $('.show-all').removeClass('selected');
+
   });
 
   $(".data-filters-links.kickouts").click(function() {
-    $(".data-filters-links.kickouts").toggleClass("selected");
-    $('.show-all').removeClass('selected');
+
   });
 
   $(".data-filters-links.possession-play").click(function() {
-    $(".data-filters-links.possession-play").toggleClass("selected");
-    $('.show-all').removeClass('selected');
+
   });
 
   $(".data-filters-links.defensive-play").click(function() {
-    $(".data-filters-links.defensive-play").toggleClass("selected");
-    $('.show-all').removeClass('selected');
+
   });
 
 
