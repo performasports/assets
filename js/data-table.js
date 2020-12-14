@@ -2368,10 +2368,11 @@ $(document).ready(function() {
     }
     if ($(".data-filters-links").hasClass('selected')) {
       $(".show-all").removeClass("selected");
-      $(".data-filters-links.key-metrics").toggleClass("selected");
+      $(".data-filters-links.key-metrics").removeClass("selected");
     }
     else if (!$(".data-filters-links.key-metrics").hasClass('selected')) {
       $(".show-all").addClass("selected");
+      $(".data-filters-links.key-metrics").addClass("selected");
     }
 
     $(".data-filters-links.key-metrics").toggleClass("selected");
