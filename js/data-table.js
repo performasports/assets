@@ -2365,6 +2365,7 @@ $(document).ready(function() {
   $(".data-filters-links.key-metrics").click(function() {
     $(".data-filters-links.key-metrics").toggleClass("selected");
     $('.data-filters-links.show-all').removeClass('selected');
+    $('.kpi-category.one').toggleClass('hide');
   });
 
   $(".data-filters-links.attacking-play").click(function() {
