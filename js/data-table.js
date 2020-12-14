@@ -2393,6 +2393,19 @@ $(document).ready(function() {
 
   $(".data-filters-links.attacking-play").click(function() {
 
+    $(".data-filters-links.attacking-play").toggleClass("selected");
+    $('.show-all').removeClass('selected');
+    $('.kpi-category.one').toggleClass('hide');
+    $('.kpi-category.six').toggleClass('hide');
+    $('.kpi-category.seven').toggleClass('hide');
+    $('.kpi-category.eight').toggleClass('hide');
+    $('.kpi-category.nine').toggleClass('hide');
+    $('.kpi-category.ten').toggleClass('hide');
+    $('.kpi-category.eleven').toggleClass('hide');
+    $('.kpi-category.twelve').toggleClass('hide');
+    $('.kpi-category.thirteen').toggleClass('hide');
+    $('.kpi-category.fourteen').toggleClass('hide');
+
   });
 
   $(".data-filters-links.kickouts").click(function() {
