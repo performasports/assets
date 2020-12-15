@@ -122,9 +122,9 @@ function barChartExpPts(){
   let no1Decimal = parseFloat(no1).toFixed(2);
   let no2Decimal = parseFloat(no2).toFixed(2);
 
-	let total = no1+no2; //10
+	let total = no1Decimal+no2Decimal; //10
 
-  console.log(no1Decimal, no2, total);
+  console.log(no1Decimal, no2Decimal, total);
 
 	let homeNum = no1/total;
 	let awayNum = no2/total;
