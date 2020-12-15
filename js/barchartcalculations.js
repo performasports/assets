@@ -117,7 +117,7 @@ function barChartCalc(){
 function barChartExpPts(){
 
 	$('.team-stats').each(function() {
-	let no1 = $(this).find("#home-team-exppts-number").toFixed(2);;
+	let no1 = $(this).find("#home-team-exppts-number").val();
 	let no2 = parseInt($(this).find("#away-team-exppts-number").text(),10);
 	let total = no1+no2; //10
 
