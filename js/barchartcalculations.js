@@ -169,7 +169,7 @@ function barChartExpPts(){
         function initialise() {
 				timeInPossession();
 				barChartCalc();
-        barChartExpPts();
+        //barChartExpPts();
         }
 
 $(document).ready(initialise);
