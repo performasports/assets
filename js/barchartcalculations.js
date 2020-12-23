@@ -121,9 +121,16 @@ function barChartExpPts(){
 	let no2text = ($("#away-team-exppts-number").text());
 
   if (no1text.charAt(0) == "-") {
-    console.log("minus number");
+    let no1new = no1text.substring(1);
+    let no1 = parseInt.no1new;
+    //console.log("minus number");
   }
 
+  if (no2text.charAt(0) == "-") {
+    let no2new = no1text.substring(1);
+    let no2 = parseInt.no2new;
+    //console.log("minus number");
+  }
 
   let no1Decimal = parseFloat(no1).toFixed(2);
   let no2Decimal = parseFloat(no2).toFixed(2);
