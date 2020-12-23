@@ -123,9 +123,10 @@ function barChartExpPts(){
   if (no1text.charAt(0) == "-") {
     let no1new = no1text.substring(1);
     let no1 = parseInt(no1new);
-    //console.log("minus number");
+    console.log("No1 minus number");
   } else {
     let no1 = parseInt(no1text);
+    console.log("No1 positive number");
   }
 
   if (no2text.charAt(0) == "-") {
