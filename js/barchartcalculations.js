@@ -124,7 +124,7 @@ function barChartExpPts(){
 
 	let total = no1Decimal+no2Decimal; //10
 
-  console.log(no1Decimal, no2Decimal, total);
+  console.log(no1,no2,no1Decimal, no2Decimal, total);
 
 	let homeNum = no1Decimal/total;
 	let awayNum = no2Decimal/total;
