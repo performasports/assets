@@ -141,22 +141,22 @@ function barChartExpPts(){
 
 	let total = no1Decimal+no2Decimal; //10
 
-  console.log("test", no1, no2, no1Decimal, no2Decimal, total);
+  console.log(no1, no2, no1Decimal, no2Decimal, total);
 
 	let homeNum = no1Decimal/total;
 	let awayNum = no2Decimal/total;
 	let homePercentage = homeNum*100;
 	let awayPercentage = awayNum*100;
 
-  if (no1 >= no2) {
+  if (no1Decimal >= no2Decimal) {
 	$(this).find("#home-team-exppts-bar").css({width: homePercentage + "%" });
 	$(this).find("#away-team-exppts-bar").css({width: 100 + "%" });
 	}
-	if (no1 == 0 && no2 == 0) {
+	if (no1Decimal == 0 && no2Decimal == 0) {
 	$(this).find("#home-team-exppts-bar").css({width: 50 + "%" });
 	$(this).find("#away-team-exppts-bar").css({width: 100 + "%" });
 	}
-	if (no2 > no1) {
+	if (no2Decimal > no1Decimal) {
 	$(this).find("#home-team-exppts-bar").css({width: 100 + "%" });
 	$(this).find("#away-team-exppts-bar").css({width: awayPercentage + "%" }).css("z-index","2");
 	}
