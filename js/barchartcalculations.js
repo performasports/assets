@@ -117,22 +117,22 @@ function barChartCalc(){
 function barChartExpPts(){
 
 	$('#total-shots').each(function() {
-	let no1text = ($("#home-team-exppts-number").text());
-	let no2text = ($("#away-team-exppts-number").text());
+	var no1text = ($("#home-team-exppts-number").text());
+	var no2text = ($("#away-team-exppts-number").text());
 
   if (no1text.charAt(0) == "-") {
-    let no1 = no1text.substring(1);
+    var no1 = no1text.substring(1);
     //console.log("No1 minus number");
   } else {
-    let no1 = no1text;
+    var no1 = no1text;
     //console.log("No1 positive number");
   }
 
   if (no2text.charAt(0) == "-") {
-    let no2 = no2text.substring(1);
+    var no2 = no2text.substring(1);
     //console.log("No1 minus number");
   } else {
-    let no2 = no2text;
+    var no2 = no2text;
     //console.log("No1 positive number");
   }
 
