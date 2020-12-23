@@ -145,23 +145,6 @@ function barChartExpPts(){
 	}
 	else {
 	}
-
-	//console.log(no1,no2);
-
-	if (no1 >= no2) {
-	$(this).find(".home-team-bar").css({width: homePercentage + "%" });
-	$(this).find(".away-team-bar").css({width: 100 + "%" });
-	}
-	if (no1 == 0 && no2 == 0) {
-	$(this).find(".home-team-bar").css({width: 50 + "%" });
-	$(this).find(".away-team-bar").css({width: 100 + "%" });
-	}
-	if (no2 > no1) {
-	$(this).find(".home-team-bar").css({width: 100 + "%" });
-	$(this).find(".away-team-bar").css({width: awayPercentage + "%" }).css("z-index","2");
-	}
-	else {
-	}
 	});
 }
 
