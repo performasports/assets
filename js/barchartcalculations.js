@@ -121,19 +121,19 @@ function barChartExpPts(){
 	let no2text = ($("#away-team-exppts-number").text());
 
   if (no1text.charAt(0) == "-") {
-    let no1new = no1text.substring(1);
-    console.log("No1 minus number",no1new);
+    let no1 = no1text.substring(1);
+    //console.log("No1 minus number");
   } else {
-    let no1 = parseInt(no1text);
-    console.log("No1 positive number");
+    let no1 = no1text;
+    //console.log("No1 positive number");
   }
 
   if (no2text.charAt(0) == "-") {
-    let no2new = no1text.substring(1);
-    let no2 = parseInt(no2new);
-    //console.log("minus number");
+    let no2 = no2text.substring(1);
+    //console.log("No1 minus number");
   } else {
-    let no2 = parseInt(no2text);
+    let no2 = no2text;
+    //console.log("No1 positive number");
   }
 
   let no1Decimal = parseFloat(no1).toFixed(2);
