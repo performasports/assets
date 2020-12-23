@@ -148,17 +148,19 @@ function barChartExpPts(){
 	let homePercentage = homeNum*100;
 	let awayPercentage = awayNum*100;
 
+  console.log(homeNum, awayNum, homePercentage, awayPercentage);
+
   if (no1Decimal >= no2Decimal) {
-	$(this).find("#home-team-exppts-bar").css({width: homePercentage + "%" });
-	$(this).find("#away-team-exppts-bar").css({width: 100 + "%" });
+	$("#home-team-exppts-bar").css({width: homePercentage + "%" });
+	$("#away-team-exppts-bar").css({width: 100 + "%" });
 	}
 	if (no1Decimal == 0 && no2Decimal == 0) {
-	$(this).find("#home-team-exppts-bar").css({width: 50 + "%" });
-	$(this).find("#away-team-exppts-bar").css({width: 100 + "%" });
+	$("#home-team-exppts-bar").css({width: 50 + "%" });
+	$("#away-team-exppts-bar").css({width: 100 + "%" });
 	}
 	if (no2Decimal > no1Decimal) {
-	$(this).find("#home-team-exppts-bar").css({width: 100 + "%" });
-	$(this).find("#away-team-exppts-bar").css({width: awayPercentage + "%" }).css("z-index","2");
+	$("#home-team-exppts-bar").css({width: 100 + "%" });
+	$("#away-team-exppts-bar").css({width: awayPercentage + "%" }).css("z-index","2");
 	}
 	else {
 	}
