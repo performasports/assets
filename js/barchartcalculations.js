@@ -141,14 +141,14 @@ function barChartExpPts(){
 
 	let total = no1Decimal+no2Decimal; //10
 
-  console.log(no1, no2, no1Decimal, no2Decimal, total);
+  //console.log(no1, no2, no1Decimal, no2Decimal, total);
 
 	let homeNum = no1Decimal/total;
 	let awayNum = no2Decimal/total;
 	let homePercentage = homeNum*100;
 	let awayPercentage = awayNum*100;
 
-  console.log(homeNum, awayNum, homePercentage, awayPercentage);
+  //console.log(homeNum, awayNum, homePercentage, awayPercentage);
 
   if (no1Decimal >= no2Decimal) {
 	$("#home-team-exppts-bar").css({width: homePercentage + "%" });
