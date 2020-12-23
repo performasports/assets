@@ -136,8 +136,8 @@ function barChartExpPts(){
     //console.log("No1 positive number");
   }
 
-  let no1Decimal = parseFloat(no1).toFixed(2);
-  let no2Decimal = parseFloat(no2).toFixed(2);
+  let no1Decimal = parseInt(no1,10);
+  let no2Decimal = parseInt(no2,10);
 
 	let total = no1Decimal+no2Decimal; //10
 
