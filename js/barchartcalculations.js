@@ -117,14 +117,15 @@ function barChartCalc(){
 function barChartExpPts(){
 
 	$('#total-shots').each(function() {
-	let no1 = $(this).find("#home-team-exppts-number").val();
+  let no1Trimmed = $(this).find("#home-team-exppts-number").substring(1);
+	let no1 = $(this).find("#home-team-exppts-number").text();
 	let no2 = $(this).find("#away-team-exppts-number").text();
   let no1Decimal = parseFloat(no1).toFixed(2);
   let no2Decimal = parseFloat(no2).toFixed(2);
 
 	let total = no1Decimal+no2Decimal; //10
 
-  console.log("test", no1, no2, no1Decimal, no2Decimal, total);
+  console.log("test", no1Trimmed, no1, no2, no1Decimal, no2Decimal, total);
 
 	let homeNum = no1Decimal/total;
 	let awayNum = no2Decimal/total;
