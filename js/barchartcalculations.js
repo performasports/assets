@@ -124,12 +124,16 @@ function barChartExpPts(){
     let no1new = no1text.substring(1);
     let no1 = parseInt.no1new;
     //console.log("minus number");
+  } else {
+    let no1 = parseInt.no1text;
   }
 
   if (no2text.charAt(0) == "-") {
     let no2new = no1text.substring(1);
     let no2 = parseInt.no2new;
     //console.log("minus number");
+  } else {
+    let no2 = parseInt.no2text;
   }
 
   let no1Decimal = parseFloat(no1).toFixed(2);
