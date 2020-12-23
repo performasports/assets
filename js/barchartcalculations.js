@@ -120,8 +120,10 @@ function barChartExpPts(){
 	let no1text = ($("#home-team-exppts-number").text());
 	let no2text = ($("#away-team-exppts-number").text());
 
-  let no1 = no1text.substring(1);
-  let no2 = no2text.substring(1);
+  if (no1text.charAt(0) == "-") {
+    console.log("minus number");
+  }
+
 
   let no1Decimal = parseFloat(no1).toFixed(2);
   let no2Decimal = parseFloat(no2).toFixed(2);
