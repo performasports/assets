@@ -1,177 +1,55 @@
-$(document).ready(function() {
+function Add(){
+    var no1=parseInt($("#txtNo1").val());
+    var no2=parseInt($("#txtNo2").val());
+    var result =no1+no2;
+     alert("The result is "+result);
+   }
+   function Substract(){
+    var no1=parseInt($("#txtNo1").val());
+    var no2=parseInt($("#txtNo2").val());
+    var result =no1-no2;
+     alert("The result is "+result);
+   }
+   function Multiply(){
+    var no1=parseInt($("#txtNo1").val());
+    var no2=parseInt($("#txtNo2").val());
+    var result =no1*no2;
+     alert("The result is "+result);
+   }
 
-  $(".bar-chart-team-stats-grid.accordion .event-heading-wrapper").click(function(){
+   function shots(){
+    let no1 = parseInt($("#home-shots-number").text(),10);
+    let no2 = parseInt($("#away-shots-number").text(),10);
+    let total = no1+no2; //10
+    let homeNum = no1/total;
+    let awayNum = no2/total;
+    let homePercentage = homeNum*100;
+    let awayPercentage = awayNum*100;
+    //alert("The result is "+result +no1 +no2);
 
-  if ($(this).parent().parent().next('.expandable-content-wrapper').hasClass('hide')) {
-  $(this).parent().parent().next('.expandable-content-wrapper').slideDown('fast').removeClass('hide');
-  }
-  else if (!$(this).parent().parent().next('.expandable-content-wrapper').hasClass('hide')) {
-  $(this).parent().parent().next('.expandable-content-wrapper').slideUp('fast').addClass('hide');
-  }
+    //$("#home-psr-bar").css({width: homePercentage + "%" });
 
-  $(this).children(".stat-heading").toggleClass("AccordionShow");
-  $(this).children(".expandable-icon").toggleClass("AccordionShow");
-  $(this).parent().toggleClass("selected");
-
-  });
-
-  $(".bar-chart-wrapper.accordion").click(function(){
-
-  if ($(this).parent().parent().next('.expandable-content-wrapper').hasClass('hide')) {
-  $(this).parent().parent().next('.expandable-content-wrapper').slideDown('fast').removeClass('hide');
-  }
-  else if (!$(this).parent().parent().next('.expandable-content-wrapper').hasClass('hide')) {
-  $(this).parent().parent().next('.expandable-content-wrapper').slideUp('fast').addClass('hide');
-  }
-
-  $(this).parent().parent().find(".stat-heading").toggleClass("AccordionShow");
-  $(this).parent().parent().find(".expandable-icon").toggleClass("AccordionShow");
-  $(this).parent().parent().find(".bar-chart-team-stats-grid.accordion").toggleClass("selected");
-
-  });
-
-
-	 //$(".bar-chart-team-stats-grid.accordion .event-heading-wrapper").click(function() {
-  		//$(".expandable-content-wrapper").toggleClass("AccordionShow");
-      //$(this).children(".stat-heading").toggleClass("AccordionShow");
-      //$(this).children(".expandable-icon").toggleClass("AccordionShow");
-		  //$(this).parent().parent().next('.expandable-content-wrapper').toggleClass("hide");
-    //});
-
-    //$(".bar-chart-wrapper.accordion").click(function() {
-      //$(".expandable-content-wrapper").toggleClass("AccordionShow");
-  		//$(this).parent().parent().find(".stat-heading").toggleClass("AccordionShow");
-      //$(this).parent().parent().find(".expandable-icon").toggleClass("AccordionShow");
-      //$(this).parent().parent().next('.expandable-content-wrapper').toggleClass("hide");
-	   //});
-
-});
-
-        function timeInPossession(){
-
-         let time = $("#home-time-in-possession-number").text();
-		     let no1 = new Date('1970-01-01T' + time + 'Z').getTime() / 1000;
-         //console.log(seconds);
-
-         let time2 = $("#away-time-in-possession-number").text();
-		     let no2 = new Date('1970-01-01T' + time2 + 'Z').getTime() / 1000;
-         //console.log(seconds);
-
-         let total = no1+no2; //10
-         let homeNum = no1/total;
-         let awayNum = no2/total;
-         let homePercentage = homeNum*100;
-         let awayPercentage = awayNum*100;
-         //alert("The result is "+total +no1 +no2);
-         //$("#home-time-in-possession-bar").css({width: homePercentage + "%" });
-         //$("#away-time-in-possession-bar").css({width: awayPercentage + "%" });
-
-         if (no1 >= no2) {
-    	   $("#home-time-in-possession-bar").css({width: homePercentage + "%" });
-         $("#away-time-in-possession-bar").css({width: 100 + "%" });
-		 		 }
-         if (no1 == 0 && no2 == 0) {
-         $("#home-time-in-possession-bar").css({width: 50 + "%" });
-         $("#away-time-in-possession-bar").css({width: 100 + "%" });
-         }
-         if (no2 > no1) {
-         $("#home-time-in-possession-bar").css({width: 100 + "%" });
-    	 	 $("#away-time-in-possession-bar").css({width: awayPercentage + "%" }).css("z-index","2");
-		 		 }
-         else {
-         }
-
-        }
-
-
-function barChartCalc(){
-
-	$('.team-stats').each(function() {
-	let no1 = parseInt($(this).find(".homestatnumber").filter(".number").text(),10);
-	let no2 = parseInt($(this).find(".awaystatnumber").filter(".number").text(),10);
-	let total = no1+no2; //10
-	let homeNum = no1/total;
-	let awayNum = no2/total;
-	let homePercentage = homeNum*100;
-	let awayPercentage = awayNum*100;
-
-	//console.log(no1,no2);
-
-	if (no1 >= no2) {
-	$(this).find(".home-team-bar").css({width: homePercentage + "%" });
-	$(this).find(".away-team-bar").css({width: 100 + "%" });
-	}
-	if (no1 == 0 && no2 == 0) {
-	$(this).find(".home-team-bar").css({width: 50 + "%" });
-	$(this).find(".away-team-bar").css({width: 100 + "%" });
-	}
-	if (no2 > no1) {
-	$(this).find(".home-team-bar").css({width: 100 + "%" });
-	$(this).find(".away-team-bar").css({width: awayPercentage + "%" }).css("z-index","2");
-	}
-	else {
-	}
-	});
+    if (no1 >= no2) {
+    $("#home-shots-bar").css({width: homePercentage + "%" });
+    $("#away-shots-bar").css({width: 100 + "%" });
 }
-
-function barChartExpPts(){
-
-	$('#total-shots').each(function() {
-	var no1text = ($("#home-team-exppts-number").text());
-	var no2text = ($("#away-team-exppts-number").text());
-
-  if (no1text.charAt(0) == "-") {
-    var no1 = no1text.substring(1);
-    //console.log("No1 minus number");
-  } else {
-    var no1 = no1text;
-    //console.log("No1 positive number");
-  }
-
-  if (no2text.charAt(0) == "-") {
-    var no2 = no2text.substring(1);
-    //console.log("No1 minus number");
-  } else {
-    var no2 = no2text;
-    //console.log("No1 positive number");
-  }
-
-  let no1Decimal = parseFloat(no1);
-  let no2Decimal = parseFloat(no2);
-
-	let total = no1Decimal+no2Decimal; //10
-
-  //console.log(no1, no2, no1Decimal, no2Decimal, total);
-
-	let homeNum = no1Decimal/total;
-	let awayNum = no2Decimal/total;
-	let homePercentage = homeNum*100;
-	let awayPercentage = awayNum*100;
-
-  //console.log(homeNum, awayNum, homePercentage, awayPercentage);
-
-  if (no1Decimal >= no2Decimal) {
-	$("#home-team-exppts-bar").css({width: homePercentage + "%" });
-	$("#away-team-exppts-bar").css({width: 100 + "%" });
-	}
-	if (no1Decimal == 0 && no2Decimal == 0) {
-	$("#home-team-exppts-bar").css({width: 50 + "%" });
-	$("#away-team-exppts-bar").css({width: 100 + "%" });
-	}
-	if (no2Decimal > no1Decimal) {
-	$("#home-team-exppts-bar").css({width: 100 + "%" });
-	$("#away-team-exppts-bar").css({width: awayPercentage + "%" }).css("z-index","2");
-	}
-	else {
-	}
-	});
+    if (no1 == 0 && no2 == 0) {
+    $("#home-shots-bar").css({width: 50 + "%" });
+    $("#away-shots-bar").css({width: 100 + "%" });
+    }
+    if (no2 > no1) {
+    $("#home-shots-bar").css({width: 100 + "%" });
+    $("#away-shots-bar").css({width: awayPercentage + "%" }).css("z-index","2");
 }
+    else {
+    }
 
-				//cdn//
-        function initialise() {
-				timeInPossession();
-				barChartCalc();
-        barChartExpPts();
-        }
+   }
+
+
+   //cdn//
+   function initialise() {
+   shots();
+   }
 
 $(document).ready(initialise);
