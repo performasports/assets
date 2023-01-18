@@ -307,6 +307,151 @@ function Add(){
 
    }
 
+   function tackles(){
+    let no1 = parseInt($("#home-tackles-number").text(),10);
+    let no2 = parseInt($("#away-tackles-number").text(),10);
+    let total = no1+no2; //10
+    let homeNum = no1/total;
+    let awayNum = no2/total;
+    let homePercentage = homeNum*100;
+    let awayPercentage = awayNum*100;
+    //alert("The result is "+result +no1 +no2);
+
+    //$("#home-psr-bar").css({width: homePercentage + "%" });
+
+    if (no1 >= no2) {
+    $("#home-tackles-bar").css({width: homePercentage + "%" });
+    $("#away-tackles-bar").css({width: 100 + "%" });
+}
+    if (no1 == 0 && no2 == 0) {
+    $("#home-tackles-bar").css({width: 50 + "%" });
+    $("#away-tackles-bar").css({width: 100 + "%" });
+    }
+    if (no2 > no1) {
+    $("#home-tackles-bar").css({width: 100 + "%" });
+    $("#away-tackles-bar").css({width: awayPercentage + "%" }).css("z-index","2");
+}
+    else {
+    }
+
+   }
+
+   function contact(){
+    let no1 = parseInt($("#home-contact-number").text(),10);
+    let no2 = parseInt($("#away-contact-number").text(),10);
+    let total = no1+no2; //10
+    let homeNum = no1/total;
+    let awayNum = no2/total;
+    let homePercentage = homeNum*100;
+    let awayPercentage = awayNum*100;
+    //alert("The result is "+result +no1 +no2);
+
+    //$("#home-psr-bar").css({width: homePercentage + "%" });
+
+    if (no1 >= no2) {
+    $("#home-contact-bar").css({width: homePercentage + "%" });
+    $("#away-contact-bar").css({width: 100 + "%" });
+}
+    if (no1 == 0 && no2 == 0) {
+    $("#home-contact-bar").css({width: 50 + "%" });
+    $("#away-contact-bar").css({width: 100 + "%" });
+    }
+    if (no2 > no1) {
+    $("#home-contact-bar").css({width: 100 + "%" });
+    $("#away-contact-bar").css({width: awayPercentage + "%" }).css("z-index","2");
+}
+    else {
+    }
+
+   }
+
+   function ballWon(){
+    let no1 = parseInt($("#home-ballWon-number").text(),10);
+    let no2 = parseInt($("#away-ballWon-number").text(),10);
+    let total = no1+no2; //10
+    let homeNum = no1/total;
+    let awayNum = no2/total;
+    let homePercentage = homeNum*100;
+    let awayPercentage = awayNum*100;
+    //alert("The result is "+result +no1 +no2);
+
+    //$("#home-psr-bar").css({width: homePercentage + "%" });
+
+    if (no1 >= no2) {
+    $("#home-ballWon-bar").css({width: homePercentage + "%" });
+    $("#away-ballWon-bar").css({width: 100 + "%" });
+}
+    if (no1 == 0 && no2 == 0) {
+    $("#home-ballWon-bar").css({width: 50 + "%" });
+    $("#away-ballWon-bar").css({width: 100 + "%" });
+    }
+    if (no2 > no1) {
+    $("#home-ballWon-bar").css({width: 100 + "%" });
+    $("#away-ballWon-bar").css({width: awayPercentage + "%" }).css("z-index","2");
+}
+    else {
+    }
+
+   }
+
+   function freesCon(){
+    let no1 = parseInt($("#home-freesCon-number").text(),10);
+    let no2 = parseInt($("#away-freesCon-number").text(),10);
+    let total = no1+no2; //10
+    let homeNum = no1/total;
+    let awayNum = no2/total;
+    let homePercentage = homeNum*100;
+    let awayPercentage = awayNum*100;
+    //alert("The result is "+result +no1 +no2);
+
+    //$("#home-psr-bar").css({width: homePercentage + "%" });
+
+    if (no1 >= no2) {
+    $("#home-freesCon-bar").css({width: homePercentage + "%" });
+    $("#away-freesCon-bar").css({width: 100 + "%" });
+}
+    if (no1 == 0 && no2 == 0) {
+    $("#home-freesCon-bar").css({width: 50 + "%" });
+    $("#away-freesCon-bar").css({width: 100 + "%" });
+    }
+    if (no2 > no1) {
+    $("#home-freesCon-bar").css({width: 100 + "%" });
+    $("#away-freesCon-bar").css({width: awayPercentage + "%" }).css("z-index","2");
+}
+    else {
+    }
+
+   }
+
+   function bookings(){
+    let no1 = parseInt($("#home-bookings-number").text(),10);
+    let no2 = parseInt($("#away-bookings-number").text(),10);
+    let total = no1+no2; //10
+    let homeNum = no1/total;
+    let awayNum = no2/total;
+    let homePercentage = homeNum*100;
+    let awayPercentage = awayNum*100;
+    //alert("The result is "+result +no1 +no2);
+
+    //$("#home-psr-bar").css({width: homePercentage + "%" });
+
+    if (no1 >= no2) {
+    $("#home-bookings-bar").css({width: homePercentage + "%" });
+    $("#away-bookings-bar").css({width: 100 + "%" });
+}
+    if (no1 == 0 && no2 == 0) {
+    $("#home-bookings-bar").css({width: 50 + "%" });
+    $("#away-bookings-bar").css({width: 100 + "%" });
+    }
+    if (no2 > no1) {
+    $("#home-bookings-bar").css({width: 100 + "%" });
+    $("#away-bookings-bar").css({width: awayPercentage + "%" }).css("z-index","2");
+}
+    else {
+    }
+
+   }
+
    //cdn//
    function initialise() {
    productivity();
@@ -319,6 +464,11 @@ function Add(){
    totalShotsConv();
    scoresFromPlay();
    scoresFromFrees();
+   tackles();
+   contact();
+   ballWon();
+   freesCon();
+   bookings();
    }
 
 $(document).ready(initialise);
