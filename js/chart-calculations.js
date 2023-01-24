@@ -1178,10 +1178,10 @@ function Add(){
     $("#awayKOShotFull").css('background-color', 'rgba(109, 179, 63, 0.5)');
 }
     if (zonePercentage < 80 && zonePercentage >= 50) {
-    $("#HomeKOShotFull").css('background-color', 'rgba(255, 180, 0, 0.5)');
+    $("#awayKOShotFull").css('background-color', 'rgba(255, 180, 0, 0.5)');
 }
     if (zonePercentage < 50) {
-    $("#HomeKOShotFull").css('background-color', 'rgba(251, 34, 0, 0.5)');
+    $("#awayKOShotFull").css('background-color', 'rgba(251, 34, 0, 0.5)');
 }
     else {
     }
