@@ -521,9 +521,9 @@ function Add(){
 
    }
 
-   function HomePos(){
-    let no1 = parseInt($("#HomePos").text(),10);
-    let no2 = parseInt($("#HomePosAvg").text(),10);
+   function homePos(){
+    let no1 = parseInt($("#homePos").text(),10);
+    let no2 = parseInt($("#homePosAvg").text(),10);
     let zoneNum = no1/no2;
     let zonePercentage = zoneNum*100;
     //alert("The result is "+result +no1 +no2);
@@ -531,13 +531,13 @@ function Add(){
     //$("#home-psr-bar").css({width: homePercentage + "%" });
 
     if (zonePercentage >= 80) {
-    $("#HomePos").css('background-color', 'rgba(109, 179, 63, 0.5)');
+    $("#homePos").css('background-color', 'rgba(109, 179, 63, 0.5)');
 }
     if (zonePercentage < 80 && zonePercentage >= 50) {
-    $("#HomePos").css('background-color', 'rgba(255, 180, 0, 0.5)');
+    $("#homePos").css('background-color', 'rgba(255, 180, 0, 0.5)');
 }
     if (zonePercentage < 50) {
-    $("#HomePos").css('background-color', 'rgba(251, 34, 0, 0.5)');
+    $("#homePos").css('background-color', 'rgba(251, 34, 0, 0.5)');
 }
     else {
     }
@@ -633,7 +633,7 @@ function Add(){
    homeAttacks();
    homeKOs();
    homeFrees();
-   HomePos();
+   homePos();
    HomeTackles();
    HomeBallWon();
    HomeShotsInside();
