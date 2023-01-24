@@ -452,6 +452,29 @@ function Add(){
 
    }
 
+   function homeAttacks(){
+    let no1 = parseInt($("#homeAttacks").text(),10);
+    let no2 = parseInt($("#homeAttacksAvg").text(),10);
+    let zoneNum = no1/no2;
+    let zonePercentage = zoneNum*100;
+    //alert("The result is "+result +no1 +no2);
+
+    //$("#home-psr-bar").css({width: homePercentage + "%" });
+
+    if (zonePercentage >= 80) {
+    $("#homeAttacks").css({rgba(109, 179, 63, 0.5)});
+}
+    if (zonePercentage < 80 && zonePercentage >= 50) {
+    $("#homeAttacks").css({rgba(255, 180, 0, 0.5)});
+}
+    if (zonePercentage < 50) {
+    $("#homeAttacks").css({rgba(251, 34, 0, 0.5)});
+}
+    else {
+    }
+
+   }
+
    //cdn//
    function initialise() {
    productivity();
@@ -469,6 +492,7 @@ function Add(){
    ballWon();
    freesCon();
    bookings();
+   homeAttacks();
    }
 
 $(document).ready(initialise);
