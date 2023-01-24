@@ -498,6 +498,121 @@ function Add(){
 
    }
 
+   function homeFrees(){
+    let no1 = parseInt($("#homeFrees").text(),10);
+    let no2 = parseInt($("#homeFreesAvg").text(),10);
+    let zoneNum = no1/no2;
+    let zonePercentage = zoneNum*100;
+    //alert("The result is "+result +no1 +no2);
+
+    //$("#home-psr-bar").css({width: homePercentage + "%" });
+
+    if (zonePercentage >= 80) {
+    $("#homeFrees").css('background-color', 'rgba(109, 179, 63, 0.5)');
+}
+    if (zonePercentage < 80 && zonePercentage >= 50) {
+    $("#homeFrees").css('background-color', 'rgba(255, 180, 0, 0.5)');
+}
+    if (zonePercentage < 50) {
+    $("#homeFrees").css('background-color', 'rgba(251, 34, 0, 0.5)');
+}
+    else {
+    }
+
+   }
+
+   function HomePos(){
+    let no1 = parseInt($("#HomePos").text(),10);
+    let no2 = parseInt($("#HomePosAvg").text(),10);
+    let zoneNum = no1/no2;
+    let zonePercentage = zoneNum*100;
+    //alert("The result is "+result +no1 +no2);
+
+    //$("#home-psr-bar").css({width: homePercentage + "%" });
+
+    if (zonePercentage >= 80) {
+    $("#HomePos").css('background-color', 'rgba(109, 179, 63, 0.5)');
+}
+    if (zonePercentage < 80 && zonePercentage >= 50) {
+    $("#HomePos").css('background-color', 'rgba(255, 180, 0, 0.5)');
+}
+    if (zonePercentage < 50) {
+    $("#HomePos").css('background-color', 'rgba(251, 34, 0, 0.5)');
+}
+    else {
+    }
+
+   }
+
+   function HomeTackles(){
+    let no1 = parseInt($("#HomeTackles").text(),10);
+    let no2 = parseInt($("#HomeTacklesAvg").text(),10);
+    let zoneNum = no1/no2;
+    let zonePercentage = zoneNum*100;
+    //alert("The result is "+result +no1 +no2);
+
+    //$("#home-psr-bar").css({width: homePercentage + "%" });
+
+    if (zonePercentage >= 80) {
+    $("#HomeTackles").css('background-color', 'rgba(109, 179, 63, 0.5)');
+}
+    if (zonePercentage < 80 && zonePercentage >= 50) {
+    $("#HomeTackles").css('background-color', 'rgba(255, 180, 0, 0.5)');
+}
+    if (zonePercentage < 50) {
+    $("#HomeTackles").css('background-color', 'rgba(251, 34, 0, 0.5)');
+}
+    else {
+    }
+
+   }
+
+   function HomeBallWon(){
+    let no1 = parseInt($("#HomeBallWon").text(),10);
+    let no2 = parseInt($("#HomeBallWonAvg").text(),10);
+    let zoneNum = no1/no2;
+    let zonePercentage = zoneNum*100;
+    //alert("The result is "+result +no1 +no2);
+
+    //$("#home-psr-bar").css({width: homePercentage + "%" });
+
+    if (zonePercentage >= 80) {
+    $("#HomeBallWon").css('background-color', 'rgba(109, 179, 63, 0.5)');
+}
+    if (zonePercentage < 80 && zonePercentage >= 50) {
+    $("#HomeBallWon").css('background-color', 'rgba(255, 180, 0, 0.5)');
+}
+    if (zonePercentage < 50) {
+    $("#HomeBallWon").css('background-color', 'rgba(251, 34, 0, 0.5)');
+}
+    else {
+    }
+
+   }
+
+   function HomeShotsInside(){
+    let no1 = parseInt($("#HomeShotsInside").text(),10);
+    let no2 = parseInt($("#HomeShotsInsideAvg").text(),10);
+    let zoneNum = no1/no2;
+    let zonePercentage = zoneNum*100;
+    //alert("The result is "+result +no1 +no2);
+
+    //$("#home-psr-bar").css({width: homePercentage + "%" });
+
+    if (zonePercentage >= 80) {
+    $("#HomeShotsInside").css('background-color', 'rgba(109, 179, 63, 0.5)');
+}
+    if (zonePercentage < 80 && zonePercentage >= 50) {
+    $("#HomeShotsInside").css('background-color', 'rgba(255, 180, 0, 0.5)');
+}
+    if (zonePercentage < 50) {
+    $("#HomeShotsInside").css('background-color', 'rgba(251, 34, 0, 0.5)');
+}
+    else {
+    }
+
+   }
+
    //cdn//
    function initialise() {
    productivity();
@@ -517,6 +632,11 @@ function Add(){
    bookings();
    homeAttacks();
    homeKOs();
+   homeFrees();
+   HomePos();
+   HomeTackles();
+   HomeBallWon();
+   HomeShotsInside();
    }
 
 $(document).ready(initialise);
