@@ -895,6 +895,12 @@ function Add(){
    HomeOppShot();
    HomeContacts();
    HomeBWShots();
+   HomeAttScore();
+   HomeKOShot();
+   HomeFreesScore();
+   HomePosLosScore();
+   HomeTackleTO();
+   HomeBWScore();
    }
 
 $(document).ready(initialise);
