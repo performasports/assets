@@ -866,6 +866,420 @@ function Add(){
 
    }
 
+   function awayAttacks(){
+    let no1 = parseInt($("#awayAttacks").text(),10);
+    let no2 = parseInt($("#homeAttacksAvg").text(),10);
+    let zoneNum = no1/no2;
+    let zonePercentage = zoneNum*100;
+    //alert("The result is "+result +no1 +no2);
+
+    //$("#home-psr-bar").css({width: homePercentage + "%" });
+
+    if (zonePercentage >= 80) {
+    $("#awayAttacks").css('background-color', 'rgba(109, 179, 63, 0.5)');
+}
+    if (zonePercentage < 80 && zonePercentage >= 50) {
+    $("#awayAttacks").css('background-color', 'rgba(255, 180, 0, 0.5)');
+}
+    if (zonePercentage < 50) {
+    $("#awayAttacks").css('background-color', 'rgba(251, 34, 0, 0.5)');
+}
+    else {
+    }
+
+   }
+
+   function awayKOs(){
+    let no1 = parseInt($("#awayKOs").text(),10);
+    let no2 = parseInt($("#HomeKOsAvg").text(),10);
+    let zoneNum = no1/no2;
+    let zonePercentage = zoneNum*100;
+    //alert("The result is "+result +no1 +no2);
+
+    //$("#home-psr-bar").css({width: homePercentage + "%" });
+
+    if (zonePercentage >= 80) {
+    $("#awayKOs").css('background-color', 'rgba(109, 179, 63, 0.5)');
+}
+    if (zonePercentage < 80 && zonePercentage >= 50) {
+    $("#awayKOs").css('background-color', 'rgba(255, 180, 0, 0.5)');
+}
+    if (zonePercentage < 50) {
+    $("#awayKOs").css('background-color', 'rgba(251, 34, 0, 0.5)');
+}
+    else {
+    }
+
+   }
+
+   function awayFrees(){
+    let no1 = parseInt($("#awayFrees").text(),10);
+    let no2 = parseInt($("#homeFreesAvg").text(),10);
+    let zoneNum = no1/no2;
+    let zonePercentage = zoneNum*100;
+    //alert("The result is "+result +no1 +no2);
+
+    //$("#home-psr-bar").css({width: homePercentage + "%" });
+
+    if (zonePercentage >= 80) {
+    $("#awayFrees").css('background-color', 'rgba(109, 179, 63, 0.5)');
+}
+    if (zonePercentage < 80 && zonePercentage >= 50) {
+    $("#awayFrees").css('background-color', 'rgba(255, 180, 0, 0.5)');
+}
+    if (zonePercentage < 50) {
+    $("#awayFrees").css('background-color', 'rgba(251, 34, 0, 0.5)');
+}
+    else {
+    }
+
+   }
+
+   function awayPos(){
+    let no1 = parseInt($("#awayPos").text(),10);
+    let no2 = parseInt($("#homePosAvg").text(),10);
+    let zoneNum = no1/no2;
+    let zonePercentage = zoneNum*100;
+    //alert("The result is "+result +no1 +no2);
+
+    //$("#home-psr-bar").css({width: homePercentage + "%" });
+
+    if (zonePercentage >= 80) {
+    $("#awayPos").css('background-color', 'rgba(109, 179, 63, 0.5)');
+}
+    if (zonePercentage < 80 && zonePercentage >= 50) {
+    $("#awayPos").css('background-color', 'rgba(255, 180, 0, 0.5)');
+}
+    if (zonePercentage < 50) {
+    $("#awayPos").css('background-color', 'rgba(251, 34, 0, 0.5)');
+}
+    else {
+    }
+
+   }
+
+   function awayTackles(){
+    let no1 = parseInt($("#awayTackles").text(),10);
+    let no2 = parseInt($("#homeTacklesAvg").text(),10);
+    let zoneNum = no1/no2;
+    let zonePercentage = zoneNum*100;
+    //alert("The result is "+result +no1 +no2);
+
+    //$("#home-psr-bar").css({width: homePercentage + "%" });
+
+    if (zonePercentage >= 80) {
+    $("#awayTackles").css('background-color', 'rgba(109, 179, 63, 0.5)');
+}
+    if (zonePercentage < 80 && zonePercentage >= 50) {
+    $("#awayTackles").css('background-color', 'rgba(255, 180, 0, 0.5)');
+}
+    if (zonePercentage < 50) {
+    $("#awayTackles").css('background-color', 'rgba(251, 34, 0, 0.5)');
+}
+    else {
+    }
+
+   }
+
+   function awayBallWon(){
+    let no1 = parseInt($("#awayBallWon").text(),10);
+    let no2 = parseInt($("#HomeBallWonAvg").text(),10);
+    let zoneNum = no1/no2;
+    let zonePercentage = zoneNum*100;
+    //alert("The result is "+result +no1 +no2);
+
+    //$("#home-psr-bar").css({width: homePercentage + "%" });
+
+    if (zonePercentage >= 80) {
+    $("#awayBallWon").css('background-color', 'rgba(109, 179, 63, 0.5)');
+}
+    if (zonePercentage < 80 && zonePercentage >= 50) {
+    $("#awayBallWon").css('background-color', 'rgba(255, 180, 0, 0.5)');
+}
+    if (zonePercentage < 50) {
+    $("#awayBallWon").css('background-color', 'rgba(251, 34, 0, 0.5)');
+}
+    else {
+    }
+
+   }
+
+   function awayShotsInside(){
+    let no1 = parseInt($("#awayShotsInside").text(),10);
+    let no2 = parseInt($("#HomeShotsInsideAvg").text(),10);
+    let zoneNum = no1/no2;
+    let zonePercentage = zoneNum*100;
+    //alert("The result is "+result +no1 +no2);
+
+    //$("#home-psr-bar").css({width: homePercentage + "%" });
+
+    if (zonePercentage >= 80) {
+    $("#awayShotsInside").css('background-color', 'rgba(109, 179, 63, 0.5)');
+}
+    if (zonePercentage < 80 && zonePercentage >= 50) {
+    $("#awayShotsInside").css('background-color', 'rgba(255, 180, 0, 0.5)');
+}
+    if (zonePercentage < 50) {
+    $("#awayShotsInside").css('background-color', 'rgba(251, 34, 0, 0.5)');
+}
+    else {
+    }
+
+   }
+
+   function awayKOShots(){
+    let no1 = parseInt($("#awayKOShots").text(),10);
+    let no2 = parseInt($("#HomeKOShotsAvg").text(),10);
+    let zoneNum = no1/no2;
+    let zonePercentage = zoneNum*100;
+    //alert("The result is "+result +no1 +no2);
+
+    //$("#home-psr-bar").css({width: homePercentage + "%" });
+
+    if (zonePercentage >= 80) {
+    $("#awayKOShots").css('background-color', 'rgba(109, 179, 63, 0.5)');
+}
+    if (zonePercentage < 80 && zonePercentage >= 50) {
+    $("#awayKOShots").css('background-color', 'rgba(255, 180, 0, 0.5)');
+}
+    if (zonePercentage < 50) {
+    $("#awayKOShots").css('background-color', 'rgba(251, 34, 0, 0.5)');
+}
+    else {
+    }
+
+   }
+
+   function awayOppFrees(){
+    let no1 = parseInt($("#awayOppFrees").text(),10);
+    let no2 = parseInt($("#HomeOppFreesAvg").text(),10);
+    let zoneNum = no1/no2;
+    let zonePercentage = zoneNum*100;
+    //alert("The result is "+result +no1 +no2);
+
+    //$("#home-psr-bar").css({width: homePercentage + "%" });
+
+    if (zonePercentage >= 80) {
+    $("#awayOppFrees").css('background-color', 'rgba(109, 179, 63, 0.5)');
+}
+    if (zonePercentage < 80 && zonePercentage >= 50) {
+    $("#awayOppFrees").css('background-color', 'rgba(255, 180, 0, 0.5)');
+}
+    if (zonePercentage < 50) {
+    $("#awayOppFrees").css('background-color', 'rgba(251, 34, 0, 0.5)');
+}
+    else {
+    }
+
+   }
+
+   function awayOppShot(){
+    let no1 = parseInt($("#awayOppShot").text(),10);
+    let no2 = parseInt($("#HomeOppShotAvg").text(),10);
+    let zoneNum = no1/no2;
+    let zonePercentage = zoneNum*100;
+    //alert("The result is "+result +no1 +no2);
+
+    //$("#home-psr-bar").css({width: homePercentage + "%" });
+
+    if (zonePercentage >= 80) {
+    $("#awayOppShot").css('background-color', 'rgba(109, 179, 63, 0.5)');
+}
+    if (zonePercentage < 80 && zonePercentage >= 50) {
+    $("#awayOppShot").css('background-color', 'rgba(255, 180, 0, 0.5)');
+}
+    if (zonePercentage < 50) {
+    $("#awayOppShot").css('background-color', 'rgba(251, 34, 0, 0.5)');
+}
+    else {
+    }
+
+   }
+
+   function awayContacts(){
+    let no1 = parseInt($("#awayContacts").text(),10);
+    let no2 = parseInt($("#HomeContactsAvg").text(),10);
+    let zoneNum = no1/no2;
+    let zonePercentage = zoneNum*100;
+    //alert("The result is "+result +no1 +no2);
+
+    //$("#home-psr-bar").css({width: homePercentage + "%" });
+
+    if (zonePercentage >= 80) {
+    $("#awayContacts").css('background-color', 'rgba(109, 179, 63, 0.5)');
+}
+    if (zonePercentage < 80 && zonePercentage >= 50) {
+    $("#awayContacts").css('background-color', 'rgba(255, 180, 0, 0.5)');
+}
+    if (zonePercentage < 50) {
+    $("#awayContacts").css('background-color', 'rgba(251, 34, 0, 0.5)');
+}
+    else {
+    }
+
+   }
+
+   function awayBWShots(){
+    let no1 = parseInt($("#awayBWShots").text(),10);
+    let no2 = parseInt($("#HomeBWShotsAvg").text(),10);
+    let zoneNum = no1/no2;
+    let zonePercentage = zoneNum*100;
+    //alert("The result is "+result +no1 +no2);
+
+    //$("#home-psr-bar").css({width: homePercentage + "%" });
+
+    if (zonePercentage >= 80) {
+    $("#awayBWShots").css('background-color', 'rgba(109, 179, 63, 0.5)');
+}
+    if (zonePercentage < 80 && zonePercentage >= 50) {
+    $("#awayBWShots").css('background-color', 'rgba(255, 180, 0, 0.5)');
+}
+    if (zonePercentage < 50) {
+    $("#awayBWShots").css('background-color', 'rgba(251, 34, 0, 0.5)');
+}
+    else {
+    }
+
+   }
+
+   function awayAttScore(){
+    let no1 = parseInt($("#awayAttScore").text(),10);
+    let no2 = parseInt($("#HomeAttScoreAvg").text(),10);
+    let zoneNum = no1/no2;
+    let zonePercentage = zoneNum*100;
+    //alert("The result is "+result +no1 +no2);
+
+    //$("#home-psr-bar").css({width: homePercentage + "%" });
+
+    if (zonePercentage >= 80) {
+    $("#awayAttScoreFull").css('background-color', 'rgba(109, 179, 63, 0.5)');
+}
+    if (zonePercentage < 80 && zonePercentage >= 50) {
+    $("#awayAttScoreFull").css('background-color', 'rgba(255, 180, 0, 0.5)');
+}
+    if (zonePercentage < 50) {
+    $("#awayAttScoreFull").css('background-color', 'rgba(251, 34, 0, 0.5)');
+}
+    else {
+    }
+
+   }
+
+   function awayKOShot(){
+    let no1 = parseInt($("#awayKOShot").text(),10);
+    let no2 = parseInt($("#HomeKOShotAvg").text(),10);
+    let zoneNum = no1/no2;
+    let zonePercentage = zoneNum*100;
+    //alert("The result is "+result +no1 +no2);
+
+    //$("#home-psr-bar").css({width: homePercentage + "%" });
+
+    if (zonePercentage >= 80) {
+    $("#awayKOShotFull").css('background-color', 'rgba(109, 179, 63, 0.5)');
+}
+    if (zonePercentage < 80 && zonePercentage >= 50) {
+    $("#HomeKOShotFull").css('background-color', 'rgba(255, 180, 0, 0.5)');
+}
+    if (zonePercentage < 50) {
+    $("#HomeKOShotFull").css('background-color', 'rgba(251, 34, 0, 0.5)');
+}
+    else {
+    }
+
+   }
+
+   function awayFreesScore(){
+    let no1 = parseInt($("#awayFreesScore").text(),10);
+    let no2 = parseInt($("#HomeFreesScoreAvg").text(),10);
+    let zoneNum = no2/no1;
+    let zonePercentage = zoneNum*100;
+    //alert("The result is "+result +no1 +no2);
+
+    //$("#home-psr-bar").css({width: homePercentage + "%" });
+
+    if (zonePercentage >= 80) {
+    $("#awayFreesScoreFull").css('background-color', 'rgba(109, 179, 63, 0.5)');
+}
+    if (zonePercentage < 80 && zonePercentage >= 50) {
+    $("#awayFreesScoreFull").css('background-color', 'rgba(255, 180, 0, 0.5)');
+}
+    if (zonePercentage < 50) {
+    $("#awayFreesScoreFull").css('background-color', 'rgba(251, 34, 0, 0.5)');
+}
+    else {
+    }
+
+   }
+
+   function awayPosLosScore(){
+    let no1 = parseInt($("#awayPosLosScore").text(),10);
+    let no2 = parseInt($("#HomePosLosScoreAvg").text(),10);
+    let zoneNum = no2/no1;
+    let zonePercentage = zoneNum*100;
+    //alert("The result is "+result +no1 +no2);
+
+    //$("#home-psr-bar").css({width: homePercentage + "%" });
+
+    if (zonePercentage >= 80) {
+    $("#awayPosLosScoreFull").css('background-color', 'rgba(109, 179, 63, 0.5)');
+}
+    if (zonePercentage < 80 && zonePercentage >= 50) {
+    $("#awayPosLosScoreFull").css('background-color', 'rgba(255, 180, 0, 0.5)');
+}
+    if (zonePercentage < 50) {
+    $("#awayPosLosScoreFull").css('background-color', 'rgba(251, 34, 0, 0.5)');
+}
+    else {
+    }
+
+   }
+
+   function awayTackleTO(){
+    let no1 = parseInt($("#awayTackleTO").text(),10);
+    let no2 = parseInt($("#HomeTackleTOAvg").text(),10);
+    let zoneNum = no1/no2;
+    let zonePercentage = zoneNum*100;
+    //alert("The result is "+result +no1 +no2);
+
+    //$("#home-psr-bar").css({width: homePercentage + "%" });
+
+    if (zonePercentage >= 80) {
+    $("#awayTackleTO").css('background-color', 'rgba(109, 179, 63, 0.5)');
+}
+    if (zonePercentage < 80 && zonePercentage >= 50) {
+    $("#awayTackleTO").css('background-color', 'rgba(255, 180, 0, 0.5)');
+}
+    if (zonePercentage < 50) {
+    $("#awayTackleTO").css('background-color', 'rgba(251, 34, 0, 0.5)');
+}
+    else {
+    }
+
+   }
+
+   function awayBWScore(){
+    let no1 = parseInt($("#awayBWScore").text(),10);
+    let no2 = parseInt($("#HomeBWScoreAvg").text(),10);
+    let zoneNum = no1/no2;
+    let zonePercentage = zoneNum*100;
+    //alert("The result is "+result +no1 +no2);
+
+    //$("#home-psr-bar").css({width: homePercentage + "%" });
+
+    if (zonePercentage >= 80) {
+    $("#awayBWScoreFull").css('background-color', 'rgba(109, 179, 63, 0.5)');
+}
+    if (zonePercentage < 80 && zonePercentage >= 50) {
+    $("#awayBWScoreFull").css('background-color', 'rgba(255, 180, 0, 0.5)');
+}
+    if (zonePercentage < 50) {
+    $("#awayBWScoreFull").css('background-color', 'rgba(251, 34, 0, 0.5)');
+}
+    else {
+    }
+
+   }
+
    //cdn//
    function initialise() {
    productivity();
@@ -901,6 +1315,24 @@ function Add(){
    HomePosLosScore();
    HomeTackleTO();
    HomeBWScore();
+   awayAttacks();
+   awayKOs();
+   awayFrees();
+   awayPos();
+   awayTackles();
+   awayBallWon();
+   awayShotsInside();
+   awayKOShots();
+   awayOppFrees();
+   awayOppShot();
+   awayContacts();
+   awayBWShots();
+   awayAttScore();
+   awayKOShot();
+   awayFreesScore();
+   awayPosLosScore();
+   awayTackleTO();
+   awayBWScore();
    }
 
 $(document).ready(initialise);
