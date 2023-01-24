@@ -461,7 +461,7 @@ function Add(){
 
     //$("#home-psr-bar").css({width: homePercentage + "%" });
 
-    if (zonePercentage >= 80 || zonePercentage = NaN) {
+    if (zonePercentage >= 80) {
     $("#homeAttacks").css('background-color', 'rgba(109, 179, 63, 0.5)');
 }
     if (zonePercentage < 80 && zonePercentage >= 50) {
@@ -484,7 +484,7 @@ function Add(){
 
     //$("#home-psr-bar").css({width: homePercentage + "%" });
 
-    if (zonePercentage >= 80 || zonePercentage = NaN) {
+    if (zonePercentage >= 80) {
     $("#HomeKOs").css('background-color', 'rgba(109, 179, 63, 0.5)');
 }
     if (zonePercentage < 80 && zonePercentage >= 50) {
@@ -507,7 +507,7 @@ function Add(){
 
     //$("#home-psr-bar").css({width: homePercentage + "%" });
 
-    if (zonePercentage >= 80 || zonePercentage = NaN) {
+    if (zonePercentage >= 80) {
     $("#homeFrees").css('background-color', 'rgba(109, 179, 63, 0.5)');
 }
     if (zonePercentage < 80 && zonePercentage >= 50) {
@@ -530,7 +530,7 @@ function Add(){
 
     //$("#home-psr-bar").css({width: homePercentage + "%" });
 
-    if (zonePercentage >= 80 || zonePercentage = NaN) {
+    if (zonePercentage >= 80) {
     $("#homePos").css('background-color', 'rgba(109, 179, 63, 0.5)');
 }
     if (zonePercentage < 80 && zonePercentage >= 50) {
@@ -553,7 +553,7 @@ function Add(){
 
     //$("#home-psr-bar").css({width: homePercentage + "%" });
 
-    if (zonePercentage >= 80 || zonePercentage = NaN) {
+    if (zonePercentage >= 80) {
     $("#homeTackles").css('background-color', 'rgba(109, 179, 63, 0.5)');
 }
     if (zonePercentage < 80 && zonePercentage >= 50) {
@@ -576,7 +576,7 @@ function Add(){
 
     //$("#home-psr-bar").css({width: homePercentage + "%" });
 
-    if (zonePercentage >= 80 || zonePercentage = NaN) {
+    if (zonePercentage >= 80) {
     $("#HomeBallWon").css('background-color', 'rgba(109, 179, 63, 0.5)');
 }
     if (zonePercentage < 80 && zonePercentage >= 50) {
@@ -599,7 +599,7 @@ function Add(){
 
     //$("#home-psr-bar").css({width: homePercentage + "%" });
 
-    if (zonePercentage >= 80 || zonePercentage = NaN) {
+    if (zonePercentage >= 80) {
     $("#HomeShotsInside").css('background-color', 'rgba(109, 179, 63, 0.5)');
 }
     if (zonePercentage < 80 && zonePercentage >= 50) {
@@ -622,7 +622,7 @@ function Add(){
 
     //$("#home-psr-bar").css({width: homePercentage + "%" });
 
-    if (zonePercentage >= 80 || zonePercentage = NaN) {
+    if (zonePercentage >= 80) {
     $("#HomeKOShots").css('background-color', 'rgba(109, 179, 63, 0.5)');
 }
     if (zonePercentage < 80 && zonePercentage >= 50) {
@@ -645,7 +645,7 @@ function Add(){
 
     //$("#home-psr-bar").css({width: homePercentage + "%" });
 
-    if (zonePercentage >= 80 || zonePercentage = NaN) {
+    if (zonePercentage >= 80) {
     $("#HomeOppFrees").css('background-color', 'rgba(109, 179, 63, 0.5)');
 }
     if (zonePercentage < 80 && zonePercentage >= 50) {
@@ -668,7 +668,7 @@ function Add(){
 
     //$("#home-psr-bar").css({width: homePercentage + "%" });
 
-    if (zonePercentage >= 80 || zonePercentage = NaN) {
+    if (zonePercentage >= 80) {
     $("#HomeOppShot").css('background-color', 'rgba(109, 179, 63, 0.5)');
 }
     if (zonePercentage < 80 && zonePercentage >= 50) {
@@ -691,7 +691,7 @@ function Add(){
 
     //$("#home-psr-bar").css({width: homePercentage + "%" });
 
-    if (zonePercentage >= 80 || zonePercentage = NaN) {
+    if (zonePercentage >= 80) {
     $("#HomeContacts").css('background-color', 'rgba(109, 179, 63, 0.5)');
 }
     if (zonePercentage < 80 && zonePercentage >= 50) {
@@ -714,7 +714,7 @@ function Add(){
 
     //$("#home-psr-bar").css({width: homePercentage + "%" });
 
-    if (zonePercentage >= 80 || zonePercentage = NaN) {
+    if (zonePercentage >= 80) {
     $("#HomeBWShots").css('background-color', 'rgba(109, 179, 63, 0.5)');
 }
     if (zonePercentage < 80 && zonePercentage >= 50) {
