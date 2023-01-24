@@ -728,6 +728,144 @@ function Add(){
 
    }
 
+   function HomeAttScore(){
+    let no1 = parseInt($("#HomeAttScore").text(),10);
+    let no2 = parseInt($("#HomeAttScoreAvg").text(),10);
+    let zoneNum = no1/no2;
+    let zonePercentage = zoneNum*100;
+    //alert("The result is "+result +no1 +no2);
+
+    //$("#home-psr-bar").css({width: homePercentage + "%" });
+
+    if (zonePercentage >= 80) {
+    $("#HomeAttScoreFull").css('background-color', 'rgba(109, 179, 63, 0.5)');
+}
+    if (zonePercentage < 80 && zonePercentage >= 50) {
+    $("#HomeAttScoreFull").css('background-color', 'rgba(255, 180, 0, 0.5)');
+}
+    if (zonePercentage < 50) {
+    $("#HomeAttScoreFull").css('background-color', 'rgba(251, 34, 0, 0.5)');
+}
+    else {
+    }
+
+   }
+
+   function HomeKOShot(){
+    let no1 = parseInt($("#HomeKOShot").text(),10);
+    let no2 = parseInt($("#HomeKOShotAvg").text(),10);
+    let zoneNum = no1/no2;
+    let zonePercentage = zoneNum*100;
+    //alert("The result is "+result +no1 +no2);
+
+    //$("#home-psr-bar").css({width: homePercentage + "%" });
+
+    if (zonePercentage >= 80) {
+    $("#HomeKOShotFull").css('background-color', 'rgba(109, 179, 63, 0.5)');
+}
+    if (zonePercentage < 80 && zonePercentage >= 50) {
+    $("#HomeKOShotFull").css('background-color', 'rgba(255, 180, 0, 0.5)');
+}
+    if (zonePercentage < 50) {
+    $("#HomeKOShotFull").css('background-color', 'rgba(251, 34, 0, 0.5)');
+}
+    else {
+    }
+
+   }
+
+   function HomeFreesScore(){
+    let no1 = parseInt($("#HomeFreesScore").text(),10);
+    let no2 = parseInt($("#HomeFreesScoreAvg").text(),10);
+    let zoneNum = no1/no2;
+    let zonePercentage = zoneNum*100;
+    //alert("The result is "+result +no1 +no2);
+
+    //$("#home-psr-bar").css({width: homePercentage + "%" });
+
+    if (zonePercentage >= 80) {
+    $("#HomeFreesScoreFull").css('background-color', 'rgba(109, 179, 63, 0.5)');
+}
+    if (zonePercentage < 80 && zonePercentage >= 50) {
+    $("#HomeFreesScoreFull").css('background-color', 'rgba(255, 180, 0, 0.5)');
+}
+    if (zonePercentage < 50) {
+    $("#HomeFreesScoreFull").css('background-color', 'rgba(251, 34, 0, 0.5)');
+}
+    else {
+    }
+
+   }
+
+   function HomePosLosScore(){
+    let no1 = parseInt($("#HomePosLosScore").text(),10);
+    let no2 = parseInt($("#HomePosLosScoreAvg").text(),10);
+    let zoneNum = no1/no2;
+    let zonePercentage = zoneNum*100;
+    //alert("The result is "+result +no1 +no2);
+
+    //$("#home-psr-bar").css({width: homePercentage + "%" });
+
+    if (zonePercentage >= 80) {
+    $("#HomePosLosScoreFull").css('background-color', 'rgba(109, 179, 63, 0.5)');
+}
+    if (zonePercentage < 80 && zonePercentage >= 50) {
+    $("#HomePosLosScoreFull").css('background-color', 'rgba(255, 180, 0, 0.5)');
+}
+    if (zonePercentage < 50) {
+    $("#HomePosLosScoreFull").css('background-color', 'rgba(251, 34, 0, 0.5)');
+}
+    else {
+    }
+
+   }
+
+   function HomeTackleTO(){
+    let no1 = parseInt($("#HomeTackleTO").text(),10);
+    let no2 = parseInt($("#HomeTackleTOAvg").text(),10);
+    let zoneNum = no1/no2;
+    let zonePercentage = zoneNum*100;
+    //alert("The result is "+result +no1 +no2);
+
+    //$("#home-psr-bar").css({width: homePercentage + "%" });
+
+    if (zonePercentage >= 80) {
+    $("#HomeTackleTO").css('background-color', 'rgba(109, 179, 63, 0.5)');
+}
+    if (zonePercentage < 80 && zonePercentage >= 50) {
+    $("#HomeTackleTO").css('background-color', 'rgba(255, 180, 0, 0.5)');
+}
+    if (zonePercentage < 50) {
+    $("#HomeTackleTO").css('background-color', 'rgba(251, 34, 0, 0.5)');
+}
+    else {
+    }
+
+   }
+
+   function HomeBWScore(){
+    let no1 = parseInt($("#HomeBWScore").text(),10);
+    let no2 = parseInt($("#HomeBWScoreAvg").text(),10);
+    let zoneNum = no1/no2;
+    let zonePercentage = zoneNum*100;
+    //alert("The result is "+result +no1 +no2);
+
+    //$("#home-psr-bar").css({width: homePercentage + "%" });
+
+    if (zonePercentage >= 80) {
+    $("#HomeBWScoreFull").css('background-color', 'rgba(109, 179, 63, 0.5)');
+}
+    if (zonePercentage < 80 && zonePercentage >= 50) {
+    $("#HomeBWScoreFull").css('background-color', 'rgba(255, 180, 0, 0.5)');
+}
+    if (zonePercentage < 50) {
+    $("#HomeBWScoreFull").css('background-color', 'rgba(251, 34, 0, 0.5)');
+}
+    else {
+    }
+
+   }
+
    //cdn//
    function initialise() {
    productivity();
