@@ -461,7 +461,7 @@ function Add(){
 
     //$("#home-psr-bar").css({width: homePercentage + "%" });
 
-    if (zonePercentage >= 80) {
+    if (zonePercentage >= 80 || zonePercentage = NaN) {
     $("#homeAttacks").css('background-color', 'rgba(109, 179, 63, 0.5)');
 }
     if (zonePercentage < 80 && zonePercentage >= 50) {
@@ -484,7 +484,7 @@ function Add(){
 
     //$("#home-psr-bar").css({width: homePercentage + "%" });
 
-    if (zonePercentage >= 80) {
+    if (zonePercentage >= 80 || zonePercentage = NaN) {
     $("#HomeKOs").css('background-color', 'rgba(109, 179, 63, 0.5)');
 }
     if (zonePercentage < 80 && zonePercentage >= 50) {
@@ -507,7 +507,7 @@ function Add(){
 
     //$("#home-psr-bar").css({width: homePercentage + "%" });
 
-    if (zonePercentage >= 80) {
+    if (zonePercentage >= 80 || zonePercentage = NaN) {
     $("#homeFrees").css('background-color', 'rgba(109, 179, 63, 0.5)');
 }
     if (zonePercentage < 80 && zonePercentage >= 50) {
@@ -530,7 +530,7 @@ function Add(){
 
     //$("#home-psr-bar").css({width: homePercentage + "%" });
 
-    if (zonePercentage >= 80) {
+    if (zonePercentage >= 80 || zonePercentage = NaN) {
     $("#homePos").css('background-color', 'rgba(109, 179, 63, 0.5)');
 }
     if (zonePercentage < 80 && zonePercentage >= 50) {
@@ -553,7 +553,7 @@ function Add(){
 
     //$("#home-psr-bar").css({width: homePercentage + "%" });
 
-    if (zonePercentage >= 80) {
+    if (zonePercentage >= 80 || zonePercentage = NaN) {
     $("#homeTackles").css('background-color', 'rgba(109, 179, 63, 0.5)');
 }
     if (zonePercentage < 80 && zonePercentage >= 50) {
@@ -576,7 +576,7 @@ function Add(){
 
     //$("#home-psr-bar").css({width: homePercentage + "%" });
 
-    if (zonePercentage >= 80) {
+    if (zonePercentage >= 80 || zonePercentage = NaN) {
     $("#HomeBallWon").css('background-color', 'rgba(109, 179, 63, 0.5)');
 }
     if (zonePercentage < 80 && zonePercentage >= 50) {
@@ -599,7 +599,7 @@ function Add(){
 
     //$("#home-psr-bar").css({width: homePercentage + "%" });
 
-    if (zonePercentage >= 80) {
+    if (zonePercentage >= 80 || zonePercentage = NaN) {
     $("#HomeShotsInside").css('background-color', 'rgba(109, 179, 63, 0.5)');
 }
     if (zonePercentage < 80 && zonePercentage >= 50) {
