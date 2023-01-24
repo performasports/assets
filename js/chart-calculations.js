@@ -777,7 +777,7 @@ function Add(){
    function HomeFreesScore(){
     let no1 = parseInt($("#HomeFreesScore").text(),10);
     let no2 = parseInt($("#HomeFreesScoreAvg").text(),10);
-    let zoneNum = no1/no2;
+    let zoneNum = no2/no1;
     let zonePercentage = zoneNum*100;
     //alert("The result is "+result +no1 +no2);
 
@@ -800,7 +800,7 @@ function Add(){
    function HomePosLosScore(){
     let no1 = parseInt($("#HomePosLosScore").text(),10);
     let no2 = parseInt($("#HomePosLosScoreAvg").text(),10);
-    let zoneNum = no1/no2;
+    let zoneNum = no2/no1;
     let zonePercentage = zoneNum*100;
     //alert("The result is "+result +no1 +no2);
 
