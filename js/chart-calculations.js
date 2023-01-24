@@ -544,9 +544,9 @@ function Add(){
 
    }
 
-   function HomeTackles(){
-    let no1 = parseInt($("#HomeTackles").text(),10);
-    let no2 = parseInt($("#HomeTacklesAvg").text(),10);
+   function homeTackles(){
+    let no1 = parseInt($("#homeTackles").text(),10);
+    let no2 = parseInt($("#homeTacklesAvg").text(),10);
     let zoneNum = no1/no2;
     let zonePercentage = zoneNum*100;
     //alert("The result is "+result +no1 +no2);
@@ -554,13 +554,13 @@ function Add(){
     //$("#home-psr-bar").css({width: homePercentage + "%" });
 
     if (zonePercentage >= 80) {
-    $("#HomeTackles").css('background-color', 'rgba(109, 179, 63, 0.5)');
+    $("#homeTackles").css('background-color', 'rgba(109, 179, 63, 0.5)');
 }
     if (zonePercentage < 80 && zonePercentage >= 50) {
-    $("#HomeTackles").css('background-color', 'rgba(255, 180, 0, 0.5)');
+    $("#homeTackles").css('background-color', 'rgba(255, 180, 0, 0.5)');
 }
     if (zonePercentage < 50) {
-    $("#HomeTackles").css('background-color', 'rgba(251, 34, 0, 0.5)');
+    $("#homeTackles").css('background-color', 'rgba(251, 34, 0, 0.5)');
 }
     else {
     }
@@ -634,7 +634,7 @@ function Add(){
    homeKOs();
    homeFrees();
    homePos();
-   HomeTackles();
+   homeTackles();
    HomeBallWon();
    HomeShotsInside();
    }
